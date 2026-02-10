@@ -1677,6 +1677,61 @@
                 });
                 filename = 'rsd2026-shopping-list.md';
                 mime = 'text/markdown';
+            } else if (format === 'mhtml') {
+                const boundary = '----=_RSD2026_MHTML_' + Date.now();
+                const htmlHead = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RSD 2026 Shopping List</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background:#111; color:#f5f5f5; margin:0; padding:16px; }
+    h1 { font-size:18px; margin:0 0 8px; }
+    p.meta { font-size:11px; color:#aaa; margin:0 0 16px; }
+    .item { padding:6px 8px; border-radius:4px; border:1px solid #333; margin-bottom:6px; background:#1c1c1c; }
+    .item-title { font-size:12px; font-weight:600; margin-bottom:2px; }
+    .item-meta { font-size:10px; color:#bbb; }
+  </style>
+</head>
+<body>
+  <h1>RSD 2026 Shopping List</h1>
+  <p class="meta">${favs.length} release${favs.length === 1 ? '' : 's'} selected • Generated from rsd2026</p>
+`;
+                let htmlBody = '';
+                favs.forEach((r, i) => {
+                    const artist = cleanDisplayText(r.Artist);
+                    const title = cleanDisplayText(r.Title);
+                    const formatVal = cleanDisplayText(r.Format);
+                    const label = cleanDisplayText(r.Label);
+                    const genre = cleanDisplayText(r['Genre 1'] || '');
+                    htmlBody += `
+  <div class="item">
+    <div class="item-title">${i + 1}. ${artist} — ${title}</div>
+    <div class="item-meta">${formatVal}${label ? ' • ' + label : ''}${genre ? ' • ' + genre : ''}</div>
+  </div>`;
+                });
+                const htmlTail = `
+</body>
+</html>
+`;
+                const fullHtml = htmlHead + htmlBody + htmlTail;
+                content =
+`From: 
+Subject: RSD 2026 Shopping List
+Date: ${new Date().toUTCString()}
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="${boundary}"
+
+--${boundary}
+Content-Type: text/html; charset="utf-8"
+Content-Location: file:///rsd2026-shopping-list.html
+
+${fullHtml}
+--${boundary}--
+`;
+                filename = 'rsd2026-shopping-list.mhtml';
+                mime = 'application/x-mimearchive';
             } else if (format === 'csv') {
                 content = 'Artist,Title,Format,Label,Genre\n';
                 favs.forEach(r => {
@@ -1713,7 +1768,8 @@
             const opts = [
                 { label: 'Markdown (.md)', format: 'markdown' },
                 { label: 'CSV (.csv)', format: 'csv' },
-                { label: 'Plain text (.txt)', format: 'txt' }
+                { label: 'Plain text (.txt)', format: 'txt' },
+                { label: 'Single-page archive (.mhtml)', format: 'mhtml' }
             ];
             opts.forEach(o => {
                 const b = document.createElement('button');

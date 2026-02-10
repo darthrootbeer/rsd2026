@@ -1589,6 +1589,7 @@
                     const rawGenre = cleanDisplayText(r['Genre 1'] || '');
                     const genreDisplay = rawGenre || 'Unknown';
                     const style1Display = cleanDisplayText(r['Style 1'] || '');
+                    const qtyDisplay = cleanDisplayText(r['Pressing Quantity'] || '');
                 return `
                 <div class="card${isFavorite ? ' favorited' : ''}">
                     <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)" onmouseenter="setCardCartHover(this, true)" onmouseleave="setCardCartHover(this, false)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">

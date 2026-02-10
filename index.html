@@ -283,7 +283,38 @@
         }
         .filters-toggle-btn:hover { border-color: #ff2fa8; color: #ff2fa8; }
         .controls input { flex: 1; min-width: 200px; }
-        .controls select { min-width: 100px; }
+        .controls-sort {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 9px;
+        }
+        .controls-sort-label {
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .sort-btn {
+            padding: 4px 7px;
+            border-radius: 999px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #bbb;
+            font-size: 9px;
+            cursor: pointer;
+        }
+        .sort-btn.active {
+            background: #333;
+            border-color: #ff2fa8;
+            color: #ffb3e6;
+        }
+        .sort-btn:hover {
+            border-color: #ff2fa8;
+        }
+        .sort-btn-dir {
+            font-size: 9px;
+            margin-left: 2px;
+        }
         .stats {
             max-width: 1400px;
             margin: 0 auto 12px;
@@ -1006,11 +1037,13 @@
     <div class="controls">
         <input type="text" id="search" placeholder="Search artist, title, label...">
 
-        <select id="sortBy">
-            <option value="artist">Sort: Artist</option>
-            <option value="title">Sort: Title</option>
-            <option value="genre">Sort: Genre</option>
-        </select>
+        <div class="controls-sort" id="sortControls">
+            <span class="controls-sort-label">Sort</span>
+            <button type="button" class="sort-btn" data-sort="artist">Artist<span class="sort-btn-dir" aria-hidden="true"></span></button>
+            <button type="button" class="sort-btn" data-sort="title">Title<span class="sort-btn-dir" aria-hidden="true"></span></button>
+            <button type="button" class="sort-btn" data-sort="genre">Genre<span class="sort-btn-dir" aria-hidden="true"></span></button>
+            <button type="button" class="sort-btn" data-sort="quantity">Quantity<span class="sort-btn-dir" aria-hidden="true"></span></button>
+        </div>
         <div class="controls-view-btns">
             <button id="viewCards" class="view-btn active" onclick="setViewMode('cards')" title="Card view">▦</button>
             <button id="viewRows" class="view-btn" onclick="setViewMode('rows')" title="Row view">≡</button>
@@ -1104,9 +1137,11 @@
         let excludedFormats = new Set();
         let viewMode = localStorage.getItem('rsd2026_viewMode') || 'cards';
 
-        let search, sortBy, stats, grid, modal, modalBody;
+        let search, stats, grid, modal, modalBody;
         let detailSidebar, detailSidebarBody, detailSidebarBreadcrumb;
         let countdownTimerId = null;
+        let sortKey = localStorage.getItem('rsd2026_sortKey') || 'artist';
+        let sortDir = localStorage.getItem('rsd2026_sortDir') || 'asc';
 
         function initCountdown() {
             const bar = document.getElementById('countdownBar');
@@ -1141,7 +1176,6 @@
 
         function init() {
             search = document.getElementById('search');
-            sortBy = document.getElementById('sortBy');
             stats = document.getElementById('stats');
             grid = document.getElementById('grid');
             modal = document.getElementById('modal');
@@ -1158,7 +1192,6 @@
                 populateFilters();
                 setupDropdowns();
                 search.addEventListener('input', filterAndRender);
-                sortBy.addEventListener('change', filterAndRender);
                 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
                 document.getElementById('exclusions')?.addEventListener('click', (e) => {
                     const tag = e.target.closest('.filter-tag');
@@ -1188,6 +1221,38 @@
                     exportFavoritesDropdown(e.target);
                 });
                 initCountdown();
+                const sortControls = document.getElementById('sortControls');
+                if (sortControls) {
+                    const sortButtons = Array.from(sortControls.querySelectorAll('.sort-btn'));
+                    const applySortState = () => {
+                        sortButtons.forEach(btn => {
+                            const key = btn.getAttribute('data-sort');
+                            const active = key === sortKey;
+                            btn.classList.toggle('active', active);
+                            const dirSpan = btn.querySelector('.sort-btn-dir');
+                            if (dirSpan) {
+                                dirSpan.textContent = active ? (sortDir === 'asc' ? '↑' : '↓') : '';
+                            }
+                        });
+                    };
+                    sortButtons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const key = btn.getAttribute('data-sort');
+                            if (!key) return;
+                            if (key === sortKey) {
+                                sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+                            } else {
+                                sortKey = key;
+                                sortDir = 'asc';
+                            }
+                            localStorage.setItem('rsd2026_sortKey', sortKey);
+                            localStorage.setItem('rsd2026_sortDir', sortDir);
+                            applySortState();
+                            filterAndRender();
+                        });
+                    });
+                    applySortState();
+                }
                 // Help panel toggle
                 const helpPanel = document.getElementById('helpPanel');
                 const helpToggle = document.getElementById('helpToggle');
@@ -1275,10 +1340,13 @@
             if (styleGroup) styleGroup.style.display = styles.length ? '' : 'none';
             if (formatGroup) formatGroup.style.display = formats.length ? '' : 'none';
 
-            const genreOpt = document.querySelector('#sortBy option[value="genre"]');
-            if (genreOpt) {
-                genreOpt.style.display = genres.length ? '' : 'none';
-                if (genres.length === 0 && sortBy && sortBy.value === 'genre') sortBy.value = 'artist';
+            const genreSortBtn = document.querySelector('.sort-btn[data-sort="genre"]');
+            if (genreSortBtn) {
+                genreSortBtn.style.display = genres.length ? '' : 'none';
+                if (genres.length === 0 && sortKey === 'genre') {
+                    sortKey = 'artist';
+                    localStorage.setItem('rsd2026_sortKey', sortKey);
+                }
             }
 
             if (genrePills) {
@@ -1447,14 +1515,19 @@
             });
 
             // Sort
-            const sortKey = sortBy?.value || 'artist';
+            const key = sortKey || 'artist';
             filteredReleases.sort((a, b) => {
-                if (sortKey === 'price') {
-                    return parseFloat(a.Price) - parseFloat(b.Price);
+                let cmp = 0;
+                if (key === 'quantity') {
+                    const aQty = parseInt(a['Pressing Quantity'] || '0', 10) || 0;
+                    const bQty = parseInt(b['Pressing Quantity'] || '0', 10) || 0;
+                    cmp = aQty - bQty;
+                } else {
+                    const aVal = (key === 'artist' ? a.Artist : key === 'title' ? a.Title : a['Genre 1'] || 'Unknown') || '';
+                    const bVal = (key === 'artist' ? b.Artist : key === 'title' ? b.Title : b['Genre 1'] || 'Unknown') || '';
+                    cmp = aVal.localeCompare(bVal);
                 }
-                const aVal = a[sortKey === 'artist' ? 'Artist' : sortKey === 'title' ? 'Title' : 'Genre 1'] || '';
-                const bVal = b[sortKey === 'artist' ? 'Artist' : sortKey === 'title' ? 'Title' : 'Genre 1'] || '';
-                return aVal.localeCompare(bVal);
+                return sortDir === 'desc' ? -cmp : cmp;
             });
 
             renderGrid();

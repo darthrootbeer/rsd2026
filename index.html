@@ -22,7 +22,7 @@
             border-bottom: 1px solid #333;
             margin-bottom: 16px;
         }
-        .header h1 { color: #ff6b35; margin-bottom: 6px; font-size: 18px; font-weight: 600; letter-spacing: 0.5px; }
+        .header h1 { color: #ff2fa8; margin-bottom: 6px; font-size: 18px; font-weight: 600; letter-spacing: 0.5px; }
         .header p { color: #999; font-size: 11px; }
         .controls {
             max-width: 1400px;
@@ -34,6 +34,37 @@
             background: #252525;
             border-radius: 4px;
         }
+        .help-panel {
+            max-width: 1400px;
+            margin: 0 auto 10px;
+            padding: 0 12px;
+            font-size: 10px;
+        }
+        .help-toggle {
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #bbb;
+            border-radius: 999px;
+            padding: 3px 10px;
+            font-size: 9px;
+            cursor: pointer;
+        }
+        .help-toggle:hover {
+            border-color: #ff2fa8;
+            color: #ff2fa8;
+        }
+        .help-body {
+            margin-top: 6px;
+            padding: 8px 10px;
+            background: #202020;
+            border-radius: 4px;
+            border: 1px solid #333;
+            color: #ccc;
+        }
+        .help-body p { margin-bottom: 4px; }
+        .help-body p:last-child { margin-bottom: 0; }
+        .help-collapsed .help-body { display: none; }
+
         .controls input, .controls select, .controls .dropdown-btn {
             padding: 4px 8px;
             border: 1px solid #444;
@@ -44,7 +75,7 @@
         }
         .controls input:focus-visible, .controls select:focus-visible, .controls .dropdown-btn:focus-visible,
         button:focus-visible, .filter-tag:focus-visible {
-            outline: 2px solid #ff6b35;
+            outline: 2px solid #ff2fa8;
             outline-offset: 2px;
         }
         .dropdown {
@@ -59,7 +90,7 @@
             padding: 4px 8px;
         }
         .dropdown-btn:hover {
-            border-color: #ff6b35;
+            border-color: #ff2fa8;
         }
         .dropdown-content {
             display: none;
@@ -149,7 +180,7 @@
             flex-shrink: 0;
             accent-color: #4CAF50;
         }
-        .dropdown-row-out input { accent-color: #ff6b35; }
+        .dropdown-row-out input { accent-color: #ff2fa8; }
         .dropdown-price {
             display: grid;
             grid-template-columns: auto 1fr;
@@ -211,9 +242,9 @@
         }
         .view-btn.active {
             background: #333;
-            color: #ff6b35;
+            color: #ff2fa8;
         }
-        .view-btn:hover { border-color: #ff6b35; }
+        .view-btn:hover { border-color: #ff2fa8; }
         .controls-view-btns { display: flex; align-items: center; gap: 4px; }
         .clear-filters-btn {
             padding: 6px 10px;
@@ -224,7 +255,17 @@
             cursor: pointer;
             font-size: 10px;
         }
-        .clear-filters-btn:hover { border-color: #ff6b35; color: #e0e0e0; }
+        .clear-filters-btn:hover { border-color: #ff2fa8; color: #e0e0e0; }
+        .filters-toggle-btn {
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #888;
+            font-size: 9px;
+            cursor: pointer;
+        }
+        .filters-toggle-btn:hover { border-color: #ff2fa8; color: #ff2fa8; }
         .controls input { flex: 1; min-width: 200px; }
         .controls select { min-width: 100px; }
         .stats {
@@ -269,7 +310,7 @@
         }
         .row-item:hover {
             background: #2a2a2a;
-            border-color: #ff6b35;
+            border-color: #ff2fa8;
         }
         .row-item .row-thumb {
             width: 36px;
@@ -289,15 +330,13 @@
             height: 100%;
             object-fit: contain;
         }
-        .row-item .row-artist { color: #ff6b35; font-size: 9px; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-artist { color: #4cc9ff; font-size: 9px; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
         .row-item .row-title { font-size: 9px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
         .row-item .row-meta { font-size: 8px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
         .row-item .row-genres { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-width: 0; overflow: hidden; }
         .row-item .row-genre { font-size: 7px; background: #333; color: #aaa; padding: 1px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
         .row-item .row-price { display: none; }
-        .row-item .row-links { font-size: 7px; white-space: nowrap; }
-        .row-item .row-links a { color: #666; text-decoration: none; margin-right: 4px; }
-        .row-item .row-links a:hover { color: #ff6b35; }
+        .row-item .row-links { font-size: 7px; white-space: nowrap; color: #666; }
         .row-item .row-star { font-size: 9px; cursor: pointer; color: #666; }
         .row-item .row-star.active { color: #d4a017; }
         .card {
@@ -311,8 +350,8 @@
         }
         .card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);
-            border-color: #ff6b35;
+            box-shadow: 0 4px 12px rgba(255, 47, 168, 0.35);
+            border-color: #ff2fa8;
         }
         .card-img {
             width: 100%;
@@ -361,7 +400,7 @@
         }
         .card-artist {
             font-size: 9px;
-            color: #ff6b35;
+            color: #4cc9ff;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-bottom: 3px;
@@ -418,8 +457,8 @@
             color: #888;
             cursor: pointer;
         }
-        .modal-close:hover { color: #ff6b35; }
-        .modal-close:focus-visible { outline: 2px solid #ff6b35; outline-offset: 2px; }
+        .modal-close:hover { color: #ff2fa8; }
+        .modal-close:focus-visible { outline: 2px solid #ff2fa8; outline-offset: 2px; }
         .modal-img {
             width: 100%;
             max-height: 280px;
@@ -428,24 +467,24 @@
             border-radius: 4px;
             margin-bottom: 12px;
         }
-        .modal-artist { color: #ff6b35; font-size: 10px; margin-bottom: 3px; }
+        .modal-artist { color: #4cc9ff; font-size: 10px; margin-bottom: 3px; }
         .modal-title { font-size: 14px; font-weight: bold; margin-bottom: 10px; }
         .modal-row { margin-bottom: 6px; font-size: 11px; }
         .modal-label { color: #888; display: inline-block; width: 100px; }
         .play-links { margin-top: 12px; padding-top: 10px; border-top: 1px solid #333; display: flex; gap: 12px; flex-wrap: wrap; }
-        .play-links a { color: #ff6b35; font-size: 10px; text-decoration: none; }
+        .play-links a { color: #ff2fa8; font-size: 10px; text-decoration: none; }
         .play-links a:hover { text-decoration: underline; }
         .card-play-links { margin-top: 6px; font-size: 8px; }
         .card-play-links a { color: #888; text-decoration: none; margin-right: 6px; }
-        .card-play-links a:hover { color: #ff6b35; text-decoration: underline; }
+        .card-play-links a:hover { color: #ff2fa8; text-decoration: underline; }
         .loading { text-align: center; padding: 24px; color: #888; font-size: 10px; }
         .favorites-cart-toggle {
             position: fixed;
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-            width: 28px;
-            padding: 12px 4px;
+            width: 34px;
+            padding: 10px 4px;
             background: #252525;
             border: 1px solid #444;
             border-right: none;
@@ -462,7 +501,7 @@
         }
         .favorites-cart-toggle:hover {
             background: #2a2a2a;
-            color: #ff6b35;
+            color: #ff2fa8;
         }
         .favorites-cart-toggle .badge {
             font-size: 9px;
@@ -495,7 +534,7 @@
             background: #252525;
             border-bottom: 1px solid #333;
             font-weight: 600;
-            color: #ff6b35;
+            color: #ff2fa8;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -510,7 +549,7 @@
             border-radius: 2px;
             cursor: pointer;
         }
-        .favorites-export-btn:hover { border-color: #ff6b35; color: #ff6b35; }
+        .favorites-export-btn:hover { border-color: #ff2fa8; color: #ff2fa8; }
         .favorites-export-menu {
             position: absolute;
             top: 100%;
@@ -534,14 +573,14 @@
             text-align: left;
             cursor: pointer;
         }
-        .favorites-export-option:hover { background: #3a3a3a; color: #ff6b35; }
+        .favorites-export-option:hover { background: #3a3a3a; color: #ff2fa8; }
         .favorites-cart-close {
             cursor: pointer;
             font-size: 14px;
             color: #888;
             padding: 0 4px;
         }
-        .favorites-cart-close:hover { color: #ff6b35; }
+        .favorites-cart-close:hover { color: #ff2fa8; }
         .favorites-cart-list {
             flex: 1;
             overflow-y: auto;
@@ -578,7 +617,7 @@
         }
         .favorites-cart-item-main { flex: 1; cursor: pointer; min-width: 0; }
         .favorites-cart-item:hover { background: #2a2a2a; }
-        .favorites-cart-item-artist { color: #ff6b35; font-size: 10px; }
+        .favorites-cart-item-artist { color: #4cc9ff; font-size: 10px; }
         .favorites-cart-item-title { color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10px; }
         .favorites-cart-item-remove {
             background: none;
@@ -588,7 +627,7 @@
             padding: 2px;
             font-size: 11px;
         }
-        .favorites-cart-item-remove:hover { color: #ff6b35; }
+        .favorites-cart-item-remove:hover { color: #ff2fa8; }
         .favorites-cart-total {
             padding: 6px 8px;
             background: #252525;
@@ -597,6 +636,14 @@
             color: #4CAF50;
         }
         .favorites-cart-empty { padding: 12px 8px; color: #666; }
+
+        .favorites-cart-hint {
+            padding: 6px 8px;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+            font-size: 9px;
+            color: #aaa;
+        }
 
         /* Left-hand detail sidebar */
         .detail-sidebar-backdrop {
@@ -652,7 +699,7 @@
             padding: 2px 4px;
         }
         .detail-sidebar-close:hover {
-            color: #ff6b35;
+            color: #ff2fa8;
         }
         .detail-sidebar-body {
             flex: 1;
@@ -681,7 +728,7 @@
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: #ff6b35;
+            color: #4cc9ff;
             margin-bottom: 4px;
         }
         .detail-sidebar-title {
@@ -726,23 +773,48 @@
         .detail-sidebar-links {
             margin-top: 12px;
             display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+            flex-direction: column;
+            gap: 6px;
         }
-        .detail-sidebar-links a {
+        .detail-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
             font-size: 9px;
             padding: 4px 8px;
             border-radius: 3px;
             border: 1px solid #444;
             background: #252525;
-            color: #ff6b35;
+            color: #ff2fa8;
             text-decoration: none;
+        }
+        .detail-link:hover {
+            border-color: #ff2fa8;
+            background: #32152a;
+        }
+        .detail-link-icon {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            background: #111;
+            color: #ffc4eb;
+            flex-shrink: 0;
+        }
+        .detail-link-label {
+            flex: 1;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        .detail-sidebar-links a:hover {
-            border-color: #ff6b35;
-            background: #33211a;
-        }
+        .detail-link-rsd .detail-link-icon { background: #111; color: #ffc4eb; }
+        .detail-link-album .detail-link-icon { background: #111827; color: #93c5fd; }
+        .detail-link-youtube .detail-link-icon { background: #7f1d1d; color: #fecaca; }
+        .detail-link-spotify .detail-link-icon { background: #064e3b; color: #6ee7b7; }
+        .detail-link-discogs .detail-link-icon { background: #111827; color: #fbbf24; }
 
         .filter-row {
             max-width: 1400px;
@@ -772,6 +844,9 @@
             gap: 4px;
             max-width: 100%;
         }
+        body.filters-collapsed #topFilters {
+            display: none;
+        }
         .filter-pill {
             padding: 2px 6px;
             border-radius: 999px;
@@ -783,12 +858,12 @@
             white-space: nowrap;
         }
         .filter-pill:hover {
-            border-color: #ff6b35;
+            border-color: #ff2fa8;
         }
         .filter-pill.active {
-            background: #3a261f;
-            border-color: #ff6b35;
-            color: #ffb199;
+            background: #311427;
+            border-color: #ff2fa8;
+            color: #ffc4eb;
         }
         .filter-pill-unknown {
             background: #332222;
@@ -806,6 +881,15 @@
     <div class="header">
         <h1>🎵 Record Store Day 2026</h1>
         <p>April 18, 2026 • 357 Exclusive Releases</p>
+    </div>
+
+    <div class="help-panel" id="helpPanel">
+        <button type="button" class="help-toggle" id="helpToggle">How to use this page ▾</button>
+        <div class="help-body" id="helpBody">
+            <p><strong>Build your RSD shopping list:</strong> click a star ★ on any release to add it to your Shopping List on the right.</p>
+            <p><strong>Filter quickly:</strong> use the search box and the Genre / Style / Format tags to narrow down releases.</p>
+            <p><strong>See full details:</strong> click a card or row to open the left details panel for artwork, description, tracklist, and links.</p>
+        </div>
     </div>
 
     <div class="controls">
@@ -859,16 +943,20 @@
     </div>
 
     <div class="favorites-cart-toggle" id="favoritesCartToggle" title="Open favorites">
-        <span>⭐</span>
+        <span>🛒</span>
         <span class="badge" id="favoritesCartBadge">0</span>
+        <span style="font-size:8px;color:#bbb;">List</span>
     </div>
     <div class="favorites-cart" id="favoritesCart">
         <div class="favorites-cart-header">
-            <span>⭐ Favorites</span>
+            <span>🛒 Shopping List</span>
             <div class="favorites-cart-header-actions">
                 <button class="favorites-export-btn" id="favoritesExportBtn" title="Export list">Export</button>
                 <span class="favorites-cart-close" id="favoritesCartClose" title="Close">×</span>
             </div>
+        </div>
+        <div class="favorites-cart-hint" id="favoritesCartHint">
+            Click ★ on any release to add it here. Use this list as your Record Store Day shopping plan.
         </div>
         <div class="favorites-cart-list" id="favoritesCartList"></div>
         <div class="favorites-cart-total" id="favoritesCartTotal"></div>
@@ -957,6 +1045,38 @@
                     e.stopPropagation();
                     exportFavoritesDropdown(e.target);
                 });
+                // Help panel toggle
+                const helpPanel = document.getElementById('helpPanel');
+                const helpToggle = document.getElementById('helpToggle');
+                const helpCollapsed = localStorage.getItem('rsd2026_helpCollapsed') === 'true';
+                if (helpPanel && helpCollapsed) {
+                    helpPanel.classList.add('help-collapsed');
+                    if (helpToggle) helpToggle.textContent = 'How to use this page ▸';
+                }
+                if (helpToggle && helpPanel) {
+                    helpToggle.addEventListener('click', () => {
+                        const isCollapsed = helpPanel.classList.toggle('help-collapsed');
+                        localStorage.setItem('rsd2026_helpCollapsed', isCollapsed ? 'true' : 'false');
+                        helpToggle.textContent = isCollapsed ? 'How to use this page ▸' : 'How to use this page ▾';
+                    });
+                }
+                // Filters collapse toggle
+                const filtersCollapsed = localStorage.getItem('rsd2026_filtersCollapsed') === 'true';
+                if (filtersCollapsed) document.body.classList.add('filters-collapsed');
+                const controlsEl = document.querySelector('.controls');
+                if (controlsEl) {
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.id = 'filtersToggleBtn';
+                    btn.className = 'filters-toggle-btn';
+                    btn.textContent = filtersCollapsed ? 'Show filters' : 'Hide filters';
+                    btn.addEventListener('click', () => {
+                        const nowCollapsed = document.body.classList.toggle('filters-collapsed');
+                        btn.textContent = nowCollapsed ? 'Show filters' : 'Hide filters';
+                        localStorage.setItem('rsd2026_filtersCollapsed', nowCollapsed ? 'true' : 'false');
+                    });
+                    controlsEl.appendChild(btn);
+                }
                 grid.classList.toggle('view-rows', viewMode === 'rows');
                 document.getElementById('viewCards').classList.toggle('active', viewMode === 'cards');
                 document.getElementById('viewRows').classList.toggle('active', viewMode === 'rows');
@@ -1088,6 +1208,10 @@
             return String(str)
                 // Replace the replacement character � with a space, then collapse spaces
                 .replace(/\uFFFD/g, ' ')
+                // Fix common CP-1252 smart quotes/dashes
+                .replace(/[\u0091\u0092]/g, '’')   // single quotes
+                .replace(/[\u0093\u0094]/g, '"')   // double quotes
+                .replace(/[\u0096\u0097]/g, '–')   // en/em dash
                 // Common mojibake sequences from mis-decoded UTF-8 → ASCII
                 .replace(/â€™/g, '’')
                 .replace(/â€œ|â€/g, '"')
@@ -1097,6 +1221,23 @@
                 // Collapse any excess whitespace introduced
                 .replace(/\s+/g, ' ')
                 .trim();
+        }
+        function cleanRichHtml(str) {
+            if (!str) return '';
+            return String(str)
+                .replace(/\uFFFD/g, ' ')
+                // Fix CP-1252 smart punctuation
+                .replace(/[\u0091\u0092]/g, '’')
+                .replace(/[\u0093\u0094]/g, '"')
+                .replace(/[\u0096\u0097]/g, '–')
+                // Fix UTF-8 mojibake sequences
+                .replace(/â€™/g, '’')
+                .replace(/â€œ|â€/g, '"')
+                .replace(/â€“|â€”/g, '–')
+                .replace(/â€¦/g, '…')
+                .replace(/Ã©/g, 'é')
+                // Collapse excessive plain spaces while preserving <br> structure
+                .replace(/ {2,}/g, ' ');
         }
         function updateFilterTags() {
             const tags = [];
@@ -1207,14 +1348,8 @@
                             ${style1Display ? `<span class="row-genre">${style1Display}</span>` : ''}
                             ${style2Display ? `<span class="row-genre">${style2Display}</span>` : ''}
                         </span>
-                        <span class="row-links" onclick="event.stopPropagation()">
-                            ${urls ? `
-                                <a href="${urls.songlink}" target="_blank" rel="noopener" title="Find on streaming">🎵</a>
-                                <a href="${urls.youtube}" target="_blank" rel="noopener">YT</a>
-                                <a href="${urls.spotify}" target="_blank" rel="noopener">Spot</a>
-                            ` : '<span style="color:#666;font-size:7px">New</span>'}
-                        </span>
-                        <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)">${isFavorite ? '⭐' : '☆'}</div>
+                        <span class="row-links" onclick="event.stopPropagation()">Details ▸</span>
+                        <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">${isFavorite ? '⭐' : '☆'}</div>
                     </div>
                 `}).join('');
             } else {
@@ -1230,7 +1365,7 @@
                     const style1Display = cleanDisplayText(r['Style 1'] || '');
                     return `
                 <div class="card">
-                    <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)">
+                    <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">
                         ${isFavorite ? '⭐' : '☆'}
                     </div>
                     <div class="card-img" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
@@ -1242,13 +1377,7 @@
                         <div class="card-meta">${cleanDisplayText(r.Format || '')} • ${labelDisplay}</div>
                         ${genreDisplay ? `<span class="card-genre">${genreDisplay}</span>` : ''}
                         ${style1Display ? `<span class="card-genre">${style1Display}</span>` : ''}
-                        ${urls ? `
-                            <div class="card-play-links" onclick="event.stopPropagation()">
-                                <a href="${urls.songlink}" target="_blank" rel="noopener">Find Streaming</a>
-                                <a href="${urls.youtube}" target="_blank" rel="noopener">YouTube</a>
-                                <a href="${urls.spotify}" target="_blank" rel="noopener">Spotify</a>
-                            </div>
-                        ` : '<div class="card-play-links" style="color:#666;">New Release</div>'}
+                        <div class="card-play-links" style="color:#666;font-size:8px;">Click for details ▸</div>
                     </div>
                 </div>
             `}).join('');
@@ -1261,11 +1390,11 @@
             if (isReissue === 'No') {
                 return null;  // Only hide for confirmed new releases
             }
-            // Use song.link for universal music links
+            // Use album.link for universal music links
             const q = encodeURIComponent(`${artist} ${title}`);
-            const songlinkUrl = `https://song.link/search?q=${q}`;
+            const albumLinkUrl = `https://album.link/search?q=${q}`;
             return {
-                songlink: songlinkUrl,
+                albumlink: albumLinkUrl,
                 youtube: `https://www.youtube.com/results?search_query=${q}`,
                 spotify: `https://open.spotify.com/search/${q}`
             };
@@ -1280,6 +1409,14 @@
             // Fallback to search if no ID found
             const q = encodeURIComponent(`${artist} ${title}`);
             return `https://recordstoreday.com/SpecialReleases?q=${q}`;
+        }
+
+        function getDiscogsMasterUrl(artist, title) {
+            // Only search Discogs by artist + album title (no edition/format text)
+            const artistClean = cleanDisplayText(artist || '');
+            const titleClean = cleanDisplayText(title || '');
+            const q = encodeURIComponent(`${artistClean} ${titleClean}`.trim());
+            return `https://www.discogs.com/search/?q=${q}&type=master`;
         }
 
         function openRSDPage(index, event) {
@@ -1451,6 +1588,7 @@
             const style1Display = cleanDisplayText(r['Style 1'] || '');
             const style2Display = cleanDisplayText(r['Style 2'] || '');
             const formatDisplay = cleanDisplayText(r.Format || '');
+            const descriptionHtml = cleanRichHtml(r.Description || '');
             modalBody.innerHTML = `
                 <div class="modal-img">${art ? `<img src="${art}" alt="${titleDisplay}" referrerpolicy="no-referrer" style="width:100%;max-height:400px;object-fit:contain;">` : '🎵'}</div>
                 <div class="modal-artist">${artistDisplay}</div>
@@ -1461,10 +1599,10 @@
                 ${style1Display ? `<div class="modal-row"><span class="modal-label">Style:</span> ${style1Display}${style2Display ? ', ' + style2Display : ''}</div>` : ''}
                 <div class="modal-row"><span class="modal-label">RSD Date:</span> ${r['RSD Date']}</div>
                 <div class="modal-row"><span class="modal-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
-                ${r.Description ? `<div class="modal-row"><span class="modal-label">Description:</span> ${r.Description}</div>` : ''}
+                ${descriptionHtml ? `<div class="modal-row"><span class="modal-label">Description:</span> ${descriptionHtml}</div>` : ''}
                 ${urls ? `
                     <div class="play-links">
-                        <a href="${urls.songlink}" target="_blank" rel="noopener">🔗 Find on All Platforms (song.link)</a>
+                        <a href="${urls.albumlink}" target="_blank" rel="noopener">All Platforms (album.link)</a>
                         <a href="${urls.youtube}" target="_blank" rel="noopener">Search on YouTube</a>
                         <a href="${urls.spotify}" target="_blank" rel="noopener">Search on Spotify</a>
                     </div>
@@ -1483,6 +1621,7 @@
             const art = getAlbumArt(r.Artist, r.Title);
             const urls = getPlayUrls(r.Artist, r.Title);
             const rsdUrl = getRSDUrl(r.Artist, r.Title);
+            const discogsUrl = getDiscogsMasterUrl(r.Artist, r.Title);
             const artistDisplay = cleanDisplayText(r.Artist);
             const titleDisplay = cleanDisplayText(r.Title);
             const labelDisplay = cleanDisplayText(r.Label);
@@ -1491,6 +1630,8 @@
             const style2Display = cleanDisplayText(r['Style 2'] || '');
             const formatDisplay = cleanDisplayText(r.Format || '');
             const releaseTypeDisplay = cleanDisplayText(r['Release Type'] || '');
+            const moreInfoHtml = cleanRichHtml(r.MoreInfo || r.Description || '');
+            const tracklistHtml = cleanRichHtml(r.Tracklist || '');
 
             if (detailSidebarBreadcrumb) {
                 detailSidebarBreadcrumb.textContent = `Record Store Day 2026 ▸ ${artistDisplay} ▸ ${titleDisplay}`;
@@ -1513,22 +1654,38 @@
                     ${style1Display ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Style:</span> ${style1Display}${style2Display ? ', ' + style2Display : ''}</div>` : ''}
                     <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
                 </div>
-                ${(r.MoreInfo || r.Description) ? `
+                ${moreInfoHtml ? `
                     <div class="detail-sidebar-section-title">More Info</div>
-                    <div class="detail-sidebar-description">${r.MoreInfo || r.Description}</div>
+                    <div class="detail-sidebar-description">${moreInfoHtml}</div>
                 ` : ''}
-                ${r.Tracklist ? `
+                ${tracklistHtml ? `
                     <div class="detail-sidebar-section-title">Tracklist</div>
-                    <div class="detail-sidebar-tracklist">${r.Tracklist}</div>
+                    <div class="detail-sidebar-tracklist">${tracklistHtml}</div>
                 ` : ''}
                 <div class="detail-sidebar-section-title">Links</div>
                 <div class="detail-sidebar-links">
-                    <a href="${rsdUrl}" target="_blank" rel="noopener">View on RecordStoreDay.com</a>
+                    <a class="detail-link detail-link-rsd" href="${rsdUrl}" target="_blank" rel="noopener">
+                        <span class="detail-link-icon">🏷️</span>
+                        <span class="detail-link-label">View on RecordStoreDay.com</span>
+                    </a>
                     ${urls ? `
-                        <a href="${urls.songlink}" target="_blank" rel="noopener">All Platforms (song.link)</a>
-                        <a href="${urls.youtube}" target="_blank" rel="noopener">Search on YouTube</a>
-                        <a href="${urls.spotify}" target="_blank" rel="noopener">Search on Spotify</a>
+                        <a class="detail-link detail-link-album" href="${urls.albumlink}" target="_blank" rel="noopener">
+                            <span class="detail-link-icon">🔗</span>
+                            <span class="detail-link-label">All Platforms (album.link)</span>
+                        </a>
+                        <a class="detail-link detail-link-youtube" href="${urls.youtube}" target="_blank" rel="noopener">
+                            <span class="detail-link-icon">▶️</span>
+                            <span class="detail-link-label">Search on YouTube</span>
+                        </a>
+                        <a class="detail-link detail-link-spotify" href="${urls.spotify}" target="_blank" rel="noopener">
+                            <span class="detail-link-icon">🎧</span>
+                            <span class="detail-link-label">Search on Spotify</span>
+                        </a>
                     ` : ''}
+                    <a class="detail-link detail-link-discogs" href="${discogsUrl}" target="_blank" rel="noopener">
+                        <span class="detail-link-icon">◎</span>
+                        <span class="detail-link-label">Search master on Discogs</span>
+                    </a>
                 </div>
             `;
             document.body.classList.add('detail-sidebar-open');

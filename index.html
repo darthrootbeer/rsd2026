@@ -727,6 +727,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            cursor: zoom-in;
         }
         .detail-sidebar-art img {
             width: 100%;
@@ -1481,6 +1482,15 @@
             return url;
         }
 
+        function openHiResArt(url) {
+            if (!url) return;
+            try {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            } catch (e) {
+                // ignore
+            }
+        }
+
         function animateFavoriteToCart(sourceEl, index) {
             try {
                 if (!document.body.classList.contains('favorites-cart-open')) return;
@@ -1705,6 +1715,9 @@
             const r = filteredReleases[index];
             if (!r || !detailSidebar || !detailSidebarBody) return;
             const art = getAlbumArt(r.Artist, r.Title);
+            const fullArtUrl = art && art.includes('img.broadtime.com/Photo/')
+                ? art.replace(/:(\d+)$/, '')
+                : art || '';
             const urls = getPlayUrls(r.Artist, r.Title);
             const rsdUrl = getRSDUrl(r.Artist, r.Title);
             const discogsUrl = getDiscogsMasterUrl(r.Artist, r.Title);
@@ -1724,7 +1737,7 @@
             }
 
             detailSidebarBody.innerHTML = `
-                <div class="detail-sidebar-art">
+                <div class="detail-sidebar-art"${fullArtUrl ? ' title="Click for super hi-res" onclick="openHiResArt(\\'' + fullArtUrl.replace(/'/g, "\\'") + '\\')"' : ''}>
                     ${art ? `<img src="${art}" alt="${titleDisplay}" referrerpolicy="no-referrer">` : '🎵'}
                 </div>
                 <div class="detail-sidebar-artist">${artistDisplay}</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Data Load</title>
+</head>
+<body>
+    <h1>Testing Data Load</h1>
+    <div id="output"></div>
+
+    <script src="rsd_images.js"></script>
+    <script src="releases_data.js"></script>
+    <script>
+        const output = document.getElementById('output');
+
+        // Check if RELEASES_DATA loaded
+        if (typeof RELEASES_DATA === 'undefined') {
+            output.innerHTML += '<p style="color:red">ERROR: RELEASES_DATA is undefined!</p>';
+        } else if (!Array.isArray(RELEASES_DATA)) {
+            output.innerHTML += '<p style="color:red">ERROR: RELEASES_DATA is not an array!</p>';
+        } else {
+            output.innerHTML += `<p style="color:green">✓ RELEASES_DATA loaded: ${RELEASES_DATA.length} releases</p>`;
+            output.innerHTML += `<p>First release: ${RELEASES_DATA[0].Artist} | ${RELEASES_DATA[0].Title}</p>`;
+        }
+
+        // Check if getRSDImageUrl function exists
+        if (typeof getRSDImageUrl === 'undefined') {
+            output.innerHTML += '<p style="color:red">ERROR: getRSDImageUrl function not found!</p>';
+        } else {
+            output.innerHTML += '<p style="color:green">✓ getRSDImageUrl function exists</p>';
+
+            // Test the function
+            const testArtist = RELEASES_DATA[0].Artist;
+            const testTitle = RELEASES_DATA[0].Title;
+            const imageUrl = getRSDImageUrl(testArtist, testTitle);
+            output.innerHTML += `<p>Test: getRSDImageUrl("${testArtist}", "${testTitle}")</p>`;
+            output.innerHTML += `<p>Result: ${imageUrl || 'NULL'}</p>`;
+
+            if (imageUrl) {
+                output.innerHTML += `<img src="${imageUrl}" style="max-width:200px">`;
+            }
+        }
+
+        // Test a few more
+        output.innerHTML += '<hr><h2>Testing first 5 releases:</h2>';
+        for (let i = 0; i < Math.min(5, RELEASES_DATA.length); i++) {
+            const r = RELEASES_DATA[i];
+            const img = getRSDImageUrl(r.Artist, r.Title);
+            output.innerHTML += `<p>${i+1}. ${r.Artist} | ${r.Title} → ${img ? '✓ HAS IMAGE' : '✗ NO IMAGE'}</p>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Store Day 2026 - Master List</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            font-size: 11px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 12px;
+            transition: padding-right 0.2s ease;
+        }
+        body.favorites-cart-open { padding-right: 390px; }
+        .header {
+            text-align: center;
+            padding: 20px 0 18px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 16px;
+        }
+        .header h1 { color: #ff6b35; margin-bottom: 6px; font-size: 18px; font-weight: 600; letter-spacing: 0.5px; }
+        .header p { color: #999; font-size: 11px; }
+        .controls {
+            max-width: 1400px;
+            margin: 0 auto 16px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 10px 12px;
+            background: #252525;
+            border-radius: 4px;
+        }
+        .controls input, .controls select, .controls .dropdown-btn {
+            padding: 4px 8px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            border-radius: 3px;
+            font-size: 9px;
+        }
+        .controls input:focus-visible, .controls select:focus-visible, .controls .dropdown-btn:focus-visible,
+        button:focus-visible, .filter-tag:focus-visible {
+            outline: 2px solid #ff6b35;
+            outline-offset: 2px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-btn {
+            cursor: pointer;
+            min-width: 80px;
+            text-align: left;
+            font-size: 9px;
+            padding: 4px 8px;
+        }
+        .dropdown-btn:hover {
+            border-color: #ff6b35;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #1e1e1e;
+            color: #f5f5f5;
+            min-width: 300px;
+            max-width: 380px;
+            max-height: 360px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+            z-index: 200;
+            border: 1px solid #555;
+            border-radius: 6px;
+            margin-top: 4px;
+            padding: 0;
+        }
+        .dropdown-content.show {
+            display: block;
+        }
+        .dropdown-content::-webkit-scrollbar { width: 10px; }
+        .dropdown-content::-webkit-scrollbar-track { background: #252525; }
+        .dropdown-content::-webkit-scrollbar-thumb { background: #555; border-radius: 5px; }
+        .dropdown-content::-webkit-scrollbar-thumb:hover { background: #666; }
+        .dropdown-header {
+            display: grid;
+            grid-template-columns: 1fr 52px;
+            gap: 0 12px;
+            padding: 8px 10px 6px;
+            font-size: 9px;
+            font-weight: 600;
+            color: #bbb;
+            border-bottom: 1px solid #444;
+            align-items: center;
+        }
+        .dropdown-header .h-in { color: #6dd66d; font-size: 10px; font-weight: 600; }
+        .dropdown-header .h-out { color: #ff8a65; font-size: 10px; font-weight: 600; }
+        .dropdown-header-cols { display: flex; flex-direction: column; gap: 2px; }
+        .dropdown-row {
+            display: grid;
+            grid-template-columns: 1fr 52px;
+            gap: 0 12px;
+            align-items: center;
+            padding: 6px 10px;
+            font-size: 9px;
+            line-height: 1.3;
+            border-bottom: 1px solid #333;
+            color: #f5f5f5;
+        }
+        .dropdown-row:hover { background: #2a2a2a; }
+        .dropdown-row-label {
+            min-width: 0;
+            word-wrap: break-word;
+            white-space: normal;
+            color: #f5f5f5;
+        }
+        .dropdown-row-cols {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center;
+        }
+        .dropdown-row-in, .dropdown-row-out {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            cursor: pointer;
+            width: 100%;
+            min-width: 48px;
+            padding: 2px 4px;
+            font-size: 9px;
+        }
+        .dropdown-row-in { color: #6dd66d; }
+        .dropdown-row-out { color: #ff8a65; }
+        .dropdown-row-in input, .dropdown-row-out input {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            min-height: 18px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            flex-shrink: 0;
+            accent-color: #4CAF50;
+        }
+        .dropdown-row-out input { accent-color: #ff6b35; }
+        .dropdown-price {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 4px 8px;
+            padding: 8px 10px;
+            align-items: center;
+            font-size: 9px;
+            color: #ccc;
+        }
+        .dropdown-price input {
+            width: 100%;
+            min-width: 0;
+            padding: 3px 4px;
+            font-size: 9px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            color: #e0e0e0;
+            border-radius: 2px;
+        }
+        .filter-tag {
+            display: inline-block;
+            padding: 2px 5px;
+            border-radius: 2px;
+            font-size: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+        .filter-tag:hover {
+            opacity: 0.9;
+        }
+        .filter-tag::after { content: ' ×'; margin-left: 2px; }
+        .filter-tag.include { background: #2d5a2d; color: #8bc34a; }
+        .filter-tag.include:hover { background: #3d6a3d; }
+        .filter-tag.exclude { background: #5a2d2d; color: #ff8a65; }
+        .filter-tag.exclude:hover { background: #6a3d3d; }
+        .exclusions {
+            max-width: 1400px;
+            margin: 0 auto 12px;
+            padding: 6px 12px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            min-height: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            font-size: 10px;
+        }
+        .exclusions:empty { display: none; }
+        .view-btn {
+            padding: 6px 8px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #888;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .view-btn.active {
+            background: #333;
+            color: #ff6b35;
+        }
+        .view-btn:hover { border-color: #ff6b35; }
+        .controls-view-btns { display: flex; align-items: center; gap: 4px; }
+        .clear-filters-btn {
+            padding: 6px 10px;
+            border: 1px solid #666;
+            background: #1a1a1a;
+            color: #888;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .clear-filters-btn:hover { border-color: #ff6b35; color: #e0e0e0; }
+        .controls input { flex: 1; min-width: 200px; }
+        .controls select { min-width: 100px; }
+        .stats {
+            max-width: 1400px;
+            margin: 0 auto 12px;
+            padding: 10px 14px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            text-align: center;
+            color: #aaa;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .grid.view-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%;
+        }
+        .row-item {
+            display: grid;
+            grid-template-columns: 36px 100px 150px 130px minmax(80px, 1fr) 72px 24px;
+            align-items: center;
+            gap: 0 12px;
+            padding: 4px 8px;
+            background: #252525;
+            border-radius: 3px;
+            border: 1px solid #333;
+            min-height: 36px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .row-item:hover {
+            background: #2a2a2a;
+            border-color: #ff6b35;
+        }
+        .row-item .row-thumb {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            background: linear-gradient(135deg, #333, #1a1a1a);
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 14px;
+        }
+        .row-item .row-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .row-item .row-artist { color: #ff6b35; font-size: 9px; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-title { font-size: 9px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-meta { font-size: 8px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-genres { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-width: 0; overflow: hidden; }
+        .row-item .row-genre { font-size: 7px; background: #333; color: #aaa; padding: 1px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
+        .row-item .row-price { display: none; }
+        .row-item .row-links { font-size: 7px; white-space: nowrap; }
+        .row-item .row-links a { color: #666; text-decoration: none; margin-right: 4px; }
+        .row-item .row-links a:hover { color: #ff6b35; }
+        .row-item .row-star { font-size: 9px; cursor: pointer; color: #666; }
+        .row-item .row-star.active { color: #d4a017; }
+        .card {
+            background: #252525;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            border: 1px solid #333;
+            position: relative;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);
+            border-color: #ff6b35;
+        }
+        .card-img {
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(135deg, #333, #1a1a1a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 36px;
+        }
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .card-body {
+            padding: 8px;
+            cursor: pointer;
+        }
+        .favorite-star {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            font-size: 10px;
+            cursor: pointer;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .favorite-star:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .favorite-star.active {
+            color: #d4a017;
+        }
+        .favorite-star.inactive {
+            color: #666;
+        }
+        .card-artist {
+            font-size: 9px;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 3px;
+        }
+        .card-title {
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            line-height: 1.25;
+        }
+        .card-meta {
+            font-size: 9px;
+            color: #888;
+            margin-bottom: 2px;
+        }
+        .card-genre {
+            display: inline-block;
+            font-size: 8px;
+            background: #333;
+            color: #aaa;
+            padding: 2px 5px;
+            border-radius: 2px;
+            margin-top: 3px;
+        }
+        .card-price { display: none; }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: #252525;
+            padding: 16px 20px;
+            border-radius: 6px;
+            max-width: 480px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            font-size: 11px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 20px;
+            color: #888;
+            cursor: pointer;
+        }
+        .modal-close:hover { color: #ff6b35; }
+        .modal-close:focus-visible { outline: 2px solid #ff6b35; outline-offset: 2px; }
+        .modal-img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+            background: #1a1a1a;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        .modal-artist { color: #ff6b35; font-size: 10px; margin-bottom: 3px; }
+        .modal-title { font-size: 14px; font-weight: bold; margin-bottom: 10px; }
+        .modal-row { margin-bottom: 6px; font-size: 11px; }
+        .modal-label { color: #888; display: inline-block; width: 100px; }
+        .play-links { margin-top: 12px; padding-top: 10px; border-top: 1px solid #333; display: flex; gap: 12px; flex-wrap: wrap; }
+        .play-links a { color: #ff6b35; font-size: 10px; text-decoration: none; }
+        .play-links a:hover { text-decoration: underline; }
+        .card-play-links { margin-top: 6px; font-size: 8px; }
+        .card-play-links a { color: #888; text-decoration: none; margin-right: 6px; }
+        .card-play-links a:hover { color: #ff6b35; text-decoration: underline; }
+        .loading { text-align: center; padding: 24px; color: #888; font-size: 10px; }
+        .favorites-cart-toggle {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 28px;
+            padding: 12px 4px;
+            background: #252525;
+            border: 1px solid #444;
+            border-right: none;
+            border-radius: 6px 0 0 6px;
+            z-index: 501;
+            cursor: pointer;
+            font-size: 12px;
+            color: #ff6b35;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+        }
+        .favorites-cart-toggle:hover {
+            background: #2a2a2a;
+            color: #ff6b35;
+        }
+        .favorites-cart-toggle .badge {
+            font-size: 9px;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        body.favorites-cart-open .favorites-cart-toggle { display: none; }
+        .favorites-cart {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 340px;
+            max-height: 100vh;
+            background: #1e1e1e;
+            border-left: 1px solid #333;
+            z-index: 500;
+            display: none;
+            flex-direction: column;
+            font-size: 10px;
+            transform: translateX(100%);
+            transition: transform 0.2s ease;
+            box-shadow: -4px 0 12px rgba(0,0,0,0.4);
+        }
+        body.favorites-cart-open .favorites-cart {
+            display: flex;
+            transform: translateX(0);
+        }
+        .favorites-cart-header {
+            padding: 6px 8px;
+            background: #252525;
+            border-bottom: 1px solid #333;
+            font-weight: 600;
+            color: #ff6b35;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .favorites-cart-header-actions { display: flex; align-items: center; gap: 4px; position: relative; }
+        .favorites-export-btn {
+            padding: 2px 6px;
+            font-size: 10px;
+            background: #333;
+            border: 1px solid #555;
+            color: #ccc;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .favorites-export-btn:hover { border-color: #ff6b35; color: #ff6b35; }
+        .favorites-export-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 2px;
+            background: #2d2d2d;
+            border: 1px solid #555;
+            border-radius: 3px;
+            padding: 4px 0;
+            z-index: 600;
+            min-width: 120px;
+        }
+        .favorites-export-option {
+            display: block;
+            width: 100%;
+            padding: 4px 10px;
+            font-size: 10px;
+            background: none;
+            border: none;
+            color: #e8e8e8;
+            text-align: left;
+            cursor: pointer;
+        }
+        .favorites-export-option:hover { background: #3a3a3a; color: #ff6b35; }
+        .favorites-cart-close {
+            cursor: pointer;
+            font-size: 14px;
+            color: #888;
+            padding: 0 4px;
+        }
+        .favorites-cart-close:hover { color: #ff6b35; }
+        .favorites-cart-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 4px 0;
+            min-height: 60px;
+        }
+        .favorites-cart-list::-webkit-scrollbar { width: 6px; }
+        .favorites-cart-list::-webkit-scrollbar-track { background: #1a1a1a; }
+        .favorites-cart-list::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+        .favorites-cart-item {
+            padding: 4px 8px;
+            border-bottom: 1px solid #222;
+            line-height: 1.3;
+            display: grid;
+            grid-template-columns: 72px 1fr auto;
+            gap: 6px;
+            align-items: center;
+        }
+        .favorites-cart-item-thumb {
+            width: 72px;
+            height: 72px;
+            border-radius: 3px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .favorites-cart-item-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .favorites-cart-item-main { flex: 1; cursor: pointer; min-width: 0; }
+        .favorites-cart-item:hover { background: #2a2a2a; }
+        .favorites-cart-item-artist { color: #ff6b35; font-size: 10px; }
+        .favorites-cart-item-title { color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10px; }
+        .favorites-cart-item-remove {
+            background: none;
+            border: none;
+            color: #777;
+            cursor: pointer;
+            padding: 2px;
+            font-size: 11px;
+        }
+        .favorites-cart-item-remove:hover { color: #ff6b35; }
+        .favorites-cart-total {
+            padding: 6px 8px;
+            background: #252525;
+            border-top: 1px solid #333;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        .favorites-cart-empty { padding: 12px 8px; color: #666; }
+
+        /* Left-hand detail sidebar */
+        .detail-sidebar-backdrop {
+            position: fixed;
+            inset: 0;
+            background: transparent;
+            z-index: 450;
+            display: none;
+        }
+        .detail-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 600px;
+            max-width: 100%;
+            height: 100vh;
+            background: #1f1f1f;
+            border-right: 1px solid #333;
+            box-shadow: 4px 0 16px rgba(0,0,0,0.6);
+            z-index: 460;
+            transform: translateX(-100%);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        body.detail-sidebar-open .detail-sidebar-backdrop {
+            display: block;
+        }
+        body.detail-sidebar-open .detail-sidebar {
+            transform: translateX(0);
+        }
+        .detail-sidebar-header {
+            padding: 8px 14px;
+            background: #252525;
+            border-bottom: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            font-size: 10px;
+            color: #ccc;
+        }
+        .detail-sidebar-breadcrumb {
+            font-size: 9px;
+            color: #888;
+        }
+        .detail-sidebar-close {
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: #aaa;
+            font-size: 16px;
+            padding: 2px 4px;
+        }
+        .detail-sidebar-close:hover {
+            color: #ff6b35;
+        }
+        .detail-sidebar-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px 16px 16px;
+            font-size: 10px;
+        }
+        .detail-sidebar-art {
+            width: 100%;
+            max-width: 320px;
+            aspect-ratio: 1 / 1;
+            background: #111;
+            border-radius: 4px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .detail-sidebar-art img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .detail-sidebar-artist {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #ff6b35;
+            margin-bottom: 4px;
+        }
+        .detail-sidebar-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .detail-sidebar-meta {
+            margin-bottom: 10px;
+            font-size: 10px;
+        }
+        .detail-sidebar-meta-row {
+            margin-bottom: 4px;
+        }
+        .detail-sidebar-meta-label {
+            display: inline-block;
+            width: 90px;
+            color: #888;
+        }
+        .detail-sidebar-section-title {
+            margin-top: 12px;
+            margin-bottom: 6px;
+            padding: 4px 8px;
+            background: #2d2d2d;
+            color: #f5f5f5;
+            font-weight: 600;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .detail-sidebar-description {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #ddd;
+        }
+        .detail-sidebar-tracklist {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #ddd;
+            margin-top: 2px;
+        }
+        .detail-sidebar-links {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .detail-sidebar-links a {
+            font-size: 9px;
+            padding: 4px 8px;
+            border-radius: 3px;
+            border: 1px solid #444;
+            background: #252525;
+            color: #ff6b35;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .detail-sidebar-links a:hover {
+            border-color: #ff6b35;
+            background: #33211a;
+        }
+
+        .filter-row {
+            max-width: 1400px;
+            margin: 0 auto 8px;
+            padding: 0 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            align-items: flex-start;
+            font-size: 9px;
+        }
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .filter-label {
+            font-size: 9px;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .filter-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            max-width: 100%;
+        }
+        .filter-pill {
+            padding: 2px 6px;
+            border-radius: 999px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            font-size: 9px;
+            color: #ccc;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-pill:hover {
+            border-color: #ff6b35;
+        }
+        .filter-pill.active {
+            background: #3a261f;
+            border-color: #ff6b35;
+            color: #ffb199;
+        }
+        .filter-pill-unknown {
+            background: #332222;
+            border-color: #aa6666;
+            color: #ffb3b3;
+        }
+        .filter-pill-unknown.active {
+            background: #5a3030;
+            border-color: #ff6b35;
+            color: #ffe0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎵 Record Store Day 2026</h1>
+        <p>April 18, 2026 • 357 Exclusive Releases</p>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search artist, title, label...">
+
+        <select id="sortBy">
+            <option value="artist">Sort: Artist</option>
+            <option value="title">Sort: Title</option>
+            <option value="genre">Sort: Genre</option>
+        </select>
+        <div class="controls-view-btns">
+            <button id="viewCards" class="view-btn active" onclick="setViewMode('cards')" title="Card view">▦</button>
+            <button id="viewRows" class="view-btn" onclick="setViewMode('rows')" title="Row view">≡</button>
+        </div>
+        <button class="clear-filters-btn" onclick="clearExclusions()">Clear Filters</button>
+    </div>
+    <div class="filter-row" id="topFilters">
+        <div class="filter-group" id="genreFilterGroup">
+            <span class="filter-label">Genres</span>
+            <div class="filter-pills" id="genrePills"></div>
+        </div>
+        <div class="filter-group" id="styleFilterGroup">
+            <span class="filter-label">Styles</span>
+            <div class="filter-pills" id="stylePills"></div>
+        </div>
+        <div class="filter-group" id="formatFilterGroup">
+            <span class="filter-label">Formats</span>
+            <div class="filter-pills" id="formatPills"></div>
+        </div>
+    </div>
+    <div class="exclusions" id="exclusions"></div>
+
+    <div class="stats" id="stats">Loading...</div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();closeModal();}" tabindex="0" role="button" aria-label="Close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="detail-sidebar-backdrop" id="detailSidebarBackdrop" onclick="closeDetailSidebar()"></div>
+    <div class="detail-sidebar" id="detailSidebar">
+        <div class="detail-sidebar-header">
+            <div class="detail-sidebar-breadcrumb" id="detailSidebarBreadcrumb"></div>
+            <button class="detail-sidebar-close" onclick="closeDetailSidebar()" aria-label="Close details">✕</button>
+        </div>
+        <div class="detail-sidebar-body" id="detailSidebarBody"></div>
+    </div>
+
+    <div class="favorites-cart-toggle" id="favoritesCartToggle" title="Open favorites">
+        <span>⭐</span>
+        <span class="badge" id="favoritesCartBadge">0</span>
+    </div>
+    <div class="favorites-cart" id="favoritesCart">
+        <div class="favorites-cart-header">
+            <span>⭐ Favorites</span>
+            <div class="favorites-cart-header-actions">
+                <button class="favorites-export-btn" id="favoritesExportBtn" title="Export list">Export</button>
+                <span class="favorites-cart-close" id="favoritesCartClose" title="Close">×</span>
+            </div>
+        </div>
+        <div class="favorites-cart-list" id="favoritesCartList"></div>
+        <div class="favorites-cart-total" id="favoritesCartTotal"></div>
+    </div>
+
+    <script src="rsd_images.js?v=1739129000"></script>
+    <script src="releases_data.js?v=1739129000"></script>
+    <script>
+        let allReleases = (typeof RELEASES_DATA !== 'undefined' && Array.isArray(RELEASES_DATA)) ? RELEASES_DATA : [];
+        let filteredReleases = [];
+        function getFavoritesFromStorage() {
+            try {
+                const cookie = document.cookie.split('; ').find(r => r.startsWith('rsd2026_favorites='));
+                if (cookie) {
+                    const val = decodeURIComponent(cookie.split('=')[1] || '[]');
+                    const arr = JSON.parse(val);
+                    return Array.isArray(arr) ? arr : [];
+                }
+            } catch (e) {}
+            try {
+                const val = localStorage.getItem('rsd2026_favorites');
+                return val ? JSON.parse(val) : [];
+            } catch (e) {}
+            return [];
+        }
+        function saveFavoritesToStorage(arr) {
+            const json = JSON.stringify(arr);
+            document.cookie = `rsd2026_favorites=${encodeURIComponent(json)}; path=/; max-age=31536000; SameSite=Lax`;
+            localStorage.setItem('rsd2026_favorites', json);
+        }
+        let favorites = new Set(getFavoritesFromStorage());
+        let showFavoritesOnly = false;
+        let includedGenres = new Set();
+        let excludedGenres = new Set();
+        let includedStyles = new Set();
+        let excludedStyles = new Set();
+        let includedFormats = new Set();
+        let excludedFormats = new Set();
+        let viewMode = localStorage.getItem('rsd2026_viewMode') || 'cards';
+
+        let search, sortBy, stats, grid, modal, modalBody;
+        let detailSidebar, detailSidebarBody, detailSidebarBreadcrumb;
+
+        function init() {
+            search = document.getElementById('search');
+            sortBy = document.getElementById('sortBy');
+            stats = document.getElementById('stats');
+            grid = document.getElementById('grid');
+            modal = document.getElementById('modal');
+            modalBody = document.getElementById('modalBody');
+            detailSidebar = document.getElementById('detailSidebar');
+            detailSidebarBody = document.getElementById('detailSidebarBody');
+            detailSidebarBreadcrumb = document.getElementById('detailSidebarBreadcrumb');
+
+            if (!grid || !stats) {
+                if (stats) stats.textContent = 'Error: missing grid/stats elements';
+                return;
+            }
+            try {
+                populateFilters();
+                setupDropdowns();
+                search.addEventListener('input', filterAndRender);
+                sortBy.addEventListener('change', filterAndRender);
+                modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+                document.getElementById('exclusions')?.addEventListener('click', (e) => {
+                    const tag = e.target.closest('.filter-tag');
+                    if (!tag) return;
+                    if (tag.dataset.price) {
+                        if (tag.dataset.price === 'min') clearPriceMin();
+                        else clearPriceMax();
+                    } else {
+                        removeFilter(tag.dataset.value, tag.dataset.type, tag.dataset.mode);
+                    }
+                });
+                document.getElementById('exclusions')?.addEventListener('keydown', (e) => {
+                    if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('.filter-tag')) {
+                        e.preventDefault();
+                        e.target.click();
+                    }
+                });
+                const cartOpen = localStorage.getItem('rsd2026_favoritesCartOpen') === 'true';
+                if (cartOpen) document.body.classList.add('favorites-cart-open');
+                document.getElementById('favoritesCartToggle')?.addEventListener('click', () => setFavoritesCartOpen(true));
+                document.getElementById('favoritesCartClose')?.addEventListener('click', () => setFavoritesCartOpen(false));
+                document.getElementById('favoritesExportBtn')?.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    exportFavoritesDropdown(e.target);
+                });
+                grid.classList.toggle('view-rows', viewMode === 'rows');
+                document.getElementById('viewCards').classList.toggle('active', viewMode === 'cards');
+                document.getElementById('viewRows').classList.toggle('active', viewMode === 'rows');
+                filterAndRender();
+            } catch (e) {
+                stats.textContent = 'Error: ' + (e.message || e);
+                console.error(e);
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+        function setupDropdowns() {
+            document.querySelectorAll('.dropdown-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const content = btn.nextElementSibling;
+                    document.querySelectorAll('.dropdown-content.show').forEach(d => {
+                        if (d !== content) d.classList.remove('show');
+                    });
+                    content.classList.toggle('show');
+                });
+            });
+            document.querySelectorAll('.dropdown-content').forEach(content => {
+                content.addEventListener('click', (e) => e.stopPropagation());
+            });
+            document.addEventListener('click', () => document.querySelectorAll('.dropdown-content.show').forEach(d => d.classList.remove('show')));
+        }
+
+        function populateFilters() {
+            const genres = [...new Set(allReleases.map(r => r['Genre 1']).filter(Boolean))].sort();
+            const styles = [...new Set(allReleases.flatMap(r => [r['Style 1'], r['Style 2']]).filter(Boolean))].sort();
+            const formats = [...new Set(allReleases.map(r => r.Format).filter(Boolean))].sort();
+
+            const hasUnknownGenre = allReleases.some(r => !r['Genre 1']);
+            if (hasUnknownGenre) genres.push('Unknown');
+
+            const hasUnknownStyle = allReleases.some(r => !r['Style 1'] && !r['Style 2']);
+            if (hasUnknownStyle) styles.push('Unknown');
+
+            const genreGroup = document.getElementById('genreFilterGroup');
+            const styleGroup = document.getElementById('styleFilterGroup');
+            const formatGroup = document.getElementById('formatFilterGroup');
+            const genrePills = document.getElementById('genrePills');
+            const stylePills = document.getElementById('stylePills');
+            const formatPills = document.getElementById('formatPills');
+
+            if (genreGroup) genreGroup.style.display = genres.length ? '' : 'none';
+            if (styleGroup) styleGroup.style.display = styles.length ? '' : 'none';
+            if (formatGroup) formatGroup.style.display = formats.length ? '' : 'none';
+
+            const genreOpt = document.querySelector('#sortBy option[value="genre"]');
+            if (genreOpt) {
+                genreOpt.style.display = genres.length ? '' : 'none';
+                if (genres.length === 0 && sortBy && sortBy.value === 'genre') sortBy.value = 'artist';
+            }
+
+            if (genrePills) {
+                genrePills.innerHTML = genres.map(v => {
+                    const active = includedGenres.has(v);
+                    const esc = String(v).replace(/"/g, '&quot;');
+                    const isUnknown = v === 'Unknown';
+                    const baseClass = `filter-pill${isUnknown ? ' filter-pill-unknown' : ''}`;
+                    const cls = `${baseClass}${active ? ' active' : ''}`;
+                    return `<button type="button" class="${cls}" data-type="genre" data-value="${esc}">${esc}</button>`;
+                }).join('');
+            }
+            if (stylePills) {
+                stylePills.innerHTML = styles.map(v => {
+                    const active = includedStyles.has(v);
+                    const esc = String(v).replace(/"/g, '&quot;');
+                    const isUnknown = v === 'Unknown';
+                    const baseClass = `filter-pill${isUnknown ? ' filter-pill-unknown' : ''}`;
+                    const cls = `${baseClass}${active ? ' active' : ''}`;
+                    return `<button type="button" class="${cls}" data-type="style" data-value="${esc}">${esc}</button>`;
+                }).join('');
+            }
+            if (formatPills) {
+                formatPills.innerHTML = formats.map(v => {
+                    const active = includedFormats.has(v);
+                    const esc = String(v).replace(/"/g, '&quot;');
+                    const cls = `filter-pill${active ? ' active' : ''}`;
+                    return `<button type="button" class="${cls}" data-type="format" data-value="${esc}">${esc}</button>`;
+                }).join('');
+            }
+
+            document.querySelectorAll('.filter-pill').forEach(pill => {
+                pill.addEventListener('click', () => {
+                    const type = pill.dataset.type;
+                    const value = pill.dataset.value;
+                    const isActive = pill.classList.contains('active');
+                    toggleFilter('include', value, type, !isActive);
+                });
+            });
+        }
+
+        function toggleFilter(mode, value, type, add) {
+            const include = mode === 'include';
+            if (type === 'genre') {
+                if (include) { add ? (includedGenres.add(value), excludedGenres.delete(value)) : includedGenres.delete(value); }
+                else { add ? (excludedGenres.add(value), includedGenres.delete(value)) : excludedGenres.delete(value); }
+            }
+            if (type === 'style') {
+                if (include) { add ? (includedStyles.add(value), excludedStyles.delete(value)) : includedStyles.delete(value); }
+                else { add ? (excludedStyles.add(value), includedStyles.delete(value)) : excludedStyles.delete(value); }
+            }
+            if (type === 'format') {
+                if (include) { add ? (includedFormats.add(value), excludedFormats.delete(value)) : includedFormats.delete(value); }
+                else { add ? (excludedFormats.add(value), includedFormats.delete(value)) : excludedFormats.delete(value); }
+            }
+            populateFilters();
+            updateFilterTags();
+            filterAndRender();
+        }
+
+        function escapeHtml(s) {
+            const d = document.createElement('div');
+            d.textContent = s;
+            return d.innerHTML;
+        }
+        function updateFilterTags() {
+            const tags = [];
+            includedGenres.forEach(g => tags.push(`<span class="filter-tag include" tabindex="0" role="button" data-value="${escapeHtml(g)}" data-type="genre" data-mode="include">+${escapeHtml(g)}</span>`));
+            excludedGenres.forEach(g => tags.push(`<span class="filter-tag exclude" tabindex="0" role="button" data-value="${escapeHtml(g)}" data-type="genre" data-mode="exclude">−${escapeHtml(g)}</span>`));
+            includedStyles.forEach(s => tags.push(`<span class="filter-tag include" tabindex="0" role="button" data-value="${escapeHtml(s)}" data-type="style" data-mode="include">+${escapeHtml(s)}</span>`));
+            excludedStyles.forEach(s => tags.push(`<span class="filter-tag exclude" tabindex="0" role="button" data-value="${escapeHtml(s)}" data-type="style" data-mode="exclude">−${escapeHtml(s)}</span>`));
+            includedFormats.forEach(f => tags.push(`<span class="filter-tag include" tabindex="0" role="button" data-value="${escapeHtml(f)}" data-type="format" data-mode="include">+${escapeHtml(f)}</span>`));
+            excludedFormats.forEach(f => tags.push(`<span class="filter-tag exclude" tabindex="0" role="button" data-value="${escapeHtml(f)}" data-type="format" data-mode="exclude">−${escapeHtml(f)}</span>`));
+
+            const exclusionsEl = document.getElementById('exclusions');
+            if (exclusionsEl) exclusionsEl.innerHTML = tags.length > 0 ? tags.join('') : '';
+        }
+
+        function removeFilter(value, type, mode) {
+            if (type === 'genre') { includedGenres.delete(value); excludedGenres.delete(value); }
+            if (type === 'style') { includedStyles.delete(value); excludedStyles.delete(value); }
+            if (type === 'format') { includedFormats.delete(value); excludedFormats.delete(value); }
+            populateFilters();
+            updateFilterTags();
+            filterAndRender();
+        }
+
+        function clearExclusions() {
+            includedGenres.clear();
+            excludedGenres.clear();
+            includedStyles.clear();
+            excludedStyles.clear();
+            includedFormats.clear();
+            excludedFormats.clear();
+            populateFilters();
+            updateFilterTags();
+            filterAndRender();
+        }
+
+        function filterAndRender() {
+            const searchTerm = (search?.value || '').toLowerCase();
+
+            filteredReleases = allReleases.filter((r, i) => {
+                const matchSearch = !searchTerm ||
+                    r.Artist.toLowerCase().includes(searchTerm) ||
+                    r.Title.toLowerCase().includes(searchTerm) ||
+                    r.Label.toLowerCase().includes(searchTerm);
+
+                const rGenres = r['Genre 1'] ? [r['Genre 1']] : ['Unknown'];
+                const rStylesRaw = [r['Style 1'], r['Style 2']].filter(Boolean);
+                const rStyles = rStylesRaw.length ? rStylesRaw : ['Unknown'];
+                const matchGenre = (includedGenres.size === 0 || rGenres.some(g => includedGenres.has(g))) &&
+                    !excludedGenres.has(r['Genre 1']);
+                const matchStyle = (includedStyles.size === 0 || rStyles.some(s => includedStyles.has(s))) &&
+                    !excludedStyles.has(r['Style 1']) && !excludedStyles.has(r['Style 2']);
+                const matchFormat = (includedFormats.size === 0 || includedFormats.has(r.Format)) &&
+                    !excludedFormats.has(r.Format);
+                const matchFavorite = !showFavoritesOnly || favorites.has(i);
+
+                return matchSearch && matchGenre && matchStyle && matchFormat && matchFavorite;
+            });
+
+            // Sort
+            const sortKey = sortBy?.value || 'artist';
+            filteredReleases.sort((a, b) => {
+                if (sortKey === 'price') {
+                    return parseFloat(a.Price) - parseFloat(b.Price);
+                }
+                const aVal = a[sortKey === 'artist' ? 'Artist' : sortKey === 'title' ? 'Title' : 'Genre 1'] || '';
+                const bVal = b[sortKey === 'artist' ? 'Artist' : sortKey === 'title' ? 'Title' : 'Genre 1'] || '';
+                return aVal.localeCompare(bVal);
+            });
+
+            renderGrid();
+            updateStats();
+            updateFavoritesCart();
+        }
+
+        function setViewMode(mode) {
+            viewMode = mode;
+            localStorage.setItem('rsd2026_viewMode', mode);
+            document.getElementById('viewCards').classList.toggle('active', mode === 'cards');
+            document.getElementById('viewRows').classList.toggle('active', mode === 'rows');
+            grid.classList.toggle('view-rows', mode === 'rows');
+            filterAndRender();
+        }
+
+        function renderGrid() {
+            if (viewMode === 'rows') {
+                grid.innerHTML = filteredReleases.map((r, i) => {
+                    const originalIndex = allReleases.indexOf(r);
+                    const isFavorite = favorites.has(originalIndex);
+                    const albumArt = getAlbumArt(r.Artist, r.Title);
+                    const urls = getPlayUrls(r.Artist, r.Title, r['Is Reissue']);
+                    return `
+                    <div class="row-item" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
+                        <div class="row-thumb">
+                            ${albumArt ? `<img src="${albumArt}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
+                        </div>
+                        <span class="row-artist">${r.Artist}</span>
+                        <span class="row-title">${r.Title}</span>
+                        <span class="row-meta">${r.Format} • ${r.Label}</span>
+                        <span class="row-genres">
+                            ${r['Genre 1'] ? `<span class="row-genre">${r['Genre 1']}</span>` : ''}
+                            ${r['Style 1'] ? `<span class="row-genre">${r['Style 1']}</span>` : ''}
+                            ${r['Style 2'] ? `<span class="row-genre">${r['Style 2']}</span>` : ''}
+                        </span>
+                        <span class="row-links" onclick="event.stopPropagation()">
+                            ${urls ? `
+                                <a href="${urls.songlink}" target="_blank" rel="noopener" title="Find on streaming">🎵</a>
+                                <a href="${urls.youtube}" target="_blank" rel="noopener">YT</a>
+                                <a href="${urls.spotify}" target="_blank" rel="noopener">Spot</a>
+                            ` : '<span style="color:#666;font-size:7px">New</span>'}
+                        </span>
+                        <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)">${isFavorite ? '⭐' : '☆'}</div>
+                    </div>
+                `}).join('');
+            } else {
+                grid.innerHTML = filteredReleases.map((r, i) => {
+                    const originalIndex = allReleases.indexOf(r);
+                    const isFavorite = favorites.has(originalIndex);
+                    const albumArt = getAlbumArt(r.Artist, r.Title);
+                    const urls = getPlayUrls(r.Artist, r.Title, r['Is Reissue']);
+
+                    return `
+                <div class="card">
+                    <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)">
+                        ${isFavorite ? '⭐' : '☆'}
+                    </div>
+                    <div class="card-img" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
+                        ${albumArt ? `<img src="${albumArt}" alt="${r.Title}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
+                    </div>
+                    <div class="card-body" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
+                        <div class="card-artist">${r.Artist}</div>
+                        <div class="card-title">${r.Title}</div>
+                        <div class="card-meta">${r.Format} • ${r.Label}</div>
+                        ${r['Genre 1'] ? `<span class="card-genre">${r['Genre 1']}</span>` : ''}
+                        ${r['Style 1'] ? `<span class="card-genre">${r['Style 1']}</span>` : ''}
+                        ${urls ? `
+                            <div class="card-play-links" onclick="event.stopPropagation()">
+                                <a href="${urls.songlink}" target="_blank" rel="noopener">Find Streaming</a>
+                                <a href="${urls.youtube}" target="_blank" rel="noopener">YouTube</a>
+                                <a href="${urls.spotify}" target="_blank" rel="noopener">Spotify</a>
+                            </div>
+                        ` : '<div class="card-play-links" style="color:#666;">New Release</div>'}
+                    </div>
+                </div>
+            `}).join('');
+            }
+        }
+
+        function getPlayUrls(artist, title, isReissue) {
+            // Show links for reissues and unknown (most RSD releases are reissues)
+            // Only hide links for confirmed new releases
+            if (isReissue === 'No') {
+                return null;  // Only hide for confirmed new releases
+            }
+            // Use song.link for universal music links
+            const q = encodeURIComponent(`${artist} ${title}`);
+            const songlinkUrl = `https://song.link/search?q=${q}`;
+            return {
+                songlink: songlinkUrl,
+                youtube: `https://www.youtube.com/results?search_query=${q}`,
+                spotify: `https://open.spotify.com/search/${q}`
+            };
+        }
+
+        function getRSDUrl(artist, title) {
+            // Try to get the specific RSD release ID
+            const releaseId = typeof getRSDReleaseId === 'function' ? getRSDReleaseId(artist, title) : null;
+            if (releaseId) {
+                return `https://recordstoreday.com/SpecialRelease/${releaseId}`;
+            }
+            // Fallback to search if no ID found
+            const q = encodeURIComponent(`${artist} ${title}`);
+            return `https://recordstoreday.com/SpecialReleases?q=${q}`;
+        }
+
+        function openRSDPage(index, event) {
+            if (event) event.stopPropagation();
+            openDetailSidebar(index);
+        }
+
+        // Album art: RecordStoreDay.com only (from rsd_images.js, built from recordstoreday.com/SpecialReleases)
+        const albumArtCache = {};
+
+        function getAlbumArt(artist, title) {
+            const key = `${artist}|${title}`;
+            if (albumArtCache[key] !== undefined) {
+                return albumArtCache[key];
+            }
+            let url = typeof getRSDImageUrl === 'function' ? getRSDImageUrl(artist, title) : null;
+            // Prefer highest practical resolution from img.broadtime.com when available
+            if (url && url.includes('img.broadtime.com/Photo/')) {
+                url = url.replace(/:(\d+)$/, ':800');
+            }
+            albumArtCache[key] = url;
+            return url;
+        }
+
+        function toggleFavorite(index, event) {
+            event.stopPropagation();
+            if (favorites.has(index)) {
+                favorites.delete(index);
+            } else {
+                favorites.add(index);
+            }
+            saveFavoritesToStorage([...favorites]);
+            updateFavoritesCart();
+            filterAndRender();
+        }
+
+        function removeFavoriteFromCart(event, index) {
+            event.stopPropagation();
+            if (favorites.has(index)) {
+                favorites.delete(index);
+                saveFavoritesToStorage([...favorites]);
+                updateFavoritesCart();
+                filterAndRender();
+            }
+        }
+
+        function updateFavoritesCart() {
+            const listEl = document.getElementById('favoritesCartList');
+            const totalEl = document.getElementById('favoritesCartTotal');
+            if (!listEl || !totalEl) return;
+            const favs = [...favorites].sort((a, b) => a - b);
+            let total = 0;
+            const badgeEl = document.getElementById('favoritesCartBadge');
+            if (badgeEl) badgeEl.textContent = favs.length;
+            if (favs.length === 0) {
+                listEl.innerHTML = '<div class="favorites-cart-empty">No items</div>';
+                totalEl.textContent = '';
+            } else {
+                listEl.innerHTML = favs.map(i => {
+                    const r = allReleases[i];
+                    if (!r) return '';
+                    const rsdUrl = getRSDUrl(r.Artist, r.Title);
+                    const albumArt = getAlbumArt(r.Artist, r.Title);
+                    return `<div class="favorites-cart-item" title="View on RecordStoreDay.com">
+                        <div class="favorites-cart-item-thumb" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
+                            ${albumArt ? `<img src="${albumArt}" alt="${r.Title}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
+                        </div>
+                        <div class="favorites-cart-item-main" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
+                            <div class="favorites-cart-item-artist">${r.Artist}</div>
+                            <div class="favorites-cart-item-title">${r.Title}</div>
+                        </div>
+                        <button class="favorites-cart-item-remove" onclick="removeFavoriteFromCart(event, ${i})" aria-label="Remove from favorites">🗑</button>
+                    </div>`;
+                }).filter(Boolean).join('');
+                totalEl.textContent = '';
+            }
+        }
+
+        function exportFavorites(format) {
+            const favs = [...favorites].sort((a, b) => a - b).map(i => allReleases[i]).filter(Boolean);
+            if (favs.length === 0) return;
+            let content, filename, mime;
+            if (format === 'markdown') {
+                content = `# RSD 2026 Favorites (${favs.length} items)\n\n`;
+                favs.forEach((r, i) => {
+                    content += `${i + 1}. **${r.Artist}** — ${r.Title} (${r.Format})\n`;
+                });
+                filename = 'rsd2026-favorites.md';
+                mime = 'text/markdown';
+            } else if (format === 'csv') {
+                content = 'Artist,Title,Format,Label,Genre\n';
+                favs.forEach(r => {
+                    const row = [r.Artist, r.Title, r.Format, r.Label, r['Genre 1'] || '']
+                        .map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
+                    content += `${row}\n`;
+                });
+                filename = 'rsd2026-favorites.csv';
+                mime = 'text/csv';
+            } else {
+                content = `RSD 2026 Favorites (${favs.length} items)\n\n`;
+                favs.forEach((r, i) => {
+                    content += `${i + 1}. ${r.Artist} - ${r.Title} (${r.Format})\n`;
+                });
+                filename = 'rsd2026-favorites.txt';
+                mime = 'text/plain';
+            }
+            const blob = new Blob([content], { type: mime });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+        function exportFavoritesDropdown(btn) {
+            document.querySelectorAll('.favorites-export-menu').forEach(m => m.remove());
+            const menu = document.createElement('div');
+            menu.className = 'favorites-export-menu';
+            const opts = [
+                { label: 'Markdown (.md)', format: 'markdown' },
+                { label: 'CSV (.csv)', format: 'csv' },
+                { label: 'Plain text (.txt)', format: 'txt' }
+            ];
+            opts.forEach(o => {
+                const b = document.createElement('button');
+                b.textContent = o.label;
+                b.className = 'favorites-export-option';
+                b.onclick = () => { exportFavorites(o.format); menu.remove(); };
+                menu.appendChild(b);
+            });
+            btn.parentElement.appendChild(menu);
+            const close = () => { menu.remove(); document.removeEventListener('click', close); };
+            setTimeout(() => document.addEventListener('click', close), 0);
+        }
+        function setFavoritesCartOpen(open) {
+            if (open) {
+                document.body.classList.add('favorites-cart-open');
+                localStorage.setItem('rsd2026_favoritesCartOpen', 'true');
+            } else {
+                document.body.classList.remove('favorites-cart-open');
+                localStorage.setItem('rsd2026_favoritesCartOpen', 'false');
+            }
+        }
+
+        function updateStats() {
+            if (!stats) return;
+            if (allReleases.length === 0) {
+                stats.textContent = 'No data loaded. Run: npm run serve (then open the URL)';
+                return;
+            }
+            stats.textContent = `Showing ${filteredReleases.length} of ${allReleases.length} releases`;
+        }
+
+        function openModal(index) {
+            const r = filteredReleases[index];
+            if (!r) return;
+            const art = getAlbumArt(r.Artist, r.Title);
+            const urls = getPlayUrls(r.Artist, r.Title);
+            modalBody.innerHTML = `
+                <div class="modal-img">${art ? `<img src="${art}" alt="${r.Title}" referrerpolicy="no-referrer" style="width:100%;max-height:400px;object-fit:contain;">` : '🎵'}</div>
+                <div class="modal-artist">${r.Artist}</div>
+                <div class="modal-title">${r.Title}</div>
+                <div class="modal-row"><span class="modal-label">Label:</span> ${r.Label}</div>
+                <div class="modal-row"><span class="modal-label">Format:</span> ${r.Format}</div>
+                <div class="modal-row"><span class="modal-label">Genre:</span> ${r['Genre 1']}</div>
+                ${r['Style 1'] ? `<div class="modal-row"><span class="modal-label">Style:</span> ${r['Style 1']}${r['Style 2'] ? ', ' + r['Style 2'] : ''}</div>` : ''}
+                <div class="modal-row"><span class="modal-label">RSD Date:</span> ${r['RSD Date']}</div>
+                <div class="modal-row"><span class="modal-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
+                ${r.Description ? `<div class="modal-row"><span class="modal-label">Description:</span> ${r.Description}</div>` : ''}
+                ${urls ? `
+                    <div class="play-links">
+                        <a href="${urls.songlink}" target="_blank" rel="noopener">🔗 Find on All Platforms (song.link)</a>
+                        <a href="${urls.youtube}" target="_blank" rel="noopener">Search on YouTube</a>
+                        <a href="${urls.spotify}" target="_blank" rel="noopener">Search on Spotify</a>
+                    </div>
+                ` : '<div class="modal-row" style="color:#888;font-size:10px;">New release - streaming links not yet available</div>'}
+            `;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        function openDetailSidebar(index) {
+            const r = filteredReleases[index];
+            if (!r || !detailSidebar || !detailSidebarBody) return;
+            const art = getAlbumArt(r.Artist, r.Title);
+            const urls = getPlayUrls(r.Artist, r.Title);
+            const rsdUrl = getRSDUrl(r.Artist, r.Title);
+
+            if (detailSidebarBreadcrumb) {
+                detailSidebarBreadcrumb.textContent = `Record Store Day 2026 ▸ ${r.Artist} ▸ ${r.Title}`;
+            }
+
+            detailSidebarBody.innerHTML = `
+                <div class="detail-sidebar-art">
+                    ${art ? `<img src="${art}" alt="${r.Title}" referrerpolicy="no-referrer">` : '🎵'}
+                </div>
+                <div class="detail-sidebar-artist">${r.Artist}</div>
+                <div class="detail-sidebar-title">${r.Title}</div>
+                <div class="detail-sidebar-meta">
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Event:</span> Record Store Day 2026</div>
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Release Date:</span> ${r['RSD Date']}</div>
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Label:</span> ${r.Label}</div>
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Format:</span> ${r.Format}</div>
+                    ${r['Pressing Quantity'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Quantity:</span> ${r['Pressing Quantity']}</div>` : ''}
+                    ${r['Release Type'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Release type:</span> ${r['Release Type']} Release</div>` : ''}
+                    ${r['Genre 1'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Genre:</span> ${r['Genre 1']}</div>` : ''}
+                    ${r['Style 1'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Style:</span> ${r['Style 1']}${r['Style 2'] ? ', ' + r['Style 2'] : ''}</div>` : ''}
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
+                </div>
+                ${(r.MoreInfo || r.Description) ? `
+                    <div class="detail-sidebar-section-title">More Info</div>
+                    <div class="detail-sidebar-description">${r.MoreInfo || r.Description}</div>
+                ` : ''}
+                ${r.Tracklist ? `
+                    <div class="detail-sidebar-section-title">Tracklist</div>
+                    <div class="detail-sidebar-tracklist">${r.Tracklist}</div>
+                ` : ''}
+                <div class="detail-sidebar-section-title">Links</div>
+                <div class="detail-sidebar-links">
+                    <a href="${rsdUrl}" target="_blank" rel="noopener">View on RecordStoreDay.com</a>
+                    ${urls ? `
+                        <a href="${urls.songlink}" target="_blank" rel="noopener">All Platforms (song.link)</a>
+                        <a href="${urls.youtube}" target="_blank" rel="noopener">Search on YouTube</a>
+                        <a href="${urls.spotify}" target="_blank" rel="noopener">Search on Spotify</a>
+                    ` : ''}
+                </div>
+            `;
+            document.body.classList.add('detail-sidebar-open');
+        }
+
+        function closeDetailSidebar() {
+            document.body.classList.remove('detail-sidebar-open');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (modal.classList.contains('active')) closeModal();
+                if (document.body.classList.contains('detail-sidebar-open')) closeDetailSidebar();
+                document.querySelectorAll('.dropdown-content.show').forEach(d => d.classList.remove('show'));
+            }
+        });
+    </script>
+</body>
+</html>

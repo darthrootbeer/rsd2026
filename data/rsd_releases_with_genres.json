@@ -1,0 +1,5282 @@
+[
+  {
+    "artist": "13th Floor Elevators",
+    "title": "We Are Not Live",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Garage Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "A High Frequency",
+    "title": "Summertime",
+    "label": "NIA",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "a-ha",
+    "title": "Analogue 20th Anniversary Deluxe Edition",
+    "label": "Rhino (Pure)",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Abbey Lincoln",
+    "title": "That's Him",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Addis Rockers",
+    "title": "Warriors",
+    "label": "REAL ROCK RECORDS",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Adorable",
+    "title": "Sunshine Smile",
+    "label": "Broadcast",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Shoegaze",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Adorable",
+    "title": "Homeboy",
+    "label": "Broadcast",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Shoegaze",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Adrianne Lenker",
+    "title": "Live at Revolution Hall",
+    "label": "4AD",
+    "format": "3xLP",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Agustin Pereyra Lucena",
+    "title": "Ese Dia Va A Llegar",
+    "label": "Far Out Recordings",
+    "format": "1LP",
+    "genre": "Jazz",
+    "subgenre1": "Bossa Nova",
+    "subgenre2": "Latin Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ahmad Jamal",
+    "title": "Live at Oil Can Harry's",
+    "label": "Catalyst",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Post-Bop",
+    "subgenre2": "Piano Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ahmad Jamal",
+    "title": "Live at the Jazz Showcase",
+    "label": "Resonance Records",
+    "format": "2xLP",
+    "genre": "Jazz",
+    "subgenre1": "Post-Bop",
+    "subgenre2": "Piano Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Air",
+    "title": "Moon Safari - Live Theatre Herodes Atticus, Athènes",
+    "label": "Warner Music France",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Downtempo",
+    "subgenre2": "Trip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alabama 3",
+    "title": "Woke Up This Morning Remixes- Gus Alt J/ Porij/ Steve Dub/Equalateral",
+    "label": "Submarine Cat",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Acid House",
+    "subgenre2": "Country Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alabaster DePlume",
+    "title": "Dear Children of Our Children, I Knew / Cremisan",
+    "label": "International Anthem",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Avant-Garde Jazz",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alannah",
+    "title": "Red Moon",
+    "label": "Jazzed Out",
+    "format": "7\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Neo-Soul",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alcatrazz",
+    "title": "No Parole from Rock 'N' Roll",
+    "label": "Culture Factory (France).",
+    "format": "2xLP",
+    "genre": "Metal",
+    "subgenre1": "Heavy Metal",
+    "subgenre2": "Neoclassical Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alcatrazz",
+    "title": "No Parole from Rock 'N' Roll",
+    "label": "Culture Factory (France).",
+    "format": "2xCD",
+    "genre": "Metal",
+    "subgenre1": "Heavy Metal",
+    "subgenre2": "Neoclassical Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alfie Templeman",
+    "title": "Happiness in Liquid Form EP",
+    "label": "Chess Club",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Bedroom Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alien Sex Fiend",
+    "title": "Between Good and Evil",
+    "label": "Culture Factory (France).",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Goth Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Alison Goldfrapp",
+    "title": "Flux (Deluxe)",
+    "label": "A.G. Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Art Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Allo Darlin'",
+    "title": "Bits And Pieces",
+    "label": "Now We Know",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Twee Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Amble",
+    "title": "Hand Me Downs EP",
+    "label": "Warner Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Amuzement Park",
+    "title": "Amuzement Park (Deluxe Edition)",
+    "label": "Our Gang Entertainment",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Amy Macdonald",
+    "title": "Can You Hear Me? The Remixes",
+    "label": "BMG",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Angel of Man",
+    "title": "RONIN: CYBERPUNK 2077",
+    "label": "Materia Collective",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Synthwave",
+    "subgenre2": "Video Game Soundtrack",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Annie Lennox",
+    "title": "Live In Central Park",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Synth-Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Annie Ross, The Tony",
+    "title": "Kinsey Quintet Loguerhythms: Songs From The Establishment",
+    "label": "Poppydisc",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "Bebop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Arcade Fire",
+    "title": "Open Your Heart or Die Trying",
+    "label": "Columbia",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Arcane Roots",
+    "title": "Melancholia Hyms",
+    "label": "Easy Life Entertainment",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Math Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ariana Grande, Cynthia",
+    "title": "Erivo/ Wicked Wicked: One Wonderful Night (Live) – The Soundtrack",
+    "label": "Republic",
+    "format": "2xLP",
+    "genre": "Soundtrack",
+    "subgenre1": "Musical Theatre",
+    "subgenre2": "Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Art of Noise",
+    "title": "The Seduction of Claude Debussy",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "AURORA",
+    "title": "What Happened To The Heart? Pt. 2 Deluxe",
+    "label": "Fontana",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Aziz Ibrahim",
+    "title": "Lahore to Longsight",
+    "label": "Indus Records",
+    "format": "2xLP",
+    "genre": "World",
+    "subgenre1": "South Asian",
+    "subgenre2": "Fusion",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bad Brains",
+    "title": "Live",
+    "label": "ORG MUSIC",
+    "format": "LP",
+    "genre": "Punk",
+    "subgenre1": "Hardcore Punk",
+    "subgenre2": "Reggae",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bad Fractals",
+    "title": "The Sea Sang Screaming",
+    "label": "Creation Youth",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Badfinger",
+    "title": "No Dice",
+    "label": "UMR/Apple",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Power Pop",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bat For Lashes",
+    "title": "Demos",
+    "label": "Echo",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Dream Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Beathoven",
+    "title": "Live At Pascoe Vale HIgh School 1977",
+    "label": "GROWN UP WRONG",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Garage Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bill Brudford",
+    "title": "Feels Good To Me",
+    "label": "Culture Factory (France).",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bill Evans",
+    "title": "Bill Evens At The BBC - The Complete 1965 London Sets",
+    "label": "Elemental",
+    "format": "2xLP",
+    "genre": "Jazz",
+    "subgenre1": "Cool Jazz",
+    "subgenre2": "Piano Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bird",
+    "title": "Havana Garden",
+    "label": "Pop Fiction Records",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "bis",
+    "title": "Antiseptic Poetry - 30 Years of bis",
+    "label": "Do Yourself In",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Riot Grrrl",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Black Sabbath",
+    "title": "Seventh Star",
+    "label": "BMG",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Heavy Metal",
+    "subgenre2": "Doom Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Blaze",
+    "title": "Basic Blaze",
+    "label": "Slip-N-Slide",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Southern Hip-Hop",
+    "subgenre2": "Gangsta Rap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Blonde On Blonde",
+    "title": "Rebirth",
+    "label": "Culture Factory (France).",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bloods & Crips",
+    "title": "Bangin' On Wax 2...The Saga Continues",
+    "label": "Dangerous Records",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Gangsta Rap",
+    "subgenre2": "West Coast Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bluey",
+    "title": "Up Here",
+    "label": "Demon Records",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "Children's",
+    "subgenre2": "TV Soundtrack",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Blur",
+    "title": "Live At The Budokan",
+    "label": "Parlophone",
+    "format": "2LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bob Hughes",
+    "title": "My Old Man",
+    "label": "Puddlebrook Records",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Singer-Songwriter",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bob Mould",
+    "title": "Body of Song",
+    "label": "Yep Roc Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Brand New Heavies, The",
+    "title": "Heavy Rhyme Experience Vol.1",
+    "label": "London Records",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Acid Jazz",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Breakers, The",
+    "title": "NIGHT AFTER NIGHT",
+    "label": "GROWN UP WRONG",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Garage Rock",
+    "subgenre2": "Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Brian Eno with Jon Hopkins",
+    "title": "& Leo Abrahams Small Craft On A Milk Sea",
+    "label": "UMR",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Brian Wilson",
+    "title": "Imagination",
+    "label": "Giant / Rhino",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Sunshine Pop",
+    "subgenre2": "Baroque Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Brian Wilson",
+    "title": "On Tour",
+    "label": "Oglio Entertainment",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Sunshine Pop",
+    "subgenre2": "Baroque Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bring Me The Horizon",
+    "title": "Lo-Files",
+    "label": "RCA",
+    "format": "2xLP",
+    "genre": "Metal",
+    "subgenre1": "Metalcore",
+    "subgenre2": "Alternative Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bruce Kulick from Kiss",
+    "title": "Transformer",
+    "label": "Culture Factory USA, Inc.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bruce Kulick from Kiss",
+    "title": "Transformer",
+    "label": "Culture Factory USA, Inc.",
+    "format": "CD",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "See.Hear.Now Asbury Park 2024",
+    "label": "Legacy Rep",
+    "format": "BOXSET",
+    "genre": "Rock",
+    "subgenre1": "Heartland Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bruno Mars",
+    "title": "Bruno Mars & Friends",
+    "label": "Atlantic",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "R&B",
+    "subgenre2": "Funk Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Bryan Adams",
+    "title": "Tough Town",
+    "label": "Bad Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Buddy Guy",
+    "title": "Sweet Tea (25th Anniversary)",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Blues",
+    "subgenre1": "Electric Blues",
+    "subgenre2": "Chicago Blues",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Buddy Holly",
+    "title": "It Is So Easy",
+    "label": "Culture Factory (France).",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Rock and Roll",
+    "subgenre2": "Rockabilly",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Buster Williams",
+    "title": "Pinnacle",
+    "label": "Time Traveler Recordings",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Post-Bop",
+    "subgenre2": "Hard Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Caamp",
+    "title": "Caamp",
+    "label": "Caamp",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cabo Verde Show",
+    "title": "Caminho De Esperança Coladance 80",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "World",
+    "subgenre1": "Afrobeat",
+    "subgenre2": "Coladeira",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Calvin Harris, Clementine",
+    "title": "Douglas Blessings",
+    "label": "Columbia",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Camper Van Beethoven",
+    "title": "Tusk",
+    "label": "Cooking Vinyl",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Captain Beefheart & The",
+    "title": "Magic Band Lick My Decals Off, Baby (Deluxe Edition)",
+    "label": "Rhino / Atlantic",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Experimental Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cardinals",
+    "title": "Cardinals EP",
+    "label": "So Young Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Alt-Country",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Carina Round",
+    "title": "The First Blood Mystery",
+    "label": "Do Yourself In",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Carl Harvey",
+    "title": "Ecstacy of Mankind",
+    "label": "REAL ROCK RECORDS",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Carly Rae Jepsen",
+    "title": "Disco Darling",
+    "label": "Silent Records/Interscope",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Dance Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cars, The",
+    "title": "Heartbeat City Live",
+    "label": "Rhino Atlantic",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "New Wave",
+    "subgenre2": "Power Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "CAST",
+    "title": "Yeah Yeah Yeah",
+    "label": "SCRUFF OF THE NECK",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Catherine Anne Davies &",
+    "title": "Bernard Butler In Memory Of My Feelings",
+    "label": "Needle Mythology",
+    "format": "LP + 7\"",
+    "genre": "Pop",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Chamber Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cecil Taylor",
+    "title": "Fragments - The Complete 1969 Salle Pleyel Concerts",
+    "label": "Elemental",
+    "format": "Box Set",
+    "genre": "Jazz",
+    "subgenre1": "Free Jazz",
+    "subgenre2": "Avant-Garde Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chant Artist Collective",
+    "title": "Relics Of Tree Worship (In Dub)",
+    "label": "Balance",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient",
+    "subgenre2": "New Age",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Charlatans, The",
+    "title": "Then",
+    "label": "Beggars Banquet",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Madchester",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Charles Mingus",
+    "title": "Town Hall Concert 1964 Vol. 1",
+    "label": "Candid",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Post-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Charles Tolliver",
+    "title": "Charles Tolliver All Stars: Right Now…and Then",
+    "label": "Mack Avenue / Strata East",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Post-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Charli XCX",
+    "title": "Party 4U",
+    "label": "Atlantic Records",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Hyperpop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chemical Brothers, The",
+    "title": "Leave Home",
+    "label": "UMR/Virgin",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Big Beat",
+    "subgenre2": "Electronica",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chet Baker",
+    "title": "Live in Japan 1987 -FUKUI VOL.1-",
+    "label": "SOLID / TOYOKASEI",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Cool Jazz",
+    "subgenre2": "West Coast Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chet Baker",
+    "title": "Live in Japan 1987 -FUKUI VOL.2-",
+    "label": "SOLID / TOYOKASEI",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Cool Jazz",
+    "subgenre2": "West Coast Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chills, The",
+    "title": "Sunburnt",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Jangle Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Chris Lucey",
+    "title": "Songs Of Protest and Anti Protest",
+    "label": "Poppydisc",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "CMAT",
+    "title": "Diet Baby CMATBABY under exclusive licence to AWAL",
+    "label": "Recordings Ltd",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Country Pop",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Coach Party",
+    "title": "Live & Loud from Club Caramel Chess Club 10'' Cold Crush Brothers, The Fresh, Wild, Fly And Bold",
+    "label": "Tuff City",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Coldcut",
+    "title": "Smoke Mirrors",
+    "label": "Ninja Tune",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Breakbeat",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Colonel Bagshot / Brian",
+    "title": "Farrell Oh! What A Lovely War (+ Six Day War 7\")",
+    "label": "Seelie Court",
+    "format": "LP + 7\"",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Colourfield, The",
+    "title": "Deception (Expanded Edition)",
+    "label": "Chrysalis Records",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "New Wave",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Confidence Man",
+    "title": "Active Scenes Vol. One",
+    "label": "Chaos/Polydor",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Electropop",
+    "subgenre2": "Dance Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Conflict",
+    "title": "There Must Be Another Way (The Singles)",
+    "label": "Jungle Records",
+    "format": "2xLP",
+    "genre": "Punk",
+    "subgenre1": "Anarcho-Punk",
+    "subgenre2": "Hardcore Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Congos, The",
+    "title": "Congo Ashanti 2025 Remaster",
+    "label": "VP / Greensleeves",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cool-Notes, The",
+    "title": "The Unreleased Demos",
+    "label": "Selector Series",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Boogie",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Corinne Bailey Rae",
+    "title": "Live In New York",
+    "label": "UMR/EMI",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Neo-Soul",
+    "subgenre2": "Pop Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cory Wong",
+    "title": "Cory Wong And The Green Screen Band",
+    "label": "Cory Wong",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Courteeners",
+    "title": "Live in Manchester",
+    "label": "Ignition Music",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cream",
+    "title": "Wheels Of Fire: Live At The Fillmore & Winterland",
+    "label": "UMR/Polydor",
+    "format": "3xLP",
+    "genre": "Rock",
+    "subgenre1": "Blues Rock",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cribs, The",
+    "title": "Selling A Vibe - Gordon Raphael Sessions Play It Again Sam 10'' Crooked Colours Vera",
+    "label": "Sweat It Out",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Garage Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Crooked Man, All Seeing I",
+    "title": "Return of the Crooked Cat",
+    "label": "London Records",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Electro",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Crosby Stills & Nash",
+    "title": "The Solo albums",
+    "label": "Rhino / Elektra",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Folk Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cuddly Toys",
+    "title": "Guillotine Theatre",
+    "label": "Jungle Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Glam Punk",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cult, The",
+    "title": "Weapon Of Choice",
+    "label": "Cooking Vinyl",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Gothic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Cure, The",
+    "title": "Greatest Hits",
+    "label": "UMR/Polydor/Fiction",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Gothic Rock",
+    "subgenre3": "New Wave"
+  },
+  {
+    "artist": "Cure, The",
+    "title": "Acoustic Hits (25th Anniversary Edition)",
+    "label": "UMR/Polydor/Fiction",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Gothic Rock",
+    "subgenre3": "New Wave"
+  },
+  {
+    "artist": "D Train",
+    "title": "The Best of The 12\" Mixes",
+    "label": "Prelude",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Boogie",
+    "subgenre2": "Hi-NRG",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dallas Good & Richard Reed",
+    "title": "Parry Were 'The Watchtowers'",
+    "label": "Yep Roc Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alt-Country",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Danny Brown",
+    "title": "Grown Up",
+    "label": "Reservoir Recordings",
+    "format": "7\"",
+    "genre": "Hip-Hop",
+    "subgenre1": "Experimental Hip-Hop",
+    "subgenre2": "Detroit Rap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "Mission Impossible 30th Anniversary Edition",
+    "label": "Decca Classics",
+    "format": "2xLP",
+    "genre": "Soundtrack",
+    "subgenre1": "Film Score",
+    "subgenre2": "Orchestral",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Darkness, The",
+    "title": "One Way Ticket To Birmingham (Live at The NEC, Birmingham, February 19, 2006)",
+    "label": "Warner Records UK",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Darkthrone",
+    "title": "As Wolves Among Sheep...Live In Oslo",
+    "label": "Peaceville",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Black Metal",
+    "subgenre2": "Death Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Hallo Spaceboy",
+    "label": "Parlophone",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Art Rock",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Excerpts from Outside",
+    "label": "Parlophone",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Art Rock",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "David Holmes",
+    "title": "This Film's Crap, Let's Slash The Seats",
+    "label": "UMR/Polydor",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Electronica",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dawson Smith",
+    "title": "I Don't Know If I Can Make It (Part 1 & 2) (Including Tom Moulton Remix)",
+    "label": "Selector Series",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Deacon Blue",
+    "title": "The Great Western Road Trip. A Live Album",
+    "label": "Cooking Vinyl",
+    "format": "Box Set",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Blue-Eyed Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Deacon Blue",
+    "title": "The Great Western Road Trip: A Live Album",
+    "label": "Cooking Vinyl",
+    "format": "CD",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Blue-Eyed Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dead Or Alive",
+    "title": "The \"Youthquake Tour\"",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Hi-NRG",
+    "subgenre2": "Synth-Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Deafheaven",
+    "title": "Live On KEXP: Under The Blue Valley",
+    "label": "Roadrunner",
+    "format": "12\"",
+    "genre": "Metal",
+    "subgenre1": "Black Metal",
+    "subgenre2": "Shoegaze",
+    "subgenre3": "Post-Metal"
+  },
+  {
+    "artist": "Def Leppard",
+    "title": "Slang",
+    "label": "UMR/Mercury",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Delerium",
+    "title": "Odyssey: The Remix Collection (25th Anniversary Edition)",
+    "label": "Nettwerk",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient",
+    "subgenre2": "Trance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Demi Lovato",
+    "title": "Frequency",
+    "label": "Island US",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Dance Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dijon",
+    "title": "How Do You Feel About Getting",
+    "label": "Warner Records",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Indie R&B",
+    "subgenre2": "Folk Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dinosaur Jr",
+    "title": "Live In Hollywood 1991 (The Green Mind Tour)",
+    "label": "CHERRY RED",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": "Noise Pop"
+  },
+  {
+    "artist": "Diplo",
+    "title": "Diplo",
+    "label": "Sweat It Out",
+    "format": "3xLP",
+    "genre": "Electronic",
+    "subgenre1": "EDM",
+    "subgenre2": "Dancehall",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Divorce",
+    "title": "Live at Get Together 2025 for War Child",
+    "label": "Gravity",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "DJ BORING",
+    "title": "Winona 2026",
+    "label": "DJ BORING (self-released)",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Lo-Fi House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "DJ KOCO",
+    "title": "Cuba 45 Boxset Curated by DJ KOCO Mr Bongo Records Boxset Doctor Who The Rescue",
+    "label": "Demon Records",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Turntablism",
+    "subgenre2": "DJ Mix",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Don Cherry",
+    "title": "Blue Lake",
+    "label": "Charly Records",
+    "format": "2LP",
+    "genre": "Jazz",
+    "subgenre1": "Free Jazz",
+    "subgenre2": "World Fusion",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Doors, The",
+    "title": "Strange Days 1967: A work in progress Pt 2",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Blues Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "doPE (John Densmore &",
+    "title": "Chuck D) No Country For Old Men",
+    "label": "ORG MUSIC",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Experimental Rock",
+    "subgenre2": "Rap Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dr John & The WDR Big",
+    "title": "Band Big Band Voodoo",
+    "label": "Orange Music Records",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "New Orleans R&B",
+    "subgenre2": "Jazz Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dr. Feelgood",
+    "title": "Oily City Confidential OST",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Pub Rock",
+    "subgenre2": "Blues Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Dream Syndicate, The",
+    "title": "Sketches For Medicine Show",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Paisley Underground",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Earth",
+    "title": "Extra-Capsular Extraction",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Drone Metal",
+    "subgenre2": "Doom Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Eastern Dark",
+    "title": "Julie Is A Junkie / Johnny And Dee Dee GROWN UP WRONG",
+    "label": "RECORDS",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Power Pop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Electronic",
+    "title": "1996 Remixes 1999",
+    "label": "Parlophone",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Alternative Dance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Elton John",
+    "title": "Positiva Presents: Elton John - The Remixes",
+    "label": "Positiva/EMI",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Piano Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Emika",
+    "title": "Untitled",
+    "label": "Emika Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Dubstep",
+    "subgenre2": "Experimental Electronic",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Empire of The Sun",
+    "title": "Walking On A Dream (Expanded Edition)",
+    "label": "UMG Australia",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "En Vogue",
+    "title": "EV3",
+    "label": "Real Gone Music",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "New Jack Swing",
+    "subgenre2": "Pop Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "English Teacher",
+    "title": "Nearly Daffodils / Nearly Daffodils (Matt Maltese Rework)",
+    "label": "UMR/Island",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Enos McLeod",
+    "title": "Moods Of A Genius",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Epic Soundtracks",
+    "title": "Debris",
+    "label": "Glass Modern",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Essential Logic",
+    "title": "Extended Play – Volume I & Volume II",
+    "label": "Hiss And Shake Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "No Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ethel Cain",
+    "title": "Inbred",
+    "label": "Amigo / AWAL",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Slowcore",
+    "subgenre3": "Dream Pop"
+  },
+  {
+    "artist": "Everly Brothers, The",
+    "title": "Bye Bye Love",
+    "label": "Culture Factory (France).",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Rock and Roll",
+    "subgenre2": "Country Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fabio Frizzi / Goblin",
+    "title": "Amore Libero OST",
+    "label": "AMS",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "Horror Soundtrack",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Faith NYC",
+    "title": "Love Is A Wish Away",
+    "label": "Creation Youth",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Deep House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Faithless",
+    "title": "To All New Arrivals",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Dance",
+    "subgenre2": "Trance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fall Out Boy",
+    "title": "Live At Madison Square Garden 2024",
+    "label": "Fueled By Ramen",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Pop Punk",
+    "subgenre2": "Emo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fall, The",
+    "title": "Are You Are Missing Winner",
+    "label": "CHERRY RED",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fantastic Aleems, The",
+    "title": "Movin' To The Beat",
+    "label": "NIA",
+    "format": "12\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Boogie",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Far Caspian",
+    "title": "Live in the Round at Leeds City Museum",
+    "label": "Tiny Library Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Dream Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fear Factory",
+    "title": "Digimortal",
+    "label": "Real Gone Music",
+    "format": "2xLP",
+    "genre": "Metal",
+    "subgenre1": "Industrial Metal",
+    "subgenre2": "Groove Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Feeder",
+    "title": "Feel It Again",
+    "label": "Echo",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Post-Grunge",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fionn Regan",
+    "title": "The Bunkhouse Vol. 1: Anchor Black Tattoo",
+    "label": "Fionn Regan Music",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "The Original Fleetwood Mac",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Soft Rock",
+    "subgenre2": "Pop Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Flintstones, The",
+    "title": "Happy By My Side (7\")",
+    "label": "Seelie Court",
+    "format": "7\"",
+    "genre": "Soundtrack",
+    "subgenre1": "Children's",
+    "subgenre2": "TV Soundtrack",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Flying Lotus",
+    "title": "1983",
+    "label": "Brainfeeder",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Experimental Hip-Hop",
+    "subgenre2": "IDM",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Foreigner",
+    "title": "Foreigner 4 Live Tour 1981-1982",
+    "label": "Rhino / Atlantic",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Arena Rock",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Francoise Hardy",
+    "title": "J'suis d'accord / Tous les garçons et les filles de mon âge",
+    "label": "SME France",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Chanson",
+    "subgenre2": "Yé-Yé",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Frankie Cosmos",
+    "title": "Next Thing (10th Anniversary Edition)",
+    "label": "Bayonet Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Lo-Fi Indie",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Frankie Goes To Hollywood",
+    "title": "Radio One Sessions 1982-1983",
+    "label": "UMR/ZTT",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Freddie King",
+    "title": "Feeling Alright - The Complete Jazz Pulsation Concert 1975",
+    "label": "Elemental",
+    "format": "Box Set",
+    "genre": "Blues",
+    "subgenre1": "Electric Blues",
+    "subgenre2": "Texas Blues",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Freddie McGregor",
+    "title": "Showcase",
+    "label": "Observer / Prestige Elite",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Dancehall",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Freeman",
+    "title": "Freeman",
+    "label": "Partisan Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "French Dogs",
+    "title": "French Dogs EP",
+    "label": "Ciao Ketchup Recordings",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Funkadelic",
+    "title": "Funkadelic",
+    "label": "ORG MUSIC",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "P-Funk",
+    "subgenre2": "Psychedelic Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gary Marks",
+    "title": "Crossroads",
+    "label": "LANTERN HEIGHTS",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Singer-Songwriter",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gay Dad",
+    "title": "Leisure Noise",
+    "label": "London Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gentle Waves, The",
+    "title": "The Green Fields Of Foreverland",
+    "label": "Cooking Vinyl",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Chamber Pop",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "George Dekker",
+    "title": "Man In The Street",
+    "label": "Room In The Sky",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Ska",
+    "subgenre2": "Rocksteady",
+    "subgenre3": ""
+  },
+  {
+    "artist": "George Harrison",
+    "title": "Dark Horse",
+    "label": "Dark Horse Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Classic Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "George Harrison",
+    "title": "Extra Texture",
+    "label": "Dark Horse Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Classic Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "George Jones",
+    "title": "Cold Hard Truth",
+    "label": "Rhino / Asylum",
+    "format": "LP",
+    "genre": "Country",
+    "subgenre1": "Honky-Tonk",
+    "subgenre2": "Classic Country",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ghost Funk Orchestra",
+    "title": "Live in Europe",
+    "label": "Karma Chief Records",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Psychedelic Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Giant Syndicate",
+    "title": "Live at Fire 40",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gigi Perez",
+    "title": "Live From VEVO DSCVR",
+    "label": "Island",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Dark Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gil Scott-Heron",
+    "title": "Reflections",
+    "label": "Culture Factory (France).",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Spoken Word",
+    "subgenre2": "Jazz Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gil Scott-Heron",
+    "title": "Reflections",
+    "label": "Culture Factory (France).",
+    "format": "CD",
+    "genre": "R&B/Soul",
+    "subgenre1": "Spoken Word",
+    "subgenre2": "Jazz Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Girlschool",
+    "title": "Live From The Camden Palace",
+    "label": "Culture Factory (France).",
+    "format": "2xLP",
+    "genre": "Metal",
+    "subgenre1": "NWOBHM",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Girlschool",
+    "title": "Live From The Camden Palace",
+    "label": "Culture Factory (France).",
+    "format": "CD",
+    "genre": "Metal",
+    "subgenre1": "NWOBHM",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gits, The",
+    "title": "Etcetera",
+    "label": "Sub Pop",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Grunge",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Goblin",
+    "title": "The Singles Collection 1975-1979",
+    "label": "CINEVOX/AMS",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "Horror Soundtrack",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gong",
+    "title": "Flying Teapot",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Space Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Good Kid",
+    "title": "Can We Hang Out Sometime?",
+    "label": "Many Hats Distribution",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Emo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Gotan Project",
+    "title": "Best Of",
+    "label": "Yabasta Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Electro Tango",
+    "subgenre2": "Downtempo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Grady Tate",
+    "title": "Lady Love / Moondance",
+    "label": "Janus",
+    "format": "7\"",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "Hard Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Grateful Dead",
+    "title": "Boston Music Hall, Boston, MA 6/11/76",
+    "label": "RBDO",
+    "format": "5xLP",
+    "genre": "Rock",
+    "subgenre1": "Jam Band",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Grateful Dead",
+    "title": "On A Back Porch , Vol 3",
+    "label": "RBD2171",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Jam Band",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Greg Dread (Dreadzone) feat.",
+    "title": "Don Letts presents Serious Dropout",
+    "label": "Echo Beach",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Dub",
+    "subgenre2": "Breakbeat",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Greg Lake",
+    "title": "Manoeuvres",
+    "label": "Trading Places",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Guarani Kaiowa ftg. Matt",
+    "title": "Black, Youth & Tymon Dogg Shamans in Space",
+    "label": "Liquid Sound Design",
+    "format": "12\"",
+    "genre": "World",
+    "subgenre1": "Latin",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "HAIM",
+    "title": "Relationships EP",
+    "label": "Polydor",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Soft Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Half Japanese",
+    "title": "We Are They Who Ache With Amorous Love",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Noise Rock",
+    "subgenre2": "Lo-Fi",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Harlem Underground Band/",
+    "title": "Mighty Tom Cats Smokin' Cheeba-Cheeba / Dance Girl",
+    "label": "Paul Winley Records",
+    "format": "7\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Disco",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hawkwind",
+    "title": "Palace Springs",
+    "label": "ATOMHENGE",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Space Rock",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Heliocentrics, The & Marshall",
+    "title": "Allen & Knoel Scott & Bilal Nuclear War",
+    "label": "Strut Records",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Jazz Funk",
+    "subgenre2": "Afrobeat",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hemlocke Springs",
+    "title": "Going...Going...GONE!",
+    "label": "AWAL",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Art Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hilary Duff",
+    "title": "(Mine)",
+    "label": "Atlantic",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Teen Pop",
+    "subgenre2": "Dance Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hollie Cook",
+    "title": "Shy Girl Dub",
+    "label": "Mr Bongo Records",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Tropical Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Holly Humberstone",
+    "title": "TBC",
+    "label": "Polydor",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Alt-Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hooveriii",
+    "title": "Destroya (10 Year Anniversary) The Reverberation",
+    "label": "Appreciation Society",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Krautrock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Horace Andy",
+    "title": "Voice In Sound, The",
+    "label": "Echo Beach",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Horslips",
+    "title": "Tell 'Em About It Johnny - Live At Winterland 1978",
+    "label": "Madfish",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Celtic Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hot Chip",
+    "title": "Selected Remixes 06-10",
+    "label": "Domino Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "House Of Love, The",
+    "title": "Live At ULU (7 October 1988)",
+    "label": "CHERRY RED",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Shoegaze",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Howe Gelb",
+    "title": "Confluence",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alt-Country",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Hugh Mundell",
+    "title": "Arise",
+    "label": "REAL ROCK RECORDS",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Human League, The",
+    "title": "Being Boiled (Expanded 12\" single)",
+    "label": "CHERRY RED",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "I-Roy",
+    "title": "Crisus Time",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Toasting",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ian Brown",
+    "title": "Music of the Spheres (Special 25th Anniversary Edition)",
+    "label": "UMR/Polydor UK",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Madchester",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ian Dury & The Blockheads",
+    "title": "Live in London 1980",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Pub Rock",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Idris Mohammad",
+    "title": "Kabsha",
+    "label": "Evidence Music",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Jazz Funk",
+    "subgenre2": "Soul Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ike White",
+    "title": "Changin' Times",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Iris DeMent",
+    "title": "The Way I Should",
+    "label": "Yep Roc Records",
+    "format": "LP",
+    "genre": "Country",
+    "subgenre1": "Americana",
+    "subgenre2": "Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Israel Vibration",
+    "title": "Vibes Alive",
+    "label": "R.A.S Records",
+    "format": "2xLP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jack Garratt",
+    "title": "The Tension Between",
+    "label": "Cooking Vinyl",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Electropop",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jack Garratt",
+    "title": "The Tension Between",
+    "label": "Cooking Vinyl",
+    "format": "CD",
+    "genre": "Pop",
+    "subgenre1": "Electropop",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jackie Mitoo",
+    "title": "In Cold Blood",
+    "label": "VP / Greensleeves",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Ska",
+    "subgenre2": "Rocksteady",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jackson C Frank",
+    "title": "Jackson C Frank",
+    "label": "Sanctuary",
+    "format": "2xLP",
+    "genre": "Folk",
+    "subgenre1": "Singer-Songwriter",
+    "subgenre2": "British Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jah Wobble",
+    "title": "The Early Years 1983-1986",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Dub",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "James Carter, Cyrus",
+    "title": "Chestnut, Ali Jackson, & Reginald Veal Gold Soundz: A Jazz Tribute To Pavement",
+    "label": "Modern Harmonic",
+    "format": "2xLP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Post-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "James Dean Bradfield",
+    "title": "The Great Western",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jamie Cullum",
+    "title": "The Song Society Playlist",
+    "label": "UMR/Island",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Jazz Pop",
+    "subgenre2": "Vocal Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jane Weaver",
+    "title": "Intiaani Kesa",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Psychedelic Pop",
+    "subgenre2": "Krautrock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jayhawks, The",
+    "title": "2 Meter Sessions",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alt-Country",
+    "subgenre2": "Americana",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jeff Buckley",
+    "title": "Live A L'Olympia",
+    "label": "Legacy Rep",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jerry Garcia",
+    "title": "Reflections",
+    "label": "ROUND RECORDS",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Jam Band",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": "Folk Rock"
+  },
+  {
+    "artist": "Jerry Jeff Walker",
+    "title": "Navajo Rug (35th Anniversary)",
+    "label": "Jerry Jeff Walker",
+    "format": "12\"",
+    "genre": "Country",
+    "subgenre1": "Outlaw Country",
+    "subgenre2": "Americana",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jesus and Mary Chain, The",
+    "title": "Some Candy Talking (40th Anniversary)",
+    "label": "Warner Music UK",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Noise Pop",
+    "subgenre2": "Shoegaze",
+    "subgenre3": "Post-Punk"
+  },
+  {
+    "artist": "Jimmy Cobb Quartet",
+    "title": "Jazz In The Key Of Blue",
+    "label": "Chesky Records",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Post-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Jocelyn Brown",
+    "title": "Somebody Else's Guy",
+    "label": "Prelude",
+    "format": "12\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Disco",
+    "subgenre2": "Dance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Joe Henderson",
+    "title": "Live at the Jazz Showcase",
+    "label": "Resonance Records",
+    "format": "2xLP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Post-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Joe Strummer & The",
+    "title": "Mescaleros Global a Go Go",
+    "label": "Dark Horse Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "John Coltrane",
+    "title": "From Form To Spirit",
+    "label": "Culture Factory (France).",
+    "format": "3xLP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Free Jazz",
+    "subgenre3": "Modal Jazz"
+  },
+  {
+    "artist": "John Coltrane",
+    "title": "The Tiberi Tapes: A Preview Of The Mythic Recordings",
+    "label": "Verve US",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Free Jazz",
+    "subgenre3": "Modal Jazz"
+  },
+  {
+    "artist": "John Coltrane Quartet",
+    "title": "France 1965: The Complete Concerts",
+    "label": "Charly Records",
+    "format": "4xLP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Free Jazz",
+    "subgenre3": "Modal Jazz"
+  },
+  {
+    "artist": "John Frusciante",
+    "title": "To Only Record Water For 10 days",
+    "label": "Rhino Warner",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "John Lennon",
+    "title": "Love Meditation Mixes",
+    "label": "UMR/Calderstone",
+    "format": "3LP",
+    "genre": "Rock",
+    "subgenre1": "Classic Rock",
+    "subgenre2": "Art Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "John Prine",
+    "title": "Found Dogs",
+    "label": "Oh Boy Records",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Country Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "John Prine",
+    "title": "BBC Sessions",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Country Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Joni Mitchell",
+    "title": "For The Roses",
+    "label": "Asylum / Warner Records",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Singer-Songwriter",
+    "subgenre2": "Folk Rock",
+    "subgenre3": "Jazz Pop"
+  },
+  {
+    "artist": "Joy Crookes",
+    "title": "Juniper - BBC Maida Vale Live Sessions",
+    "label": "Insanity",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Neo-Soul",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Judas Priest",
+    "title": "Live In Los Angeles 90",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Heavy Metal",
+    "subgenre2": "NWOBHM",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Junkie XL",
+    "title": "Saturday Teenage Kick",
+    "label": "Real Gone Music",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Big Beat",
+    "subgenre2": "Film Score",
+    "subgenre3": ""
+  },
+  {
+    "artist": "K's, The",
+    "title": "Pretty On The Internet",
+    "label": "Lab Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Kae Tempest",
+    "title": "Self Titled (Stripped)",
+    "label": "Island",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Spoken Word",
+    "subgenre2": "Conscious Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Kaiser Chiefs",
+    "title": "Kaiser Chiefs - The Future is Medieval - Alphabetised Compendium",
+    "label": "UMR/Polydor",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "KATSEYE",
+    "title": "Touch / Gabriela - Tour Arrangements & Acapella Versions (12\" Vinyl)",
+    "label": "HYBE/Geffen",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "K-Pop",
+    "subgenre2": "Dance Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "KH",
+    "title": "Remixes",
+    "label": "Ministry",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Techno",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Khruangbin",
+    "title": "White Gloves ii / M. Blanc",
+    "label": "Dead Oceans",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Funk",
+    "subgenre3": "World"
+  },
+  {
+    "artist": "King Crimson",
+    "title": "Penn State 29 June, 1974",
+    "label": "Panegyric",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "King Gizzard & The Lizard",
+    "title": "Wizard Live Around The Globe - Part VI: The Acoustic Concert",
+    "label": "Blind Rope Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Garage Rock",
+    "subgenre3": "Progressive Rock"
+  },
+  {
+    "artist": "King Gizzard & The Lizard",
+    "title": "Wizard Big Fig Wasp",
+    "label": "Having Fun Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Garage Rock",
+    "subgenre3": "Progressive Rock"
+  },
+  {
+    "artist": "Kinks, The",
+    "title": "One For The Road BMG Rights Management",
+    "label": "(UK) Ltd.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "British Invasion",
+    "subgenre2": "Mod",
+    "subgenre3": "Power Pop"
+  },
+  {
+    "artist": "KISS",
+    "title": "1976 Special KISS Tour EP",
+    "label": "UMe",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Kodaline",
+    "title": "In A Perfect World (expanded)",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Pop Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Kokoroko",
+    "title": "Live At Metropolis",
+    "label": "Brownswood",
+    "format": "12\"",
+    "genre": "Jazz",
+    "subgenre1": "Afrobeat",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": ""
+  },
+  {
+    "artist": "KPop Demon Hunters Cast,",
+    "title": "HUNTR/X, Saja Boys KPop Demon Hunters (Soundtrack from the Netflix Film) - HUNTR/X Edition (Record Store Day Exclusive)",
+    "label": "Republic",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "K-Pop",
+    "subgenre2": "TV Soundtrack",
+    "subgenre3": ""
+  },
+  {
+    "artist": "KPop Demon Hunters Cast,",
+    "title": "HUNTR/X, Saja Boys KPop Demon Hunters (Soundtrack from the Netflix Film) - Saja Boys Edition (Record Store Day Exclusive)",
+    "label": "Republic",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "K-Pop",
+    "subgenre2": "TV Soundtrack",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Kraan",
+    "title": "Aladin Tapes",
+    "label": "36Music",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Krautrock",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": "Progressive Rock"
+  },
+  {
+    "artist": "Kula Shaker",
+    "title": "Good Money (Jagz Kooner's 'The Midnight Circus' Remix)",
+    "label": "Strange F.O.L.K. LLP",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Labi Siffre",
+    "title": "Crying Laughing Loving Lying Expanded Edition",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lanu",
+    "title": "The Double Sunrise",
+    "label": "Impressed Recordings",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Downtempo",
+    "subgenre2": "Nu Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Last Dinner Party, The",
+    "title": "The Scythe / Second Best (Live From The Pyre)",
+    "label": "Island",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Art Rock",
+    "subgenre2": "Baroque Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lathums, The",
+    "title": "Gull In The Wind Modern Sky UK 10'' Laura Marling Laura Marling - Live at Albert Hall, Manchester",
+    "label": "Chrysalis Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lenny Kaye's Nuggets Band",
+    "title": "Live At The BBC",
+    "label": "Cadiz Music",
+    "format": "10\"",
+    "genre": "Rock",
+    "subgenre1": "Garage Rock",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": "Proto-Punk"
+  },
+  {
+    "artist": "Leon Russell",
+    "title": "Best of Hank Wilson",
+    "label": "Dark Horse Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Southern Rock",
+    "subgenre2": "Swamp Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Leslie Butler",
+    "title": "Ja-Gan",
+    "label": "Trojan Records",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Ska",
+    "subgenre2": "Rocksteady",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Levitation Room",
+    "title": "Ethos",
+    "label": "Greenway Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Neo-Psychedelia",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lightning Seeds",
+    "title": "Quarrelsome Moments: B-Sides and Rarities",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Power Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lil Peep",
+    "title": "crybaby",
+    "label": "AWAL",
+    "format": "12\"",
+    "genre": "Hip-Hop",
+    "subgenre1": "Emo Rap",
+    "subgenre2": "SoundCloud Rap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Little Annie",
+    "title": "Short & Sweet (Expanded Edition)",
+    "label": "On-U Sound",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Avant-Garde",
+    "subgenre2": "Cabaret",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Little Feat",
+    "title": "Little Feat",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Southern Rock",
+    "subgenre2": "Blues Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Living Legends",
+    "title": "The Gathering",
+    "label": "Legendary Music, LLC",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Underground Hip-Hop",
+    "subgenre2": "West Coast Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "London Cowboys",
+    "title": "Animal Pleasure + Tall in the Saddle & more",
+    "label": "Jungle Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Glam Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lonnie Sattin",
+    "title": "Caravan / Uska Dara",
+    "label": "PANORAMA",
+    "format": "7\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Gospel",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Look Outside Your Window",
+    "title": "Look Outside Your Window",
+    "label": "Look Outside Your Window",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Experimental Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Louis Dunford",
+    "title": "Live in North London",
+    "label": "RCA",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Louise",
+    "title": "Confessions (Extended Editions)",
+    "label": "Lil Lou Records Ltd",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Pop R&B",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Love with Johnny Echols",
+    "title": "Love & Let Live - Live At The Beachland Ballroom & Tavern, Cleveland, Ohio - April 30th 2025",
+    "label": "Madfish",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lucy Dacus",
+    "title": "New Song",
+    "label": "Geffen",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ludovico Einaudi",
+    "title": "Divenire 20th Anniversary Edition",
+    "label": "Decca Records",
+    "format": "2xLP",
+    "genre": "Classical",
+    "subgenre1": "Minimalism",
+    "subgenre2": "Contemporary Classical",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ludus",
+    "title": "The Seduction",
+    "label": "LANTERN REC.",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "No Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Lunachicks",
+    "title": "Beauty Tips, Hair Care and Fuck the Patriarchy",
+    "label": "Manic Merch",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Riot Grrrl",
+    "subgenre3": ""
+  },
+  {
+    "artist": "M People",
+    "title": "Northern Soul",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Dance",
+    "subgenre2": "House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mad X, Tara Lew and Meelo",
+    "title": "Medina Feeling It / Babylon Time Dun",
+    "label": "Room In The Sky",
+    "format": "7\"",
+    "genre": "Electronic",
+    "subgenre1": "Dance",
+    "subgenre2": "DJ Mix",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Maddy Prior & June Tabor",
+    "title": "Silly Sisters",
+    "label": "Chrysalis Catalogue",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "British Folk",
+    "subgenre2": "Traditional Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Madness",
+    "title": "Faces For Radio - The BBC Sessions 1979-1982 West Village Music",
+    "label": "Management",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Ska",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Madonna",
+    "title": "The Confessions Tour Live",
+    "label": "Warner Records",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mal-One",
+    "title": "God Save Us From Misery E.P.",
+    "label": "Punk Art Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Art Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "March Violets, The",
+    "title": "Natural History",
+    "label": "Jungle Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Gothic Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mark Knopfler and Emmylou",
+    "title": "Harris All The Roadrunning",
+    "label": "UMR/EMI",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Roots Rock",
+    "subgenre2": "Americana",
+    "subgenre3": "Country Rock"
+  },
+  {
+    "artist": "Mark Lanegan Band",
+    "title": "Bubblegum (Original Draft)",
+    "label": "Beggars Banquet",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Grunge",
+    "subgenre3": "Dark Americana"
+  },
+  {
+    "artist": "Mark Murphy",
+    "title": "The 1966 Manchester Sessions - Live at Club 43",
+    "label": "Jazz Rewind (Hindsight)",
+    "format": "2xLP",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "Bebop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mark Ronson & RAYE",
+    "title": "Suzanne",
+    "label": "Columbia",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Nu-Disco",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Markolino Dimond",
+    "title": "Brujeria",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Roots Reggae",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Marshall Crenshaw",
+    "title": "The Bootleg Sounds of Marshall Crenshaw 1984- 1989",
+    "label": "Yep Roc Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Power Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mary Wallopers, The",
+    "title": "A Mouthful of Mary Wallopers BC Records 10'' Massive Wagons Full Nelson",
+    "label": "Earache Records",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Irish Folk",
+    "subgenre2": "Punk Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Matt Maltese",
+    "title": "Good Morning It's Now Tomorrow (5th Anniversary Collector's Edition)",
+    "label": "Nettwerk",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Chamber Pop",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mayday Parade",
+    "title": "Tales Told By Dead Friends",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Pop Punk",
+    "subgenre2": "Emo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "MC 900 Ft. Jesus",
+    "title": "Welcome To My Dream (35th Anniversary Expanded Edition)",
+    "label": "Nettwerk",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Experimental Hip-Hop",
+    "subgenre2": "Trip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Megadeth",
+    "title": "Hidden Treasures",
+    "label": "UMe",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Thrash Metal",
+    "subgenre2": "Speed Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Meiko Kaji",
+    "title": "Urami Bushi/Shura No Hana Teichiku Entertainment /",
+    "label": "TOYOKASEI",
+    "format": "12\"",
+    "genre": "Soundtrack",
+    "subgenre1": "Japanese Film Score",
+    "subgenre2": "Enka",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Melanie B",
+    "title": "Hot",
+    "label": "UMR/Virgin",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "R&B Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Melody Gardot",
+    "title": "Bye Bye Blackbird",
+    "label": "Fontana",
+    "format": "12\" EP",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "Jazz Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Men They Couldn't Hang,",
+    "title": "The Devil On The Wind",
+    "label": "Vinyl Star",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Folk Punk",
+    "subgenre2": "Celtic Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Meteors, The",
+    "title": "From Zorch with Love: The Very Best of the Meteors 1981-1997",
+    "label": "Culture Factory (France).",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Psychobilly",
+    "subgenre2": "Rockabilly",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Metronomy",
+    "title": "B- Sides & Rarities",
+    "label": "Because Music",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "Indie Electronic",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Michael Schenker Group",
+    "title": "Best of Live MSG – 1980 – 1984",
+    "label": "Chrysalis Catalogue",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mighty Rootsmen, The",
+    "title": "Strike Back (Volume 2)",
+    "label": "Bulletproof",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Miguel Tur",
+    "title": "Junto Al Mar (Deluxe Edition)",
+    "label": "Deja Vu Kid",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Deep House",
+    "subgenre2": "Minimal Techno",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mike Peters of The Alarm",
+    "title": "Feel Free The 21st Century Recording",
+    "label": "Company",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Miles Davis",
+    "title": "Lady Be Good: Live in Europe with The Birdland All-Stars",
+    "label": "Unique Jazz",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Modal Jazz",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": "Cool Jazz"
+  },
+  {
+    "artist": "Miles Davis",
+    "title": "From Bebop To Blue",
+    "label": "Culture Factory (France).",
+    "format": "3xLP",
+    "genre": "Jazz",
+    "subgenre1": "Modal Jazz",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": "Cool Jazz"
+  },
+  {
+    "artist": "Miles Davis",
+    "title": "The New Sounds (Mono 10\") UMR/Concord 10'' Misfits Famous Monsters",
+    "label": "Rhino Atlantic",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Modal Jazz",
+    "subgenre2": "Jazz Fusion",
+    "subgenre3": "Cool Jazz"
+  },
+  {
+    "artist": "Misunderstood, The",
+    "title": "Complete Recordings",
+    "label": "Trading Places",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Garage Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "MK, Chrystal",
+    "title": "Dior",
+    "label": "Columbia",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Deep House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Modern Eon",
+    "title": "Fiction Tales",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Modern Lovers, The",
+    "title": "The Modern Lovers",
+    "label": "BMG",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Proto-Punk",
+    "subgenre2": "Garage Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Morcheeba",
+    "title": "Escape The Chaos (The Remixes)",
+    "label": "100% Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Downtempo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Motorhead",
+    "title": "On Parole",
+    "label": "Warner Music UK",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Speed Metal",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Motörhead",
+    "title": "The Lost Tapes Vol.7",
+    "label": "BMG",
+    "format": "2xLP",
+    "genre": "Metal",
+    "subgenre1": "Speed Metal",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Motörhead",
+    "title": "MOTORHEAD",
+    "label": "Chiswick",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Speed Metal",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mr. Big",
+    "title": "Hey Man (30th Anniversary Edition)",
+    "label": "evoXS",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Muse",
+    "title": "Muse S/T EP",
+    "label": "Warner Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": "Art Rock"
+  },
+  {
+    "artist": "Muse",
+    "title": "Muscle Museum",
+    "label": "Warner Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": "Art Rock"
+  },
+  {
+    "artist": "Mutemath",
+    "title": "Mutemath",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Experimental Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "My Life With The Thrill Kill",
+    "title": "Kult Sinister Whispers: The Wax Trax! Years Remixed",
+    "label": "Wax Trax! Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Industrial",
+    "subgenre2": "EBM",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Myles Smith",
+    "title": "Stargazing (Aurora Edition)",
+    "label": "RCA",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Mötley Crüe",
+    "title": "Live Wire EP",
+    "label": "BMG",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Glam Metal",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nadia Reid",
+    "title": "Live at St Paul's With NZ Trio",
+    "label": "Chrysalis Records",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Napalm Death",
+    "title": "Harmony Corruption",
+    "label": "Earache Records",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Grindcore",
+    "subgenre2": "Death Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nas",
+    "title": "God's Son",
+    "label": "Legacy Rep",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "East Coast Hip-Hop",
+    "subgenre2": "Conscious Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "National Health",
+    "title": "Of Queues and Cures",
+    "label": "Charly Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Canterbury Scene",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Neil Young & The Chrome",
+    "title": "Hearts The Live Album",
+    "label": "Reprise / Warner Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Folk Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Neko Case",
+    "title": "Cool Boys",
+    "label": "ANTI-",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Alt-Country",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "New York Dolls",
+    "title": "One Day It Will Please Us To Remember Even This",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Glam Rock",
+    "subgenre3": "Proto-Punk"
+  },
+  {
+    "artist": "Niall Horan, The RTÉ Concert",
+    "title": "Orchestra Flicker featuring the RTÉ Orchestra",
+    "label": "Capitol US",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Orchestral Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nicky Wire",
+    "title": "Intimism",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nicola Conte",
+    "title": "Naquela Base",
+    "label": "Far Out Recordings",
+    "format": "7\"",
+    "genre": "Jazz",
+    "subgenre1": "Nu Jazz",
+    "subgenre2": "Bossa Nova",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nilüfer Yanya",
+    "title": "Nilüfer Yanya Live at Metropolis",
+    "label": "Ninja Tune",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Art Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Nolan Porter & Stone",
+    "title": "Foundation Live at the 100 Club",
+    "label": "100% Records",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Northern Soul",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ólafur Arnalds & Loreen",
+    "title": "SAGES",
+    "label": "Mercury KX",
+    "format": "12\" EP",
+    "genre": "Electronic",
+    "subgenre1": "Neo-Classical",
+    "subgenre2": "Ambient",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Olive",
+    "title": "Extra Virgin",
+    "label": "Commercial Group",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Dance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Olivia Dean",
+    "title": "Live At The BBC",
+    "label": "Capitol UK",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Neo-Soul",
+    "subgenre2": "Indie Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "One The Juggler",
+    "title": "Imperial Way",
+    "label": "Real Vision",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "New Wave",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Orb, The",
+    "title": "Bicycles & Tricycles",
+    "label": "Cooking Vinyl",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient House",
+    "subgenre2": "Downtempo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Orchestral Manoeuvres In",
+    "title": "The Dark Archive Vol. 1 (1981-1990)",
+    "label": "UMR/Virgin",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Pale Blue Eyes",
+    "title": "BBC Radio sessions",
+    "label": "Broadcast Recordings",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Panda Bear & Sonic Boom",
+    "title": "Graveyard/Lucky Charm",
+    "label": "Domino",
+    "format": "7\"",
+    "genre": "Electronic",
+    "subgenre1": "Psychedelic Pop",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Crooked Teeth",
+    "label": "Earache Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Nu Metal",
+    "subgenre2": "Alternative Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Paramore",
+    "title": "All We Know Is Falling",
+    "label": "Atlantic",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Pop Punk",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": "Emo"
+  },
+  {
+    "artist": "Paris Paloma",
+    "title": "Good Boy / Good Girl",
+    "label": "Nettwerk",
+    "format": "7\"",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Chamber Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Patti Jo",
+    "title": "Make Me Believe In You / Ain't No Love Lost (Tom Moulton Mixes)",
+    "label": "Celestial Echo",
+    "format": "7\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Disco",
+    "subgenre2": "Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Paul Weller",
+    "title": "When Your Garden's Overgrown (Live at the BBC / Boy About Town (Live At The BBC)",
+    "label": "Parlophone",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Mod Revival",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Pavement",
+    "title": "Perfect Sound Forever EP Matador Records 10'' Pavey Ark More Time, More Speed",
+    "label": "Sunk Island Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Lo-Fi",
+    "subgenre3": "Slacker Rock"
+  },
+  {
+    "artist": "Peaches",
+    "title": "No Lube, So Rude",
+    "label": "Kill Rock Stars",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Electroclash",
+    "subgenre2": "Electropunk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Pearls Before Swine",
+    "title": "Tom Rapp: The Man Who Fell to Earth",
+    "label": "Earth Recordings",
+    "format": "LP",
+    "genre": "Folk",
+    "subgenre1": "Psychedelic Folk",
+    "subgenre2": "Freak Folk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Peregrine",
+    "title": "Songs Of Mine",
+    "label": "BONFIRE",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Perrie",
+    "title": "Bonus Tracks",
+    "label": "Columbia",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Pop R&B",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Pete Tong + Friends",
+    "title": "Ibiza Classics - The B Sides",
+    "label": "Ministry",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "House",
+    "subgenre2": "Dance",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Peter Gabriel",
+    "title": "Sledgehammer",
+    "label": "Real World",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Art Rock",
+    "subgenre2": "Progressive Rock",
+    "subgenre3": "World"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Live at LA Sports Arena, 1975",
+    "label": "Legacy Rep",
+    "format": "BOXSET",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": "Art Rock"
+  },
+  {
+    "artist": "PinkPantheress",
+    "title": "Girl Like Me",
+    "label": "Warner Records",
+    "format": "7\"",
+    "genre": "Electronic",
+    "subgenre1": "UK Garage",
+    "subgenre2": "Drum and Bass",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Pixies",
+    "title": "Live In Newport",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": "Noise Pop"
+  },
+  {
+    "artist": "Police Dog Hogan",
+    "title": "Hydrogen Bus",
+    "label": "Major Tom",
+    "format": "12\"",
+    "genre": "Folk",
+    "subgenre1": "Folk Rock",
+    "subgenre2": "Bluegrass",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Poor Righteous Teachers",
+    "title": "The New World Order",
+    "label": "Legacy Rep",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "East Coast Hip-Hop",
+    "subgenre2": "Conscious Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Porcupine Tree",
+    "title": "We Lost The Skyline",
+    "label": "Transmission",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Power Station, The",
+    "title": "Power Mad: Live at the Spectrum, Philadelphia, PA, 21/8/85 Warner Music UK Boxset Pretty Things, The From The Other Side Madfish 10'' Primal Scream Echo Dek",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "New Wave",
+    "subgenre2": "Synth-Pop",
+    "subgenre3": "Dance Rock"
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Gentle Tuesday / Imperial: The 1987 EP's",
+    "label": "Warner Music UK",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Madchester",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Professor Longhair",
+    "title": "The Last Mardi Gras",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Blues",
+    "subgenre1": "New Orleans R&B",
+    "subgenre2": "Boogie-Woogie",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Public Service Broadcasting",
+    "title": "The Race For Space (Remixes)",
+    "label": "Test Card Recordings",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Indie Electronic",
+    "subgenre2": "Post-Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Purple Disco Machine",
+    "title": "Soulmatic",
+    "label": "Sweat It Out",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Nu-Disco",
+    "subgenre2": "House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Puscifer",
+    "title": "Normal Isn't Live",
+    "label": "BMG",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Industrial Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "R. Carlos Nakai",
+    "title": "Canyon Trilogy",
+    "label": "Dark Horse Records",
+    "format": "2xLP",
+    "genre": "World",
+    "subgenre1": "Native American",
+    "subgenre2": "New Age",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rachel Chinouriri",
+    "title": "Little House EP",
+    "label": "Parlophone",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Alt-Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Radha Krishna Temple",
+    "title": "(London) The Radha Krsna Temple",
+    "label": "Dark Horse Records",
+    "format": "LP",
+    "genre": "World",
+    "subgenre1": "Devotional",
+    "subgenre2": "Indian Classical",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ramones",
+    "title": "Live in San Francisco",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Pop Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rascals, The",
+    "title": "Rascalize",
+    "label": "DeltaSonic Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ray Charles",
+    "title": "Ray Charles - Live In Concert",
+    "label": "Tangerine",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Rhythm and Blues",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Residents, The",
+    "title": "The Residents present Randy, Chuck & Bob In The Studio",
+    "label": "NEW RALPH",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Experimental Rock",
+    "subgenre2": "Avant-Garde",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rhetta Hughes",
+    "title": "Light My Fire / You're Doing It With Her (When It Should Be Me)",
+    "label": "South Street Soul",
+    "format": "7\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ritchie Blackmore's",
+    "title": "Rainbow Live from Köln 1976",
+    "label": "Demon Records",
+    "format": "3xLP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Neoclassical Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rival Consoles",
+    "title": "MindsEye",
+    "label": "Erased Tapes",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "IDM",
+    "subgenre2": "Ambient",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Robert Forster",
+    "title": "Danger In The Past",
+    "label": "Needle Mythology",
+    "format": "LP + 7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Jangle Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Robert Forster",
+    "title": "Calling From A Country Phone",
+    "label": "Needle Mythology",
+    "format": "LP + 7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Jangle Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Robert Plant",
+    "title": "Saving Grace: All That Glitters",
+    "label": "Warner Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Blues Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": "World"
+  },
+  {
+    "artist": "Rod Stewart",
+    "title": "Alternate Atlantic Crossing",
+    "label": "Atlantic / Rhino",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Pop Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rolling Stones, The",
+    "title": "Big Hits (US) - Japanese Edition",
+    "label": "ABKCO MUSIC",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Blues Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rory Gallagher",
+    "title": "Calling Card",
+    "label": "UMR",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Blues Rock",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rose Gray",
+    "title": "April/Lotus",
+    "label": "Polydor",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Alt-Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Roxy Music",
+    "title": "Viva! Roxy Music",
+    "label": "UMR/EMI",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Art Rock",
+    "subgenre2": "Glam Rock",
+    "subgenre3": "New Wave"
+  },
+  {
+    "artist": "Roy Hargrove",
+    "title": "Bern - Live in Switzerland",
+    "label": "Time Traveler Recordings",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Neo-Bop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "RUNT w/Todd Rundgren",
+    "title": "The Necessary Cosmic Frenzy",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Power Pop",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Rupert's People",
+    "title": "Compendium",
+    "label": "Trading Places",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Freakbeat",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ryuichi Sakamoto (Featuring",
+    "title": "Danceries) End of Asia",
+    "label": "Gearbox",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient",
+    "subgenre2": "Contemporary Classical",
+    "subgenre3": ""
+  },
+  {
+    "artist": "RZA, Juice Crew",
+    "title": "Big Daddy Kane, Craig G, Roxanne Shanté, Kool G Rap Granddaddy I.U., Masta Ace, Pearl Gates Bobby Digital Presents: The Juice Crew 36 Chambers / DNA /",
+    "label": "Hitmaker",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "East Coast Hip-Hop",
+    "subgenre2": "Hardcore Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "RZA, Various Artists",
+    "title": "The Man with the Iron Fists (Original Motion Picture Soundtrack)",
+    "label": "36 Chambers",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "East Coast Hip-Hop",
+    "subgenre2": "Hardcore Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Schmoov!",
+    "title": "While You Wait",
+    "label": "Winding Road Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Breakbeat",
+    "subgenre2": "Downtempo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Scott Matthews",
+    "title": "Passing Stranger",
+    "label": "Shedio Records",
+    "format": "2xLP",
+    "genre": "Folk",
+    "subgenre1": "Singer-Songwriter",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Scott Weiland",
+    "title": "Live from the Happy In Galoshes Tour 2009",
+    "label": "Scott Weiland",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Grunge",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Scuba",
+    "title": "Petrology",
+    "label": "Hotflush",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Dubstep",
+    "subgenre2": "Techno",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Selena Gomez",
+    "title": "Droplets EP Interscope 10'' Self Esteem Cuddles Please",
+    "label": "UMR/Fiction",
+    "format": "12\" EP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sensational Alex Harvey",
+    "title": "Band, The Live In The New World - Berlin '76",
+    "label": "Madfish",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Glam Rock",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sex Pistols",
+    "title": "Jubilee",
+    "label": "UMR",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Punk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sheena Easton",
+    "title": "Shockwave",
+    "label": "CHERRY POP",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sigrid x Bring Me The",
+    "title": "Horizon Bad Life",
+    "label": "UMR/Island",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Electropop",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Simon Fisher Turner",
+    "title": "Stuff",
+    "label": "Glass Modern",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Ambient",
+    "subgenre2": "Experimental",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Simply Red",
+    "title": "Remixes",
+    "label": "East West",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Blue-Eyed Soul",
+    "subgenre2": "Pop Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sisters of Mercy, The",
+    "title": "First and Last and Always (Japanese Remix)",
+    "label": "Warner Music UK",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Gothic Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Skid Row",
+    "title": "Live at the Moscow Music Peace Festival",
+    "label": "BMG",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Glam Metal",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Skye",
+    "title": "Mind How You Go",
+    "label": "100% Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Downtempo",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sleep Token",
+    "title": "Caramel",
+    "label": "RCA",
+    "format": "12\"",
+    "genre": "Metal",
+    "subgenre1": "Progressive Metal",
+    "subgenre2": "Alternative Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Slint",
+    "title": "untitled (albini rough mixes)",
+    "label": "Touch and Go Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Post-Rock",
+    "subgenre2": "Math Rock",
+    "subgenre3": "Noise Rock"
+  },
+  {
+    "artist": "Slomosa",
+    "title": "Live at Verftet Bergen, Norway",
+    "label": "Apollon Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Stoner Rock",
+    "subgenre2": "Desert Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Smudge All Stars",
+    "title": "Our Lives",
+    "label": "Violent Drum Recordings",
+    "format": "12\"",
+    "genre": "Reggae",
+    "subgenre1": "Roots Reggae",
+    "subgenre2": "Dub",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Snake Corps, The",
+    "title": "Flesh On Flesh",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Gothic Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Snuts, The",
+    "title": "Live at the Boiler Shop",
+    "label": "Assai Records",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Pop Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Soft Cell",
+    "title": "Danceteria (Remixes)",
+    "label": "Big Frock",
+    "format": "12\"",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sonic Youth",
+    "title": "The Diamond Sea / Grayfolded",
+    "label": "UMe",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Noise Rock",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": "No Wave"
+  },
+  {
+    "artist": "Sophie Ellis-Bextor",
+    "title": "Read My Lips",
+    "label": "UMR/Polydor",
+    "format": "2xLP",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Nu-Disco",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Soul Jazz Records Presents",
+    "title": "Power Pop! American Power Pop for the Now Generation 1977-1981",
+    "label": "Soul Jazz",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Soul Jazz Records Presents",
+    "title": "Studio One Sound",
+    "label": "Soul Jazz",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "South Shore Commission",
+    "title": "South Shore Commission",
+    "label": "South Street Disco",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Disco",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Spacey Jane",
+    "title": "Live at The Hordern Pavilion (Sydney, NSW) 2025",
+    "label": "UMR/Concord",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Surf Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Splat!",
+    "title": "And Yeah So (1981-1985)",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Spunk",
+    "title": "Tighten It Up",
+    "label": "Gold Coast",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Garage Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Squirrel Nut Zippers, The",
+    "title": "Roasted Right: Expanded Edition",
+    "label": "Modern Harmonic",
+    "format": "12\"",
+    "genre": "Jazz",
+    "subgenre1": "Swing",
+    "subgenre2": "Hot Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stalk-Forest Group",
+    "title": "St. Cecilia - The Elektra Recordings",
+    "label": "Rhino / Elektra",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Psychedelic Rock",
+    "subgenre2": "Proto-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Starley",
+    "title": "Call On Me",
+    "label": "Central Station Records",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Electropop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Status Quo",
+    "title": "Live In Hammersmith 1979",
+    "label": "Demon Records",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Boogie Rock",
+    "subgenre2": "Hard Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stealing Sheep",
+    "title": "GLO",
+    "label": "NINE X NINE",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Psychedelic Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Steely Dan",
+    "title": "Alive In America",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Jazz Rock",
+    "subgenre2": "Soft Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stewart Copeland",
+    "title": "The Rhythmatist (signed)",
+    "label": "Demon Records",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "Film Score",
+    "subgenre2": "World",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stiff Little Fingers",
+    "title": "John Peel Sessions",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "title": "Live At Rolling Rock 2001",
+    "label": "Rhino Atlantic",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Grunge",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stranglers, The",
+    "title": "Rarities",
+    "label": "Warner Music UK",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Punk",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Strawbs, The",
+    "title": "Strawberry Music Sampler No.1",
+    "label": "BONFIRE",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Stray Cats",
+    "title": "Rumble In Brixton",
+    "label": "Surfdog",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Rockabilly",
+    "subgenre2": "Psychobilly",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Streets, The",
+    "title": "Computers and Blues",
+    "label": "Locked On",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "UK Garage",
+    "subgenre2": "Hip-Hop",
+    "subgenre3": "Grime"
+  },
+  {
+    "artist": "Suede",
+    "title": "Antidepressants - Demos",
+    "label": "BMG",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Suede",
+    "title": "Coming Up at the BBC",
+    "label": "Demon Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Glam Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sugar",
+    "title": "File Under Easy Listening - The Singles",
+    "label": "BMG",
+    "format": "3xLP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Power Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sugarhill Gang/Grandmaster",
+    "title": "Flash Rapper's Delight DUB/The Message DUB",
+    "label": "Sanctuary",
+    "format": "12\"",
+    "genre": "Hip-Hop",
+    "subgenre1": "Old School Hip-Hop",
+    "subgenre2": "Electro",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sunday (1994)",
+    "title": "Live and Unwell",
+    "label": "RCA",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Supergrass",
+    "title": "Don't Leave Me Alone",
+    "label": "Echo",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Swamp Dogg",
+    "title": "Swamp Dogg Gets His Pool Painted",
+    "label": "Joyful Noise Recordings",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Southern Soul",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Sword, The",
+    "title": "Three Songs",
+    "label": "Kemado",
+    "format": "12\"",
+    "genre": "Metal",
+    "subgenre1": "Stoner Metal",
+    "subgenre2": "Doom Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "T. Rex",
+    "title": "Songs from \"Marc\"",
+    "label": "Demon Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Glam Rock",
+    "subgenre2": "Psychedelic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Talking Heads",
+    "title": "The CBS / Columbia Demos",
+    "label": "Rhino",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "New Wave",
+    "subgenre2": "Post-Punk",
+    "subgenre3": "Art Rock"
+  },
+  {
+    "artist": "Tamino",
+    "title": "Babylon EP (Live) Communion 10'' Tangerine Dream Night Trains & Cityscapes",
+    "label": "Invisible Hands Music",
+    "format": "12\"",
+    "genre": "Pop",
+    "subgenre1": "Art Pop",
+    "subgenre2": "Chamber Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tanita Tikaram",
+    "title": "Tanita Tikaram (Acoustic)",
+    "label": "Cooking Vinyl",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Folk Pop",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tanya Donnelly & Chris",
+    "title": "Brokaw The Undone Is Done Again",
+    "label": "Fire Records",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tate McRae",
+    "title": "Hung Up On You",
+    "label": "Nettwerk",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Dance Pop",
+    "subgenre2": "Pop R&B",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tears, The",
+    "title": "Here Come The Tears",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Britpop",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Teenage Fanclub & Jad Fair",
+    "title": "Words of Wisdom and Hope",
+    "label": "Merge Records",
+    "format": "LP + 7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Power Pop",
+    "subgenre3": "Lo-Fi"
+  },
+  {
+    "artist": "Telescopes, The",
+    "title": "Editions II: Space Fest",
+    "label": "Glass Modern",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Shoegaze",
+    "subgenre2": "Noise Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Terry Callier",
+    "title": "Live at The Earl of Old Town, October 24, 1967",
+    "label": "Time Traveler Recordings",
+    "format": "2xLP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Soul",
+    "subgenre2": "Folk Soul",
+    "subgenre3": "Jazz"
+  },
+  {
+    "artist": "Thievery Corporation",
+    "title": "Culture Of Fear",
+    "label": "Thievery Corporation",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Trip-Hop",
+    "subgenre2": "Downtempo",
+    "subgenre3": "Dub"
+  },
+  {
+    "artist": "Thin Lizzy",
+    "title": "Live in Cleveland 1976",
+    "label": "UMR/Vertigo",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Third Eye Blind",
+    "title": "Rarities & First Drafts",
+    "label": "Rhino",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Pop Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tina Harvey",
+    "title": "Tina Harvey",
+    "label": "Trading Places",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Roots Reggae",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tom Grennan",
+    "title": "Little Bit Of Love",
+    "label": "Insanity",
+    "format": "7\"",
+    "genre": "Pop",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Pop Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tom Petty & The",
+    "title": "Heartbreakers July 16, 1978 - Paradise Theater, Boston, MA",
+    "label": "UMe",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Heartland Rock",
+    "subgenre2": "Classic Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Tony Banks",
+    "title": "18 Pieces For Orchestra Naxos Boxset Tony Bennett MTV Unplugged",
+    "label": "Legacy Rep",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Troubleman",
+    "title": "Time Out Of Mind",
+    "label": "Far Out Recordings",
+    "format": "2LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Funk",
+    "subgenre2": "Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Turin Brakes",
+    "title": "Acoustic Live",
+    "label": "Cooking Vinyl",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Folk Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "TV Girl",
+    "title": "The Night in Question: French Exit Outtakes Blissful Serenity Industries,",
+    "label": "LLC",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "Indie Pop",
+    "subgenre2": "Lo-Fi",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ultravox",
+    "title": "The Re-Mixes",
+    "label": "Chrysalis Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Synth-Pop",
+    "subgenre2": "New Wave",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Universal Robot Band",
+    "title": "Barely Breaking Even",
+    "label": "Moonglow",
+    "format": "12\"",
+    "genre": "R&B/Soul",
+    "subgenre1": "Disco",
+    "subgenre2": "Funk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Vaccines, The",
+    "title": "What Did You Expect.... Demos and B-sides",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Post-Punk Revival",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Van Halen",
+    "title": "Live in New Haven CT 1986",
+    "label": "Rhino Warner",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Hard Rock",
+    "subgenre2": "Glam Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Arists",
+    "title": "Westbound Sound: Westbound Records Curated by RSD Vol. 3",
+    "label": "ORG MUSIC",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "What Dance Is This? UK Post-Punk Dancefloor 1979–1983 Vol. 1",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "What Dance Is This? UK Post-Punk Dancefloor 1979–1983 Vol. 2",
+    "label": "LANTERN REC.",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Funk & Soul Instrumentals 1967",
+    "label": "History Of Soul",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Soho Scene '63 Vol 2: Jazz Goes Mod",
+    "label": "1960s Records",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Pioneers",
+    "label": "Mercury KX",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Pavilion 12\"s Volume 1 (Balearic Nuggets)",
+    "label": "Two Piers / Pavilion",
+    "format": "12\"",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Twenty Years Deep",
+    "label": "Brownswood",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Sex: Craft Must Have Clothes Stranger Than Paradise",
+    "label": "Records",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "The Catalyst Files Compiled By Rainer Trüby & Miche",
+    "label": "PANORAMA",
+    "format": "2xLP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Rebirth 20",
+    "label": "Rebirth",
+    "format": "2xLP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Nublu Dance",
+    "label": "Nublu Records",
+    "format": "2xLP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Rocking Steady In The Room In The Sky",
+    "label": "Room In The Sky",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Jazz Dispensary: Magia Brasileira",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Just Tell Me You Love Me: A Tribute To Fleetwood Mac",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Stax: Killer B's",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Bakers Dozen Volume 1",
+    "label": "Bakers Dozen / ADA",
+    "format": "LP",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists",
+    "title": "TSZR Volume 1 Three Six Zero Recordings /",
+    "label": "ADA",
+    "format": "12\"",
+    "genre": "Various",
+    "subgenre1": "Compilation",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists - deadmau5 /",
+    "title": "MelleFresh Play Records: 30 Years at Play",
+    "label": "Play Records",
+    "format": "2xLP",
+    "genre": "Electronic",
+    "subgenre1": "Progressive House",
+    "subgenre2": "Electro House",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists - Monstercat",
+    "title": "and Firaga Records UNDERTALE (10-Year Anniversary Remixes)",
+    "label": "Monstercat, Firaga Records",
+    "format": "LP",
+    "genre": "Electronic",
+    "subgenre1": "EDM",
+    "subgenre2": "Bass Music",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various Artists from Curaga",
+    "title": "Records and Chill Ghost Records Video Game LoFi: Pokémon Lullabies",
+    "label": "Curaga Records",
+    "format": "LP",
+    "genre": "Soundtrack",
+    "subgenre1": "Video Game Soundtrack",
+    "subgenre2": "",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Various/Greg Belson",
+    "title": "Greg Belson Presents: The House Of Beauty",
+    "label": "Celestial Echo",
+    "format": "LP",
+    "genre": "R&B/Soul",
+    "subgenre1": "Gospel",
+    "subgenre2": "Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Vi Velasco With Zoot Sims",
+    "title": "And His Orchestra Cantando Bossa Nova Means Singing The Bossa Nova",
+    "label": "Poppydisc",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Vocal Jazz",
+    "subgenre2": "Cool Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Vince Guaraldi (and Vince",
+    "title": "Guaraldi Sextet and Vince Guaraldi Trio) Vince Guaraldi Ball and Glove \"Charlie Brown All Stars\" and \"It's Arbor Day Charlie Brown\" Lee Mendelson Film",
+    "label": "Productions",
+    "format": "10\"",
+    "genre": "Jazz",
+    "subgenre1": "Cool Jazz",
+    "subgenre2": "Latin Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Violent Femmes",
+    "title": "The Blind Leading the Naked",
+    "label": "UMR/Concord",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Folk Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Violet Grohl",
+    "title": "What's Heaven Without You / Swallowtail",
+    "label": "Republic",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Singer-Songwriter",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Virgin Prunes",
+    "title": "Heresie BMG Rights Management",
+    "label": "(UK) Ltd.",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Gothic Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": "Art Punk"
+  },
+  {
+    "artist": "W.A.S.P.",
+    "title": "Inside The Electric Circus",
+    "label": "Madfish",
+    "format": "LP",
+    "genre": "Metal",
+    "subgenre1": "Glam Metal",
+    "subgenre2": "Heavy Metal",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Walker Brothers, The",
+    "title": "Nite Flights",
+    "label": "Commercial Group",
+    "format": "LP",
+    "genre": "Pop",
+    "subgenre1": "Baroque Pop",
+    "subgenre2": "Blue-Eyed Soul",
+    "subgenre3": ""
+  },
+  {
+    "artist": "We Are Scientists",
+    "title": "Buckle",
+    "label": "100% Records",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Post-Punk Revival",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Ween",
+    "title": "Europe '90",
+    "label": "Rhino",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Experimental Rock",
+    "subgenre2": "Alternative Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Weepies, The",
+    "title": "Say I Am You (20th Anniversary Expanded Edition)",
+    "label": "Nettwerk",
+    "format": "2xLP",
+    "genre": "Folk",
+    "subgenre1": "Indie Folk",
+    "subgenre2": "Chamber Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Weezer",
+    "title": "Weezer 1192",
+    "label": "Ernest Jenning Record Co.",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Alternative Rock",
+    "subgenre2": "Power Pop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Wendell Harrison and Tribe",
+    "title": "A Tribute to Pharoah Sanders",
+    "label": "ORG MUSIC",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Spiritual Jazz",
+    "subgenre2": "Free Jazz",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Who, The",
+    "title": "A Quick One",
+    "label": "UMR/Polydor",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Mod",
+    "subgenre2": "Classic Rock",
+    "subgenre3": "Hard Rock"
+  },
+  {
+    "artist": "William S. Burroughs",
+    "title": "In Dub",
+    "label": "Echo Beach",
+    "format": "LP",
+    "genre": "Spoken Word",
+    "subgenre1": "Experimental",
+    "subgenre2": "Avant-Garde",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Winston Reedy",
+    "title": "Could You Be Loved",
+    "label": "Room In The Sky",
+    "format": "7\"",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Roots Reggae",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Winston Reedy",
+    "title": "Back To My Roots",
+    "label": "Room In The Sky",
+    "format": "LP",
+    "genre": "Reggae",
+    "subgenre1": "Lovers Rock",
+    "subgenre2": "Roots Reggae",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Wire",
+    "title": "Read & Burn 03 + -",
+    "label": "pinkflag",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Art Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Wiz Khalifa",
+    "title": "Khalifa",
+    "label": "Real Gone Music",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Trap",
+    "subgenre2": "West Coast Hip-Hop",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Wolf Alice",
+    "title": "Play It Out / Midnight Song (Live in LA)",
+    "label": "Columbia",
+    "format": "7\"",
+    "genre": "Rock",
+    "subgenre1": "Shoegaze",
+    "subgenre2": "Indie Rock",
+    "subgenre3": "Grunge"
+  },
+  {
+    "artist": "Xmal Deutschland",
+    "title": "The Complete BBC Peel Sessions",
+    "label": "4AD",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "Gothic Rock",
+    "subgenre2": "Post-Punk",
+    "subgenre3": ""
+  },
+  {
+    "artist": "XTC",
+    "title": "LIVE BOOTS - Live at Emerald City 1981",
+    "label": "Ape House",
+    "format": "2xLP",
+    "genre": "Rock",
+    "subgenre1": "New Wave",
+    "subgenre2": "Post-Punk",
+    "subgenre3": "Power Pop"
+  },
+  {
+    "artist": "Xzibit",
+    "title": "Restless",
+    "label": "Loud Records",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "West Coast Hip-Hop",
+    "subgenre2": "Gangsta Rap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Xzibit",
+    "title": "At the Speed of Life",
+    "label": "Legacy Rep",
+    "format": "LP",
+    "genre": "Hip-Hop",
+    "subgenre1": "West Coast Hip-Hop",
+    "subgenre2": "Gangsta Rap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Yann Tierson",
+    "title": "On Tour 2006",
+    "label": "Warner France",
+    "format": "LP",
+    "genre": "Classical",
+    "subgenre1": "Minimalism",
+    "subgenre2": "Film Score",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Yes",
+    "title": "Tales From Topographic Tours",
+    "label": "Rhino",
+    "format": "Box Set",
+    "genre": "Rock",
+    "subgenre1": "Progressive Rock",
+    "subgenre2": "Art Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Young Dolph & Paper Route",
+    "title": "EMPIRE Paper Route Illuminati",
+    "label": "Paper Route EMPIRE",
+    "format": "2xLP",
+    "genre": "Hip-Hop",
+    "subgenre1": "Southern Hip-Hop",
+    "subgenre2": "Trap",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Yusef Lateef",
+    "title": "Lost In Sound",
+    "label": "Charlie Parker Records",
+    "format": "LP",
+    "genre": "Jazz",
+    "subgenre1": "Hard Bop",
+    "subgenre2": "Modal Jazz",
+    "subgenre3": "World"
+  },
+  {
+    "artist": "Zodiac Youth",
+    "title": "Carnival Of Souls",
+    "label": "Creation Youth",
+    "format": "LP",
+    "genre": "Rock",
+    "subgenre1": "Post-Punk",
+    "subgenre2": "Indie Rock",
+    "subgenre3": ""
+  },
+  {
+    "artist": "Zutons, The",
+    "title": "Valerie EP",
+    "label": "Commercial Group",
+    "format": "12\"",
+    "genre": "Rock",
+    "subgenre1": "Indie Rock",
+    "subgenre2": "Britpop",
+    "subgenre3": ""
+  }
+]

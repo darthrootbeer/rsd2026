@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head><title>Image Test</title></head>
+<body style="background:#1a1a1a;color:#fff;font-family:monospace;padding:20px;">
+    <h1>Image Loading Test</h1>
+    <div id="results"></div>
+
+    <script src="rsd_images.js?v=1739129000"></script>
+    <script src="releases_data.js?v=1739129000"></script>
+    <script>
+        const results = document.getElementById('results');
+
+        // Test 1: Check if data loaded
+        results.innerHTML += `<h2>Step 1: Data Load Check</h2>`;
+        results.innerHTML += `<p>RELEASES_DATA defined: ${typeof RELEASES_DATA !== 'undefined' ? '✓ YES' : '✗ NO'}</p>`;
+        results.innerHTML += `<p>RSD_IMAGE_MAP defined: ${typeof RSD_IMAGE_MAP !== 'undefined' ? '✓ YES' : '✗ NO'}</p>`;
+        results.innerHTML += `<p>getRSDImageUrl function: ${typeof getRSDImageUrl !== 'undefined' ? '✓ YES' : '✗ NO'}</p>`;
+
+        if (typeof RELEASES_DATA === 'undefined') {
+            results.innerHTML += '<p style="color:red">ERROR: RELEASES_DATA not loaded!</p>';
+        } else {
+            results.innerHTML += `<p>Total releases: ${RELEASES_DATA.length}</p>`;
+
+            // Test 2: Check first 10 releases for images
+            results.innerHTML += `<h2>Step 2: Image URL Test (First 10)</h2>`;
+            for (let i = 0; i < Math.min(10, RELEASES_DATA.length); i++) {
+                const r = RELEASES_DATA[i];
+                const imgUrl = getRSDImageUrl(r.Artist, r.Title);
+                const status = imgUrl ? '✓' : '✗';
+                const color = imgUrl ? 'green' : 'red';
+                results.innerHTML += `<p style="color:${color}">${status} ${i+1}. ${r.Artist} | ${r.Title}</p>`;
+                if (imgUrl) {
+                    results.innerHTML += `<p style="margin-left:20px;font-size:10px;">${imgUrl}</p>`;
+                }
+            }
+
+            // Test 3: Try to load actual images
+            results.innerHTML += `<h2>Step 3: Actual Image Display (First 5)</h2>`;
+            results.innerHTML += `<div style="display:flex;gap:10px;flex-wrap:wrap;">`;
+            for (let i = 0; i < Math.min(5, RELEASES_DATA.length); i++) {
+                const r = RELEASES_DATA[i];
+                const imgUrl = getRSDImageUrl(r.Artist, r.Title);
+                if (imgUrl) {
+                    results.innerHTML += `
+                        <div style="border:1px solid #333;padding:5px;width:150px;">
+                            <img src="${imgUrl}" style="width:100%;height:150px;object-fit:contain;background:#333;"
+                                 onerror="this.style.border='2px solid red'">
+                            <p style="font-size:9px;margin-top:5px;">${r.Artist}<br>${r.Title}</p>
+                        </div>
+                    `;
+                } else {
+                    results.innerHTML += `
+                        <div style="border:1px solid red;padding:5px;width:150px;height:150px;display:flex;align-items:center;justify-content:center;">
+                            <p style="font-size:9px;text-align:center;color:red;">NO IMAGE<br>${r.Artist}<br>${r.Title}</p>
+                        </div>
+                    `;
+                }
+            }
+            results.innerHTML += `</div>`;
+
+            // Test 4: RSD ID test
+            results.innerHTML += `<h2>Step 4: RSD ID Test (First 10)</h2>`;
+            for (let i = 0; i < Math.min(10, RELEASES_DATA.length); i++) {
+                const r = RELEASES_DATA[i];
+                const rsdId = getRSDReleaseId(r.Artist, r.Title);
+                const status = rsdId ? '✓' : '✗';
+                const color = rsdId ? 'green' : 'red';
+                results.innerHTML += `<p style="color:${color}">${status} ${i+1}. ${r.Artist} | ${r.Title} → ID: ${rsdId || 'MISSING'}</p>`;
+            }
+
+            // Test 5: Known releases validation
+            results.innerHTML += `<h2>Step 5: Known Releases Check</h2>`;
+            const knownTests = [
+                { artist: '13th Floor Elevators', title: 'We Are Not Live', expectedImgFragment: '418467310726', expectedId: '20143' },
+                { artist: 'A-Ha', title: 'Analogue 20th Anniversary Deluxe Edition', expectedImgFragment: '418467310484', expectedId: '19926' },
+                { artist: 'Captain Beefheart & \\nThe Magic Band', title: 'Trout Mask Replica Deluxe 2LP Edition', expectedImgFragment: null, expectedId: '19936' }
+            ];
+
+            for (const test of knownTests) {
+                const img = getRSDImageUrl(test.artist, test.title);
+                const id = getRSDReleaseId(test.artist, test.title);
+                const imgMatch = test.expectedImgFragment ? (img && img.includes(test.expectedImgFragment)) : true;
+                const idMatch = id === test.expectedId;
+
+                results.innerHTML += `<p style="margin-top:10px;"><strong>${test.artist} | ${test.title}</strong></p>`;
+                results.innerHTML += `<p style="margin-left:20px;color:${imgMatch ? 'green' : 'red'}">Image: ${imgMatch ? '✓' : '✗'} ${img || 'MISSING'}</p>`;
+                results.innerHTML += `<p style="margin-left:20px;color:${idMatch ? 'green' : 'red'}">ID: ${idMatch ? '✓' : '✗'} ${id || 'MISSING'} (expected ${test.expectedId})</p>`;
+            }
+
+            // Test 6: Overall statistics
+            results.innerHTML += `<h2>Step 6: Overall Statistics</h2>`;
+            let totalWithImages = 0;
+            let totalWithIds = 0;
+            for (const r of RELEASES_DATA) {
+                if (getRSDImageUrl(r.Artist, r.Title)) totalWithImages++;
+                if (getRSDReleaseId(r.Artist, r.Title)) totalWithIds++;
+            }
+            results.innerHTML += `<p>Releases with images: ${totalWithImages} / ${RELEASES_DATA.length} (${((totalWithImages/RELEASES_DATA.length)*100).toFixed(1)}%)</p>`;
+            results.innerHTML += `<p>Releases with RSD IDs: ${totalWithIds} / ${RELEASES_DATA.length} (${((totalWithIds/RELEASES_DATA.length)*100).toFixed(1)}%)</p>`;
+
+            const success = totalWithImages === RELEASES_DATA.length && totalWithIds === RELEASES_DATA.length;
+            results.innerHTML += `<h2 style="color:${success ? 'green' : 'orange'}">${success ? '✓ ALL TESTS PASSED!' : '⚠ SOME TESTS FAILED'}</h2>`;
+        }
+    </script>
+</body>
+</html>

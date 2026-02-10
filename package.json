@@ -1,0 +1,21 @@
+{
+  "name": "rsd2026",
+  "version": "1.0.0",
+  "description": "Record Store Day 2026 - Browse exclusive releases",
+  "scripts": {
+    "serve": "npx --yes serve .",
+    "start": "npx --yes serve .",
+    "build:rsd-images": "node scripts/build-rsd-images.js",
+    "build:rsd-images:json": "node scripts/build-rsd-images.js --from-json data/rsd_extracted.json",
+    "build:rsd-images:fetch": "node scripts/build-rsd-images.js --fetch",
+    "extract:rsd": "node scripts/extract-rsd-with-puppeteer.js"
+  },
+  "devDependencies": {
+    "@qnaplus/node-curl-impersonate": "^1.0.2",
+    "cheerio": "^1.2.0",
+    "playwright": "^1.58.2",
+    "puppeteer": "^24.37.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

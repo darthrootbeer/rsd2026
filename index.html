@@ -399,13 +399,13 @@
             background: #252525;
             border-radius: 4px;
             overflow: hidden;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            transition: border-color 0.2s;
             border: 1px solid #333;
             position: relative;
             cursor: pointer;
         }
         .card:hover {
-            border-color: #444;
+            border-color: #ff2fa8;
         }
         .card.favorited {
             border-color: #d4a017;
@@ -445,24 +445,25 @@
             font-size: 14px;
             cursor: pointer;
             z-index: 10;
-            background: rgba(0, 0, 0, 0.65);
+            background: #333;
             border-radius: 50%;
             width: 22px;
             height: 22px;
-            border: 1px solid rgba(255, 255, 255, 0.85);
+            border: 1px solid #666;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: background 0.2s, border-color 0.2s;
         }
         .favorite-star:hover {
-            background: rgba(0, 0, 0, 0.5);
+            background: #3a3a3a;
+            border-color: #d4a017;
         }
         .favorite-star.active {
             color: #d4a017;
         }
         .favorite-star.inactive {
-            color: #666;
+            color: #bbb;
         }
         .card-artist {
             font-size: 9px;
@@ -1595,7 +1596,7 @@
                     const qtyDisplay = cleanDisplayText(r['Pressing Quantity'] || '');
                 return `
                 <div class="card${isFavorite ? ' favorited' : ''}">
-                    <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)" onmouseenter="setCardCartHover(this, true)" onmouseleave="setCardCartHover(this, false)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">
+                    <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">
                         🛒
                     </div>
                     <div class="card-img" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
@@ -1724,13 +1725,7 @@
         }
 
         function setCardCartHover(el, on) {
-            const card = el?.closest('.card');
-            if (!card) return;
-            if (on) {
-                card.classList.add('cart-hover');
-            } else {
-                card.classList.remove('cart-hover');
-            }
+            // Deprecated: kept for compatibility, no-op
         }
 
         function toggleFavorite(index, event) {

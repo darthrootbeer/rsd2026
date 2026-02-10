@@ -968,23 +968,8 @@
             color: #ffe0e0;
         }
         .countdown-bar {
-            max-width: 1400px;
-            margin: 0 auto 8px;
-            padding: 6px 10px;
-            background: #222032;
-            border-radius: 999px;
-            border: 1px solid #ff2fa8;
+            margin-top: 4px;
             font-size: 10px;
-            color: #fdf2ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-        .countdown-label {
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            font-weight: 600;
             color: #ffb3e6;
         }
         .countdown-value {
@@ -996,12 +981,10 @@
 <body>
     <div class="header">
         <h1>🎵 Record Store Day 2026</h1>
+        <div class="countdown-bar" id="countdownBar">
+            <span class="countdown-value" id="countdownValue">–</span>
+        </div>
         <p>April 18, 2026 • 357 Exclusive Releases</p>
-    </div>
-
-    <div class="countdown-bar" id="countdownBar">
-        <span class="countdown-label">Countdown to RSD 2026:</span>
-        <span class="countdown-value" id="countdownValue">–</span>
     </div>
 
     <div class="help-panel" id="helpPanel">

@@ -1557,10 +1557,13 @@
         }
 
         function getDiscogsMasterUrl(artist, title) {
-            // Only search Discogs by artist + album title (no edition/format text)
+            // Only search Discogs by artist + album title, stripped to alphanumeric + spaces
             const artistClean = cleanDisplayText(artist || '');
             const titleClean = cleanDisplayText(title || '');
-            const q = encodeURIComponent(`${artistClean} ${titleClean}`.trim());
+            const raw = `${artistClean} ${titleClean}`.trim();
+            const alnumOnly = raw.replace(/[^a-z0-9\s]/gi, ' ').replace(/\s+/g, ' ').trim();
+            const query = alnumOnly || raw;
+            const q = encodeURIComponent(query);
             return `https://www.discogs.com/search/?q=${q}&type=master`;
         }
 

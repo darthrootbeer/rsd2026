@@ -341,7 +341,7 @@
         }
         .row-item {
             display: grid;
-            grid-template-columns: 36px 100px 150px 130px minmax(80px, 1fr) 72px 24px;
+            grid-template-columns: 36px 160px 260px 70px 140px minmax(160px, 1fr) 24px;
             align-items: center;
             gap: 0 12px;
             padding: 4px 8px;
@@ -387,11 +387,12 @@
         }
         .row-item .row-artist { color: #4cc9ff; font-size: 9px; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
         .row-item .row-title { font-size: 9px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-qty { font-size: 8px; color: #bbb; white-space: nowrap; text-align: right; }
         .row-item .row-meta { font-size: 8px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+        .row-item .row-snippet { font-size: 8px; color: #aaa; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
         .row-item .row-genres { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-width: 0; overflow: hidden; }
         .row-item .row-genre { font-size: 7px; background: #333; color: #aaa; padding: 1px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
         .row-item .row-price { display: none; }
-        .row-item .row-links { font-size: 7px; white-space: nowrap; color: #666; }
         .row-item .row-star { font-size: 11px; cursor: pointer; color: #666; }
         .row-item .row-star.active { color: #d4a017; }
         .card {
@@ -1560,6 +1561,12 @@
                     const qtyDisplay = cleanDisplayText(r['Pressing Quantity'] || '');
                     const style2Display = cleanDisplayText(r['Style 2'] || '');
                     const formatDisplay = cleanDisplayText(r.Format || '');
+                    let snippet = '';
+                    if (r.MoreInfo || r.Description) {
+                        const raw = String(r.MoreInfo || r.Description).replace(/<[^>]+>/g, ' ');
+                        const cleaned = cleanDisplayText(raw);
+                        snippet = cleaned.length > 128 ? cleaned.slice(0, 125).trimEnd() + '…' : cleaned;
+                    }
                     return `
                     <div class="row-item${isFavorite ? ' favorited' : ''}" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
                         <div class="row-thumb">
@@ -1567,13 +1574,9 @@
                         </div>
                         <span class="row-artist">${artistDisplay}</span>
                         <span class="row-title">${titleDisplay}</span>
+                        <span class="row-qty">${qtyDisplay || ''}</span>
                         <span class="row-meta">${formatDisplay} • ${labelDisplay}</span>
-                        <span class="row-genres">
-                            ${genreDisplay ? `<span class="row-genre">${genreDisplay}</span>` : ''}
-                            ${style1Display ? `<span class="row-genre">${style1Display}</span>` : ''}
-                            ${style2Display ? `<span class="row-genre">${style2Display}</span>` : ''}
-                        </span>
-                        <span class="row-links" onclick="event.stopPropagation()"></span>
+                        <span class="row-snippet">${snippet}</span>
                         <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">🛒</div>
                     </div>
                 `}).join('');

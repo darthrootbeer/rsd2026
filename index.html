@@ -1275,9 +1275,9 @@
                 // Collapse excessive plain spaces while preserving <br> structure
                 .replace(/ {2,}/g, ' ');
 
-            // If there are no explicit <p> tags, treat double <br> as paragraph breaks
+            // If there are no explicit <p> tags, treat any <br> run as a paragraph break
             if (!/<p[\s>]/i.test(html)) {
-                html = html.replace(/(<br\s*\/?>\s*){2,}/gi, '</p><p>');
+                html = html.replace(/(<br\s*\/?>\s*)+/gi, '</p><p>');
                 html = `<p>${html}</p>`;
             }
             return html;

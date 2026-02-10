@@ -663,6 +663,7 @@
         .favorites-cart-item-artist { color: #4cc9ff; font-size: 10px; }
         .favorites-cart-item-title { color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10px; }
         .favorites-cart-item-format { color: #999; font-size: 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .favorites-cart-item-qty { color: #888; font-size: 9px; }
         .favorites-cart-item-remove {
             background: none;
             border: none;
@@ -1698,9 +1699,6 @@
                     const titleDisplay = cleanDisplayText(r.Title);
                     const formatDisplay = cleanDisplayText(r.Format || '');
                     const qtyDisplay = cleanDisplayText(r['Pressing Quantity'] || '');
-                    const formatLine = formatDisplay
-                        ? `${formatDisplay}${qtyDisplay ? ' \u2022 Q:' + qtyDisplay : ''}`
-                        : (qtyDisplay ? `Q:${qtyDisplay}` : '');
                     return `<div class="favorites-cart-item" title="View on RecordStoreDay.com">
                         <div class="favorites-cart-item-thumb" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
                             ${albumArt ? `<img src="${albumArt}" alt="${titleDisplay}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
@@ -1708,7 +1706,8 @@
                         <div class="favorites-cart-item-main" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
                             <div class="favorites-cart-item-artist">${artistDisplay}</div>
                             <div class="favorites-cart-item-title">${titleDisplay}</div>
-                            ${formatLine ? `<div class="favorites-cart-item-format">${formatLine}</div>` : ''}
+                            ${formatDisplay ? `<div class="favorites-cart-item-format">${formatDisplay}</div>` : ''}
+                            ${qtyDisplay ? `<div class="favorites-cart-item-qty">Quantity: ${qtyDisplay}</div>` : ''}
                         </div>
                         <button class="favorites-cart-item-remove" onclick="removeFavoriteFromCart(event, ${i})" aria-label="Remove from favorites">🗑</button>
                     </div>`;

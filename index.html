@@ -509,6 +509,15 @@
             color: #4CAF50;
         }
         body.favorites-cart-open .favorites-cart-toggle { display: none; }
+        .fly-to-cart {
+            position: fixed;
+            z-index: 1000;
+            pointer-events: none;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.45s ease-out;
+        }
         .favorites-cart {
             position: fixed;
             top: 0;
@@ -1452,9 +1461,53 @@
             return url;
         }
 
+        function animateFavoriteToCart(sourceEl, index) {
+            try {
+                if (!document.body.classList.contains('favorites-cart-open')) return;
+                const cartList = document.getElementById('favoritesCartList');
+                if (!cartList) return;
+                const container = sourceEl?.closest('.card, .row-item');
+                if (!container) return;
+                const imgEl = container.querySelector('.card-img img, .row-thumb img');
+                if (!imgEl) return;
+
+                const imgRect = imgEl.getBoundingClientRect();
+                const cartRect = cartList.getBoundingClientRect();
+
+                const clone = imgEl.cloneNode(true);
+                clone.classList.add('fly-to-cart');
+                clone.style.left = `${imgRect.left}px`;
+                clone.style.top = `${imgRect.top}px`;
+                clone.style.width = `${imgRect.width}px`;
+                clone.style.height = `${imgRect.height}px`;
+                clone.style.transform = 'translate3d(0, 0, 0) scale(1)';
+                clone.style.opacity = '1';
+                document.body.appendChild(clone);
+
+                const targetX = cartRect.left + cartRect.width / 2;
+                const targetY = cartRect.top + 24;
+                const startX = imgRect.left + imgRect.width / 2;
+                const startY = imgRect.top + imgRect.height / 2;
+                const deltaX = targetX - startX;
+                const deltaY = targetY - startY;
+
+                requestAnimationFrame(() => {
+                    clone.style.transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(0.25)`;
+                    clone.style.opacity = '0';
+                });
+
+                clone.addEventListener('transitionend', () => {
+                    clone.remove();
+                }, { once: true });
+            } catch (e) {
+                // fail silently; animation is purely decorative
+            }
+        }
+
         function toggleFavorite(index, event) {
             event.stopPropagation();
-            if (favorites.has(index)) {
+            const wasFavorite = favorites.has(index);
+            if (wasFavorite) {
                 favorites.delete(index);
             } else {
                 favorites.add(index);
@@ -1462,6 +1515,9 @@
             saveFavoritesToStorage([...favorites]);
             updateFavoritesCart();
             filterAndRender();
+            if (!wasFavorite) {
+                animateFavoriteToCart(event?.currentTarget || event?.target, index);
+            }
         }
 
         function removeFavoriteFromCart(event, index) {

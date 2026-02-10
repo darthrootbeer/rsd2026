@@ -361,7 +361,7 @@
         .row-item .row-genre { font-size: 7px; background: #333; color: #aaa; padding: 1px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
         .row-item .row-price { display: none; }
         .row-item .row-links { font-size: 7px; white-space: nowrap; color: #666; }
-        .row-item .row-star { font-size: 9px; cursor: pointer; color: #666; }
+        .row-item .row-star { font-size: 11px; cursor: pointer; color: #666; }
         .row-item .row-star.active { color: #d4a017; }
         .card {
             background: #252525;
@@ -409,7 +409,7 @@
             position: absolute;
             top: 4px;
             right: 4px;
-            font-size: 10px;
+            font-size: 11px;
             cursor: pointer;
             z-index: 10;
             background: rgba(0, 0, 0, 0.4);
@@ -1007,7 +1007,7 @@
     <div class="help-panel" id="helpPanel">
         <button type="button" class="help-toggle" id="helpToggle">How to use this page ▾</button>
         <div class="help-body" id="helpBody">
-            <p><strong>Build your RSD shopping list:</strong> click a star ★ on any release to add it to your Shopping List on the right.</p>
+            <p><strong>Build your RSD shopping list:</strong> click the cart 🛒 on any release to add it to your Shopping List on the right.</p>
             <p><strong>Filter quickly:</strong> use the search box and the Genre / Style / Format tags to narrow down releases.</p>
             <p><strong>See full details:</strong> click a card or row to open the left details panel for artwork, description, tracklist, and links.</p>
             <p style="margin-top:8px;color:#888;font-size:9px;"><strong>Note:</strong> This site is an independent fan-made tool to help you plan your own Record Store Day shopping list. It is not affiliated with or endorsed by Record Store Day, its organizers, or participating labels and stores.</p>
@@ -1074,7 +1074,7 @@
             </div>
         </div>
         <div class="favorites-cart-hint" id="favoritesCartHint">
-            Click ★ on any release to add it here. Use this list as your Record Store Day shopping plan.
+            Click the cart 🛒 on any release to add it here. Use this list as your Record Store Day shopping plan.
         </div>
         <div class="favorites-cart-list" id="favoritesCartList"></div>
         <div class="favorites-cart-total" id="favoritesCartTotal"></div>
@@ -1515,7 +1515,7 @@
                             ${style2Display ? `<span class="row-genre">${style2Display}</span>` : ''}
                         </span>
                         <span class="row-links" onclick="event.stopPropagation()">Details ▸</span>
-                        <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">${isFavorite ? '⭐' : '☆'}</div>
+                        <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">🛒</div>
                     </div>
                 `}).join('');
             } else {
@@ -1532,7 +1532,7 @@
                     return `
                 <div class="card${isFavorite ? ' favorited' : ''}">
                     <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">
-                        ${isFavorite ? '⭐' : '☆'}
+                        🛒
                     </div>
                     <div class="card-img" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
                         ${albumArt ? `<img src="${albumArt}" alt="${titleDisplay}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}

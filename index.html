@@ -732,16 +732,38 @@
             font-size: 9px;
             color: #888;
         }
-        .detail-sidebar-close {
-            cursor: pointer;
-            border: none;
-            background: transparent;
-            color: #aaa;
-            font-size: 16px;
-            padding: 2px 4px;
+        .detail-sidebar-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
-        .detail-sidebar-close:hover {
-            color: #ff2fa8;
+        .detail-sidebar-fav-btn {
+            cursor: pointer;
+            border: 1px solid #ff2fa8;
+            background: #32152a;
+            color: #ffecb3;
+            font-size: 9px;
+            padding: 3px 10px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+        .detail-sidebar-fav-btn:hover {
+            background: #3f1a33;
+            border-color: #ff2fa8;
+        }
+        .detail-sidebar-fav-btn .fav-icon {
+            font-size: 10px;
+        }
+        .detail-sidebar-fav-btn.favorited {
+            border-color: #d4a017;
+            background: #3a2a12;
+            color: #ffe9a3;
+        }
+        .detail-sidebar-fav-btn.favorited .fav-icon {
+            color: #ffd54f;
         }
         .detail-sidebar-body {
             flex: 1;
@@ -959,6 +981,7 @@
             <p><strong>Build your RSD shopping list:</strong> click a star ★ on any release to add it to your Shopping List on the right.</p>
             <p><strong>Filter quickly:</strong> use the search box and the Genre / Style / Format tags to narrow down releases.</p>
             <p><strong>See full details:</strong> click a card or row to open the left details panel for artwork, description, tracklist, and links.</p>
+            <p style="margin-top:8px;color:#888;font-size:9px;"><strong>Note:</strong> This site is an independent fan-made tool to help you plan your own Record Store Day shopping list. It is not affiliated with or endorsed by Record Store Day, its organizers, or participating labels and stores.</p>
         </div>
     </div>
 
@@ -1008,7 +1031,7 @@
     <div class="detail-sidebar" id="detailSidebar">
         <div class="detail-sidebar-header">
             <div class="detail-sidebar-breadcrumb" id="detailSidebarBreadcrumb"></div>
-            <button class="detail-sidebar-close" onclick="closeDetailSidebar()" aria-label="Close details">✕</button>
+            <div class="detail-sidebar-actions" id="detailSidebarActions"></div>
         </div>
         <div class="detail-sidebar-body" id="detailSidebarBody"></div>
     </div>
@@ -1587,6 +1610,18 @@
             }
         }
 
+        function toggleFavoriteFromSidebar(index) {
+            // Toggle favorite for the given release index and refresh the sidebar UI
+            const fakeEvent = { stopPropagation() {} };
+            toggleFavorite(index, fakeEvent);
+            const release = allReleases[index];
+            if (!release) return;
+            const detailIndex = filteredReleases.indexOf(release);
+            if (detailIndex !== -1) {
+                openDetailSidebar(detailIndex);
+            }
+        }
+
         function removeFavoriteFromCart(event, index) {
             event.stopPropagation();
             if (favorites.has(index)) {
@@ -1636,11 +1671,11 @@
             if (favs.length === 0) return;
             let content, filename, mime;
             if (format === 'markdown') {
-                content = `# RSD 2026 Favorites (${favs.length} items)\n\n`;
+                content = `# RSD 2026 Shopping List (${favs.length} items)\n\n`;
                 favs.forEach((r, i) => {
                     content += `${i + 1}. **${cleanDisplayText(r.Artist)}** — ${cleanDisplayText(r.Title)} (${cleanDisplayText(r.Format)})\n`;
                 });
-                filename = 'rsd2026-favorites.md';
+                filename = 'rsd2026-shopping-list.md';
                 mime = 'text/markdown';
             } else if (format === 'csv') {
                 content = 'Artist,Title,Format,Label,Genre\n';
@@ -1654,14 +1689,14 @@
                     ].map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
                     content += `${row}\n`;
                 });
-                filename = 'rsd2026-favorites.csv';
+                filename = 'rsd2026-shopping-list.csv';
                 mime = 'text/csv';
             } else {
-                content = `RSD 2026 Favorites (${favs.length} items)\n\n`;
+                content = `RSD 2026 Shopping List (${favs.length} items)\n\n`;
                 favs.forEach((r, i) => {
                     content += `${i + 1}. ${cleanDisplayText(r.Artist)} - ${cleanDisplayText(r.Title)} (${cleanDisplayText(r.Format)})\n`;
                 });
-                filename = 'rsd2026-favorites.txt';
+                filename = 'rsd2026-shopping-list.txt';
                 mime = 'text/plain';
             }
             const blob = new Blob([content], { type: mime });
@@ -1758,6 +1793,7 @@
             const urls = getPlayUrls(r.Artist, r.Title);
             const rsdUrl = getRSDUrl(r.Artist, r.Title);
             const discogsUrl = getDiscogsMasterUrl(r.Artist, r.Title);
+            const originalIndex = allReleases.indexOf(r);
             const artistDisplay = cleanDisplayText(r.Artist);
             const titleDisplay = cleanDisplayText(r.Title);
             const labelDisplay = cleanDisplayText(r.Label);
@@ -1771,6 +1807,19 @@
 
             if (detailSidebarBreadcrumb) {
                 detailSidebarBreadcrumb.textContent = `Record Store Day 2026 ▸ ${artistDisplay} ▸ ${titleDisplay}`;
+            }
+            const sidebarActions = document.getElementById('detailSidebarActions');
+            if (sidebarActions && originalIndex !== -1) {
+                const isFavorite = favorites.has(originalIndex);
+                const favLabel = isFavorite ? 'In Shopping List' : 'Add to Shopping List';
+                const favClass = isFavorite ? 'detail-sidebar-fav-btn favorited' : 'detail-sidebar-fav-btn';
+                const favIcon = isFavorite ? '⭐' : '＋';
+                sidebarActions.innerHTML = `
+                    <button type="button" class="${favClass}" onclick="toggleFavoriteFromSidebar(${originalIndex})">
+                        <span class="fav-icon">${favIcon}</span>
+                        <span class="fav-label">${favLabel}</span>
+                    </button>
+                `;
             }
 
             detailSidebarBody.innerHTML = `

@@ -256,6 +256,22 @@
             font-size: 10px;
         }
         .clear-filters-btn:hover { border-color: #ff2fa8; color: #e0e0e0; }
+        .favorites-toggle-btn {
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #bbb;
+            font-size: 9px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .favorites-toggle-btn:hover {
+            border-color: #ff2fa8;
+            color: #ff2fa8;
+        }
         .filters-toggle-btn {
             padding: 6px 8px;
             border-radius: 4px;
@@ -959,6 +975,7 @@
             <button id="viewRows" class="view-btn" onclick="setViewMode('rows')" title="Row view">≡</button>
         </div>
         <button class="clear-filters-btn" onclick="clearExclusions()">Clear Filters</button>
+        <button type="button" class="favorites-toggle-btn" id="favoritesCartToggle" title="Show or hide your shopping list">🛒 List</button>
     </div>
     <div class="filter-row" id="topFilters">
         <div class="filter-group" id="genreFilterGroup">
@@ -1093,7 +1110,10 @@
                 } else {
                     document.body.classList.remove('favorites-cart-open');
                 }
-                document.getElementById('favoritesCartToggle')?.addEventListener('click', () => setFavoritesCartOpen(true));
+                document.getElementById('favoritesCartToggle')?.addEventListener('click', () => {
+                    const isOpen = document.body.classList.contains('favorites-cart-open');
+                    setFavoritesCartOpen(!isOpen);
+                });
                 document.getElementById('favoritesCartClose')?.addEventListener('click', () => setFavoritesCartOpen(false));
                 document.getElementById('favoritesExportBtn')?.addEventListener('click', (e) => {
                     e.stopPropagation();

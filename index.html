@@ -450,6 +450,9 @@
             color: #888;
             margin-bottom: 2px;
         }
+        .card-qty {
+            color: #999;
+        }
         .card-genre {
             display: inline-block;
             font-size: 8px;
@@ -1481,6 +1484,7 @@
                     const rawGenre = cleanDisplayText(r['Genre 1'] || '');
                     const genreDisplay = rawGenre || 'Unknown';
                     const style1Display = cleanDisplayText(r['Style 1'] || '');
+                    const qtyDisplay = cleanDisplayText(r['Pressing Quantity'] || '');
                     const style2Display = cleanDisplayText(r['Style 2'] || '');
                     const formatDisplay = cleanDisplayText(r.Format || '');
                     return `
@@ -1524,6 +1528,7 @@
                         <div class="card-artist">${artistDisplay}</div>
                         <div class="card-title">${titleDisplay}</div>
                         <div class="card-meta">${cleanDisplayText(r.Format || '')} • ${labelDisplay}</div>
+                            ${qtyDisplay ? `<div class="card-meta card-qty">Quantity: ${qtyDisplay}</div>` : ''}
                         ${genreDisplay ? `<span class="card-genre">${genreDisplay}</span>` : ''}
                         ${style1Display ? `<span class="card-genre">${style1Display}</span>` : ''}
                     </div>

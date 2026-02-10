@@ -1497,7 +1497,7 @@
                             ${style1Display ? `<span class="row-genre">${style1Display}</span>` : ''}
                             ${style2Display ? `<span class="row-genre">${style2Display}</span>` : ''}
                         </span>
-                        <span class="row-links" onclick="event.stopPropagation()">Details ▸</span>
+                        <span class="row-links" onclick="event.stopPropagation()"></span>
                         <div class="row-star ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${originalIndex}, event)" title="${isFavorite ? 'Remove from shopping list' : 'Add to shopping list'}">🛒</div>
                     </div>
                 `}).join('');
@@ -1526,7 +1526,6 @@
                         <div class="card-meta">${cleanDisplayText(r.Format || '')} • ${labelDisplay}</div>
                         ${genreDisplay ? `<span class="card-genre">${genreDisplay}</span>` : ''}
                         ${style1Display ? `<span class="card-genre">${style1Display}</span>` : ''}
-                        <div class="card-play-links" style="color:#666;font-size:8px;">Click for details ▸</div>
                     </div>
                 </div>
             `}).join('');

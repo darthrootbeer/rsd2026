@@ -789,13 +789,10 @@
             margin-top: 2px;
         }
         .detail-sidebar-links {
-            margin-top: 12px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+            margin-top: 8px;
         }
         .detail-link {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 6px;
             font-size: 9px;
@@ -829,10 +826,31 @@
             text-overflow: ellipsis;
         }
         .detail-link-rsd .detail-link-icon { background: #111; color: #ffc4eb; }
-        .detail-link-album .detail-link-icon { background: #111827; color: #93c5fd; }
-        .detail-link-youtube .detail-link-icon { background: #7f1d1d; color: #fecaca; }
-        .detail-link-spotify .detail-link-icon { background: #064e3b; color: #6ee7b7; }
-        .detail-link-discogs .detail-link-icon { background: #111827; color: #fbbf24; }
+        .detail-sidebar-links-row {
+            margin-top: 6px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .detail-link-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            border: 1px solid #444;
+            background: #252525;
+            font-size: 9px;
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+        .detail-link-chip:hover {
+            border-color: #ff2fa8;
+            color: #ff2fa8;
+        }
+        .detail-link-chip-icon {
+            font-size: 9px;
+        }
 
         .filter-row {
             max-width: 1400px;
@@ -1408,11 +1426,8 @@
             if (isReissue === 'No') {
                 return null;  // Only hide for confirmed new releases
             }
-            // Use album.link for universal music links
             const q = encodeURIComponent(`${artist} ${title}`);
-            const albumLinkUrl = `https://album.link/search?q=${q}`;
             return {
-                albumlink: albumLinkUrl,
                 youtube: `https://www.youtube.com/results?search_query=${q}`,
                 spotify: `https://open.spotify.com/search/${q}`
             };
@@ -1667,9 +1682,8 @@
                 ${descriptionHtml ? `<div class="modal-row"><span class="modal-label">Description:</span> ${descriptionHtml}</div>` : ''}
                 ${urls ? `
                     <div class="play-links">
-                        <a href="${urls.albumlink}" target="_blank" rel="noopener">All Platforms (album.link)</a>
+                        <a href="${urls.spotify}" target="_blank" rel="noopener">Open on Spotify</a>
                         <a href="${urls.youtube}" target="_blank" rel="noopener">Search on YouTube</a>
-                        <a href="${urls.spotify}" target="_blank" rel="noopener">Search on Spotify</a>
                     </div>
                 ` : '<div class="modal-row" style="color:#888;font-size:10px;">New release - streaming links not yet available</div>'}
             `;
@@ -1733,24 +1747,22 @@
                         <span class="detail-link-icon">🏷️</span>
                         <span class="detail-link-label">View on RecordStoreDay.com</span>
                     </a>
-                    ${urls ? `
-                        <a class="detail-link detail-link-album" href="${urls.albumlink}" target="_blank" rel="noopener">
-                            <span class="detail-link-icon">🔗</span>
-                            <span class="detail-link-label">All Platforms (album.link)</span>
+                    <div class="detail-sidebar-links-row">
+                        ${urls ? `
+                            <a class="detail-link-chip" href="${urls.spotify}" target="_blank" rel="noopener">
+                                <span class="detail-link-chip-icon">🎧</span>
+                                <span>Spotify</span>
+                            </a>
+                            <a class="detail-link-chip" href="${urls.youtube}" target="_blank" rel="noopener">
+                                <span class="detail-link-chip-icon">▶️</span>
+                                <span>YouTube</span>
+                            </a>
+                        ` : ''}
+                        <a class="detail-link-chip" href="${discogsUrl}" target="_blank" rel="noopener">
+                            <span class="detail-link-chip-icon">◎</span>
+                            <span>Discogs</span>
                         </a>
-                        <a class="detail-link detail-link-youtube" href="${urls.youtube}" target="_blank" rel="noopener">
-                            <span class="detail-link-icon">▶️</span>
-                            <span class="detail-link-label">Search on YouTube</span>
-                        </a>
-                        <a class="detail-link detail-link-spotify" href="${urls.spotify}" target="_blank" rel="noopener">
-                            <span class="detail-link-icon">🎧</span>
-                            <span class="detail-link-label">Search on Spotify</span>
-                        </a>
-                    ` : ''}
-                    <a class="detail-link detail-link-discogs" href="${discogsUrl}" target="_blank" rel="noopener">
-                        <span class="detail-link-icon">◎</span>
-                        <span class="detail-link-label">Search master on Discogs</span>
-                    </a>
+                    </div>
                 </div>
             `;
             document.body.classList.add('detail-sidebar-open');

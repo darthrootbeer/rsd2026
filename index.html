@@ -1478,7 +1478,8 @@
                     const artistDisplay = cleanDisplayText(r.Artist);
                     const titleDisplay = cleanDisplayText(r.Title);
                     const labelDisplay = cleanDisplayText(r.Label);
-                    const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+                    const rawGenre = cleanDisplayText(r['Genre 1'] || '');
+                    const genreDisplay = rawGenre || 'Unknown';
                     const style1Display = cleanDisplayText(r['Style 1'] || '');
                     const style2Display = cleanDisplayText(r['Style 2'] || '');
                     const formatDisplay = cleanDisplayText(r.Format || '');
@@ -1508,7 +1509,8 @@
                     const artistDisplay = cleanDisplayText(r.Artist);
                     const titleDisplay = cleanDisplayText(r.Title);
                     const labelDisplay = cleanDisplayText(r.Label);
-                    const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+                    const rawGenre = cleanDisplayText(r['Genre 1'] || '');
+                    const genreDisplay = rawGenre || 'Unknown';
                     const style1Display = cleanDisplayText(r['Style 1'] || '');
                     return `
                 <div class="card${isFavorite ? ' favorited' : ''}">
@@ -1814,7 +1816,8 @@
             const artistDisplay = cleanDisplayText(r.Artist);
             const titleDisplay = cleanDisplayText(r.Title);
             const labelDisplay = cleanDisplayText(r.Label);
-            const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+            const rawGenre = cleanDisplayText(r['Genre 1'] || '');
+            const genreDisplay = rawGenre || 'Unknown';
             const style1Display = cleanDisplayText(r['Style 1'] || '');
             const style2Display = cleanDisplayText(r['Style 2'] || '');
             const formatDisplay = cleanDisplayText(r.Format || '');
@@ -1858,7 +1861,8 @@
             const artistDisplay = cleanDisplayText(r.Artist);
             const titleDisplay = cleanDisplayText(r.Title);
             const labelDisplay = cleanDisplayText(r.Label);
-            const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+            const rawGenre = cleanDisplayText(r['Genre 1'] || '');
+            const genreDisplay = rawGenre || 'Unknown';
             const style1Display = cleanDisplayText(r['Style 1'] || '');
             const style2Display = cleanDisplayText(r['Style 2'] || '');
             const formatDisplay = cleanDisplayText(r.Format || '');

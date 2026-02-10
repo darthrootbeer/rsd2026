@@ -407,16 +407,16 @@
         }
         .favorite-star {
             position: absolute;
-            top: 4px;
-            right: 4px;
-            font-size: 16px;
+            top: 6px;
+            right: 6px;
+            font-size: 18px;
             cursor: pointer;
             z-index: 10;
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(0, 0, 0, 0.65);
             border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.7);
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.85);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -662,6 +662,7 @@
         .favorites-cart-item:hover { background: #2a2a2a; }
         .favorites-cart-item-artist { color: #4cc9ff; font-size: 10px; }
         .favorites-cart-item-title { color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10px; }
+        .favorites-cart-item-format { color: #999; font-size: 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .favorites-cart-item-remove {
             background: none;
             border: none;
@@ -1695,6 +1696,7 @@
                     const albumArt = getAlbumArt(r.Artist, r.Title);
                     const artistDisplay = cleanDisplayText(r.Artist);
                     const titleDisplay = cleanDisplayText(r.Title);
+                    const formatDisplay = cleanDisplayText(r.Format || '');
                     return `<div class="favorites-cart-item" title="View on RecordStoreDay.com">
                         <div class="favorites-cart-item-thumb" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
                             ${albumArt ? `<img src="${albumArt}" alt="${titleDisplay}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
@@ -1702,6 +1704,7 @@
                         <div class="favorites-cart-item-main" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
                             <div class="favorites-cart-item-artist">${artistDisplay}</div>
                             <div class="favorites-cart-item-title">${titleDisplay}</div>
+                            ${formatDisplay ? `<div class="favorites-cart-item-format">${formatDisplay}</div>` : ''}
                         </div>
                         <button class="favorites-cart-item-remove" onclick="removeFavoriteFromCart(event, ${i})" aria-label="Remove from favorites">🗑</button>
                     </div>`;

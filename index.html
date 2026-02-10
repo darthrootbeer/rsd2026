@@ -1941,7 +1941,7 @@ ${fullHtml}
             }
 
             detailSidebarBody.innerHTML = `
-                <div class="detail-sidebar-art"${fullArtUrl ? ' title="Click for super hi-res" onclick="openHiResArt(\\'' + fullArtUrl.replace(/'/g, "\\'") + '\\')"' : ''}>
+                <div class="detail-sidebar-art">
                     ${art ? `<img src="${art}" alt="${titleDisplay}" referrerpolicy="no-referrer">` : '🎵'}
                 </div>
                 <div class="detail-sidebar-artist">${artistDisplay}</div>
@@ -1989,6 +1989,22 @@ ${fullHtml}
                     </div>
                 </div>
             `;
+            // Wire up hi-res art click separately to avoid inline JS quoting issues
+            const artContainer = detailSidebarBody.querySelector('.detail-sidebar-art');
+            if (artContainer) {
+                if (fullArtUrl) {
+                    artContainer.title = 'Click for super hi-res';
+                    artContainer.style.cursor = 'zoom-in';
+                    artContainer.onclick = (ev) => {
+                        ev.stopPropagation();
+                        openHiResArt(fullArtUrl);
+                    };
+                } else {
+                    artContainer.removeAttribute('title');
+                    artContainer.style.cursor = '';
+                    artContainer.onclick = null;
+                }
+            }
             document.body.classList.add('detail-sidebar-open');
         }
 

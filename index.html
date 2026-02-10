@@ -1260,7 +1260,7 @@
         }
         function cleanRichHtml(str) {
             if (!str) return '';
-            return String(str)
+            let html = String(str)
                 .replace(/\uFFFD/g, ' ')
                 // Fix CP-1252 smart punctuation
                 .replace(/[\u0091\u0092]/g, '’')
@@ -1274,6 +1274,13 @@
                 .replace(/Ã©/g, 'é')
                 // Collapse excessive plain spaces while preserving <br> structure
                 .replace(/ {2,}/g, ' ');
+
+            // If there are no explicit <p> tags, treat double <br> as paragraph breaks
+            if (!/<p[\s>]/i.test(html)) {
+                html = html.replace(/(<br\s*\/?>\s*){2,}/gi, '</p><p>');
+                html = `<p>${html}</p>`;
+            }
+            return html;
         }
         function updateFilterTags() {
             const tags = [];

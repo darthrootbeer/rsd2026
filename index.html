@@ -409,17 +409,18 @@
             position: absolute;
             top: 4px;
             right: 4px;
-            font-size: 11px;
+            font-size: 16px;
             cursor: pointer;
             z-index: 10;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.55);
             border-radius: 50%;
-            width: 18px;
-            height: 18px;
+            width: 24px;
+            height: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: transform 0.2s, background 0.2s;
+            transition: transform 0.2s, background 0.2s, border-color 0.2s;
         }
         .favorite-star:hover {
             transform: scale(1.1);

@@ -662,11 +662,11 @@
         }
         .detail-sidebar-art {
             width: 100%;
-            max-width: 320px;
+            max-width: none; /* allow full-width hero image */
             aspect-ratio: 1 / 1;
             background: #111;
             border-radius: 4px;
-            margin: 0 auto 12px;
+            margin: 0 0 12px 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1081,6 +1081,23 @@
             d.textContent = s;
             return d.innerHTML;
         }
+
+        // Normalize display text to strip or fix strange mojibake characters
+        function cleanDisplayText(str) {
+            if (!str) return '';
+            return String(str)
+                // Replace the replacement character � with a space, then collapse spaces
+                .replace(/\uFFFD/g, ' ')
+                // Common mojibake sequences from mis-decoded UTF-8 → ASCII
+                .replace(/â€™/g, '’')
+                .replace(/â€œ|â€/g, '"')
+                .replace(/â€“|â€”/g, '–')
+                .replace(/â€¦/g, '…')
+                .replace(/Ã©/g, 'é')
+                // Collapse any excess whitespace introduced
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
         function updateFilterTags() {
             const tags = [];
             includedGenres.forEach(g => tags.push(`<span class="filter-tag include" tabindex="0" role="button" data-value="${escapeHtml(g)}" data-type="genre" data-mode="include">+${escapeHtml(g)}</span>`));
@@ -1170,18 +1187,25 @@
                     const isFavorite = favorites.has(originalIndex);
                     const albumArt = getAlbumArt(r.Artist, r.Title);
                     const urls = getPlayUrls(r.Artist, r.Title, r['Is Reissue']);
+                    const artistDisplay = cleanDisplayText(r.Artist);
+                    const titleDisplay = cleanDisplayText(r.Title);
+                    const labelDisplay = cleanDisplayText(r.Label);
+                    const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+                    const style1Display = cleanDisplayText(r['Style 1'] || '');
+                    const style2Display = cleanDisplayText(r['Style 2'] || '');
+                    const formatDisplay = cleanDisplayText(r.Format || '');
                     return `
                     <div class="row-item" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
                         <div class="row-thumb">
                             ${albumArt ? `<img src="${albumArt}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
                         </div>
-                        <span class="row-artist">${r.Artist}</span>
-                        <span class="row-title">${r.Title}</span>
-                        <span class="row-meta">${r.Format} • ${r.Label}</span>
+                        <span class="row-artist">${artistDisplay}</span>
+                        <span class="row-title">${titleDisplay}</span>
+                        <span class="row-meta">${formatDisplay} • ${labelDisplay}</span>
                         <span class="row-genres">
-                            ${r['Genre 1'] ? `<span class="row-genre">${r['Genre 1']}</span>` : ''}
-                            ${r['Style 1'] ? `<span class="row-genre">${r['Style 1']}</span>` : ''}
-                            ${r['Style 2'] ? `<span class="row-genre">${r['Style 2']}</span>` : ''}
+                            ${genreDisplay ? `<span class="row-genre">${genreDisplay}</span>` : ''}
+                            ${style1Display ? `<span class="row-genre">${style1Display}</span>` : ''}
+                            ${style2Display ? `<span class="row-genre">${style2Display}</span>` : ''}
                         </span>
                         <span class="row-links" onclick="event.stopPropagation()">
                             ${urls ? `
@@ -1199,21 +1223,25 @@
                     const isFavorite = favorites.has(originalIndex);
                     const albumArt = getAlbumArt(r.Artist, r.Title);
                     const urls = getPlayUrls(r.Artist, r.Title, r['Is Reissue']);
-
+                    const artistDisplay = cleanDisplayText(r.Artist);
+                    const titleDisplay = cleanDisplayText(r.Title);
+                    const labelDisplay = cleanDisplayText(r.Label);
+                    const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+                    const style1Display = cleanDisplayText(r['Style 1'] || '');
                     return `
                 <div class="card">
                     <div class="favorite-star ${isFavorite ? 'active' : 'inactive'}" onclick="toggleFavorite(${originalIndex}, event)">
                         ${isFavorite ? '⭐' : '☆'}
                     </div>
                     <div class="card-img" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
-                        ${albumArt ? `<img src="${albumArt}" alt="${r.Title}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
+                        ${albumArt ? `<img src="${albumArt}" alt="${titleDisplay}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
                     </div>
                     <div class="card-body" onclick="openRSDPage(${i}, event)" title="View on RecordStoreDay.com">
-                        <div class="card-artist">${r.Artist}</div>
-                        <div class="card-title">${r.Title}</div>
-                        <div class="card-meta">${r.Format} • ${r.Label}</div>
-                        ${r['Genre 1'] ? `<span class="card-genre">${r['Genre 1']}</span>` : ''}
-                        ${r['Style 1'] ? `<span class="card-genre">${r['Style 1']}</span>` : ''}
+                        <div class="card-artist">${artistDisplay}</div>
+                        <div class="card-title">${titleDisplay}</div>
+                        <div class="card-meta">${cleanDisplayText(r.Format || '')} • ${labelDisplay}</div>
+                        ${genreDisplay ? `<span class="card-genre">${genreDisplay}</span>` : ''}
+                        ${style1Display ? `<span class="card-genre">${style1Display}</span>` : ''}
                         ${urls ? `
                             <div class="card-play-links" onclick="event.stopPropagation()">
                                 <a href="${urls.songlink}" target="_blank" rel="noopener">Find Streaming</a>
@@ -1315,13 +1343,15 @@
                     if (!r) return '';
                     const rsdUrl = getRSDUrl(r.Artist, r.Title);
                     const albumArt = getAlbumArt(r.Artist, r.Title);
+                    const artistDisplay = cleanDisplayText(r.Artist);
+                    const titleDisplay = cleanDisplayText(r.Title);
                     return `<div class="favorites-cart-item" title="View on RecordStoreDay.com">
                         <div class="favorites-cart-item-thumb" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
-                            ${albumArt ? `<img src="${albumArt}" alt="${r.Title}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
+                            ${albumArt ? `<img src="${albumArt}" alt="${titleDisplay}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='🎵'">` : '🎵'}
                         </div>
                         <div class="favorites-cart-item-main" onclick="window.open('${rsdUrl}', '_blank', 'noopener,noreferrer')">
-                            <div class="favorites-cart-item-artist">${r.Artist}</div>
-                            <div class="favorites-cart-item-title">${r.Title}</div>
+                            <div class="favorites-cart-item-artist">${artistDisplay}</div>
+                            <div class="favorites-cart-item-title">${titleDisplay}</div>
                         </div>
                         <button class="favorites-cart-item-remove" onclick="removeFavoriteFromCart(event, ${i})" aria-label="Remove from favorites">🗑</button>
                     </div>`;
@@ -1337,15 +1367,20 @@
             if (format === 'markdown') {
                 content = `# RSD 2026 Favorites (${favs.length} items)\n\n`;
                 favs.forEach((r, i) => {
-                    content += `${i + 1}. **${r.Artist}** — ${r.Title} (${r.Format})\n`;
+                    content += `${i + 1}. **${cleanDisplayText(r.Artist)}** — ${cleanDisplayText(r.Title)} (${cleanDisplayText(r.Format)})\n`;
                 });
                 filename = 'rsd2026-favorites.md';
                 mime = 'text/markdown';
             } else if (format === 'csv') {
                 content = 'Artist,Title,Format,Label,Genre\n';
                 favs.forEach(r => {
-                    const row = [r.Artist, r.Title, r.Format, r.Label, r['Genre 1'] || '']
-                        .map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
+                    const row = [
+                        cleanDisplayText(r.Artist),
+                        cleanDisplayText(r.Title),
+                        cleanDisplayText(r.Format),
+                        cleanDisplayText(r.Label),
+                        cleanDisplayText(r['Genre 1'] || '')
+                    ].map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
                     content += `${row}\n`;
                 });
                 filename = 'rsd2026-favorites.csv';
@@ -1353,7 +1388,7 @@
             } else {
                 content = `RSD 2026 Favorites (${favs.length} items)\n\n`;
                 favs.forEach((r, i) => {
-                    content += `${i + 1}. ${r.Artist} - ${r.Title} (${r.Format})\n`;
+                    content += `${i + 1}. ${cleanDisplayText(r.Artist)} - ${cleanDisplayText(r.Title)} (${cleanDisplayText(r.Format)})\n`;
                 });
                 filename = 'rsd2026-favorites.txt';
                 mime = 'text/plain';
@@ -1409,14 +1444,21 @@
             if (!r) return;
             const art = getAlbumArt(r.Artist, r.Title);
             const urls = getPlayUrls(r.Artist, r.Title);
+            const artistDisplay = cleanDisplayText(r.Artist);
+            const titleDisplay = cleanDisplayText(r.Title);
+            const labelDisplay = cleanDisplayText(r.Label);
+            const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+            const style1Display = cleanDisplayText(r['Style 1'] || '');
+            const style2Display = cleanDisplayText(r['Style 2'] || '');
+            const formatDisplay = cleanDisplayText(r.Format || '');
             modalBody.innerHTML = `
-                <div class="modal-img">${art ? `<img src="${art}" alt="${r.Title}" referrerpolicy="no-referrer" style="width:100%;max-height:400px;object-fit:contain;">` : '🎵'}</div>
-                <div class="modal-artist">${r.Artist}</div>
-                <div class="modal-title">${r.Title}</div>
-                <div class="modal-row"><span class="modal-label">Label:</span> ${r.Label}</div>
-                <div class="modal-row"><span class="modal-label">Format:</span> ${r.Format}</div>
-                <div class="modal-row"><span class="modal-label">Genre:</span> ${r['Genre 1']}</div>
-                ${r['Style 1'] ? `<div class="modal-row"><span class="modal-label">Style:</span> ${r['Style 1']}${r['Style 2'] ? ', ' + r['Style 2'] : ''}</div>` : ''}
+                <div class="modal-img">${art ? `<img src="${art}" alt="${titleDisplay}" referrerpolicy="no-referrer" style="width:100%;max-height:400px;object-fit:contain;">` : '🎵'}</div>
+                <div class="modal-artist">${artistDisplay}</div>
+                <div class="modal-title">${titleDisplay}</div>
+                <div class="modal-row"><span class="modal-label">Label:</span> ${labelDisplay}</div>
+                <div class="modal-row"><span class="modal-label">Format:</span> ${formatDisplay}</div>
+                <div class="modal-row"><span class="modal-label">Genre:</span> ${genreDisplay}</div>
+                ${style1Display ? `<div class="modal-row"><span class="modal-label">Style:</span> ${style1Display}${style2Display ? ', ' + style2Display : ''}</div>` : ''}
                 <div class="modal-row"><span class="modal-label">RSD Date:</span> ${r['RSD Date']}</div>
                 <div class="modal-row"><span class="modal-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
                 ${r.Description ? `<div class="modal-row"><span class="modal-label">Description:</span> ${r.Description}</div>` : ''}
@@ -1441,26 +1483,34 @@
             const art = getAlbumArt(r.Artist, r.Title);
             const urls = getPlayUrls(r.Artist, r.Title);
             const rsdUrl = getRSDUrl(r.Artist, r.Title);
+            const artistDisplay = cleanDisplayText(r.Artist);
+            const titleDisplay = cleanDisplayText(r.Title);
+            const labelDisplay = cleanDisplayText(r.Label);
+            const genreDisplay = cleanDisplayText(r['Genre 1'] || '');
+            const style1Display = cleanDisplayText(r['Style 1'] || '');
+            const style2Display = cleanDisplayText(r['Style 2'] || '');
+            const formatDisplay = cleanDisplayText(r.Format || '');
+            const releaseTypeDisplay = cleanDisplayText(r['Release Type'] || '');
 
             if (detailSidebarBreadcrumb) {
-                detailSidebarBreadcrumb.textContent = `Record Store Day 2026 ▸ ${r.Artist} ▸ ${r.Title}`;
+                detailSidebarBreadcrumb.textContent = `Record Store Day 2026 ▸ ${artistDisplay} ▸ ${titleDisplay}`;
             }
 
             detailSidebarBody.innerHTML = `
                 <div class="detail-sidebar-art">
-                    ${art ? `<img src="${art}" alt="${r.Title}" referrerpolicy="no-referrer">` : '🎵'}
+                    ${art ? `<img src="${art}" alt="${titleDisplay}" referrerpolicy="no-referrer">` : '🎵'}
                 </div>
-                <div class="detail-sidebar-artist">${r.Artist}</div>
-                <div class="detail-sidebar-title">${r.Title}</div>
+                <div class="detail-sidebar-artist">${artistDisplay}</div>
+                <div class="detail-sidebar-title">${titleDisplay}</div>
                 <div class="detail-sidebar-meta">
                     <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Event:</span> Record Store Day 2026</div>
                     <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Release Date:</span> ${r['RSD Date']}</div>
-                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Label:</span> ${r.Label}</div>
-                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Format:</span> ${r.Format}</div>
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Label:</span> ${labelDisplay}</div>
+                    <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Format:</span> ${formatDisplay}</div>
                     ${r['Pressing Quantity'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Quantity:</span> ${r['Pressing Quantity']}</div>` : ''}
-                    ${r['Release Type'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Release type:</span> ${r['Release Type']} Release</div>` : ''}
-                    ${r['Genre 1'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Genre:</span> ${r['Genre 1']}</div>` : ''}
-                    ${r['Style 1'] ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Style:</span> ${r['Style 1']}${r['Style 2'] ? ', ' + r['Style 2'] : ''}</div>` : ''}
+                    ${releaseTypeDisplay ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Release type:</span> ${releaseTypeDisplay} Release</div>` : ''}
+                    ${genreDisplay ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Genre:</span> ${genreDisplay}</div>` : ''}
+                    ${style1Display ? `<div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Style:</span> ${style1Display}${style2Display ? ', ' + style2Display : ''}</div>` : ''}
                     <div class="detail-sidebar-meta-row"><span class="detail-sidebar-meta-label">Type:</span> ${r['Is Reissue'] === 'Yes' ? 'Reissue/Repress' : r['Is Reissue'] === 'No' ? 'New Release' : 'Unknown'}</div>
                 </div>
                 ${(r.MoreInfo || r.Description) ? `

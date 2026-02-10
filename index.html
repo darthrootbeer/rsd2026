@@ -15,7 +15,7 @@
             padding: 12px;
             transition: padding-right 0.2s ease;
         }
-        body.favorites-cart-open { padding-right: 390px; }
+        /* Keep body padding static; don't shift layout when shopping list is open */
         .header {
             text-align: center;
             padding: 20px 0 18px;
@@ -1043,8 +1043,13 @@
                         e.target.click();
                     }
                 });
-                const cartOpen = localStorage.getItem('rsd2026_favoritesCartOpen') === 'true';
-                if (cartOpen) document.body.classList.add('favorites-cart-open');
+                const cartPref = localStorage.getItem('rsd2026_favoritesCartOpen');
+                const cartOpen = cartPref !== 'false'; // default to open unless explicitly closed
+                if (cartOpen) {
+                    document.body.classList.add('favorites-cart-open');
+                } else {
+                    document.body.classList.remove('favorites-cart-open');
+                }
                 document.getElementById('favoritesCartToggle')?.addEventListener('click', () => setFavoritesCartOpen(true));
                 document.getElementById('favoritesCartClose')?.addEventListener('click', () => setFavoritesCartOpen(false));
                 document.getElementById('favoritesExportBtn')?.addEventListener('click', (e) => {
